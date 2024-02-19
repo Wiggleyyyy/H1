@@ -1,0 +1,145 @@
+/*nav scroll effect start*/
+body.nav-fixed nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+}
+
+nav.nav-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+}
+
+body.nav-fixed main {
+    margin-top: 50px; /* Adjust margin to accommodate the fixed navigation bar */
+    width: 100%;
+}
+/*nav scroll effect end*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding-top: 1vh;
+}
+
+nav {
+    padding: 1vh;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    padding: 2vh;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+nav li:hover{
+    background-color: #4c4c4c;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+}
+
+section#products{
+    text-align: center;
+}
+
+/* Style for the product list */
+section#products ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#products li {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+section#products img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section#products h3 {
+    margin-top: 10px;
+}
+
+section#products p {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+form {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    section#products li {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section#products li {
+        width: calc(100% - 20px);
+    }
+}
