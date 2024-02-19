@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Client_Side",
+    "\\Database",
+    "\\Programmering"
   ],
+  "SelectedNode": "\\Programmering\\Program_Yatzy",
   "PreviewInSolutionExplorer": false
 }
