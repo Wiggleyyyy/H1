@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\bin\Debug\net6.0\Program_DivisibleBy2Or3.exe
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\bin\Debug\net6.0\Program_DivisibleBy2Or3.deps.json
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\bin\Debug\net6.0\Program_DivisibleBy2Or3.runtimeconfig.json
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\bin\Debug\net6.0\Program_DivisibleBy2Or3.dll
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\bin\Debug\net6.0\Program_DivisibleBy2Or3.pdb
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\Program_DivisibleBy2Or3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\Program_DivisibleBy2Or3.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\Program_DivisibleBy2Or3.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\Program_DivisibleBy2Or3.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\Program_DivisibleBy2Or3.dll
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\refint\Program_DivisibleBy2Or3.dll
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\Program_DivisibleBy2Or3.pdb
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\Program_DivisibleBy2Or3.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_DivisibleBy2Or3\obj\Debug\net6.0\ref\Program_DivisibleBy2Or3.dll

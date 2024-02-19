@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_IfYearIsLeap\bin\Debug\net6.0\Program_IfYearIsLeap.exe
+C:\Skole\H1\H1\Program_IfYearIsLeap\bin\Debug\net6.0\Program_IfYearIsLeap.deps.json
+C:\Skole\H1\H1\Program_IfYearIsLeap\bin\Debug\net6.0\Program_IfYearIsLeap.runtimeconfig.json
+C:\Skole\H1\H1\Program_IfYearIsLeap\bin\Debug\net6.0\Program_IfYearIsLeap.dll
+C:\Skole\H1\H1\Program_IfYearIsLeap\bin\Debug\net6.0\Program_IfYearIsLeap.pdb
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\Program_IfYearIsLeap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\Program_IfYearIsLeap.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\Program_IfYearIsLeap.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\Program_IfYearIsLeap.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\Program_IfYearIsLeap.dll
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\refint\Program_IfYearIsLeap.dll
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\Program_IfYearIsLeap.pdb
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\Program_IfYearIsLeap.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_IfYearIsLeap\obj\Debug\net6.0\ref\Program_IfYearIsLeap.dll

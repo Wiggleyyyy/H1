@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_SwapTwoNumbers\bin\Debug\net6.0\Program_SwapTwoNumbers.exe
+C:\Skole\H1\H1\Program_SwapTwoNumbers\bin\Debug\net6.0\Program_SwapTwoNumbers.deps.json
+C:\Skole\H1\H1\Program_SwapTwoNumbers\bin\Debug\net6.0\Program_SwapTwoNumbers.runtimeconfig.json
+C:\Skole\H1\H1\Program_SwapTwoNumbers\bin\Debug\net6.0\Program_SwapTwoNumbers.dll
+C:\Skole\H1\H1\Program_SwapTwoNumbers\bin\Debug\net6.0\Program_SwapTwoNumbers.pdb
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\Program_SwapTwoNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\Program_SwapTwoNumbers.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\Program_SwapTwoNumbers.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\Program_SwapTwoNumbers.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\Program_SwapTwoNumbers.dll
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\refint\Program_SwapTwoNumbers.dll
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\Program_SwapTwoNumbers.pdb
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\Program_SwapTwoNumbers.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_SwapTwoNumbers\obj\Debug\net6.0\ref\Program_SwapTwoNumbers.dll

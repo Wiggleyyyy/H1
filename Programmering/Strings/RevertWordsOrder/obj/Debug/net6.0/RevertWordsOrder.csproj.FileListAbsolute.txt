@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_RevertWordsOrder\bin\Debug\net6.0\Program_RevertWordsOrder.exe
+C:\Skole\H1\H1\Program_RevertWordsOrder\bin\Debug\net6.0\Program_RevertWordsOrder.deps.json
+C:\Skole\H1\H1\Program_RevertWordsOrder\bin\Debug\net6.0\Program_RevertWordsOrder.runtimeconfig.json
+C:\Skole\H1\H1\Program_RevertWordsOrder\bin\Debug\net6.0\Program_RevertWordsOrder.dll
+C:\Skole\H1\H1\Program_RevertWordsOrder\bin\Debug\net6.0\Program_RevertWordsOrder.pdb
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\Program_RevertWordsOrder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\Program_RevertWordsOrder.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\Program_RevertWordsOrder.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\Program_RevertWordsOrder.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\Program_RevertWordsOrder.dll
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\refint\Program_RevertWordsOrder.dll
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\Program_RevertWordsOrder.pdb
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\Program_RevertWordsOrder.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_RevertWordsOrder\obj\Debug\net6.0\ref\Program_RevertWordsOrder.dll

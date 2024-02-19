@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_SortCharactersDecending\bin\Debug\net6.0\Program_SortCharactersDecending.exe
+C:\Skole\H1\H1\Program_SortCharactersDecending\bin\Debug\net6.0\Program_SortCharactersDecending.deps.json
+C:\Skole\H1\H1\Program_SortCharactersDecending\bin\Debug\net6.0\Program_SortCharactersDecending.runtimeconfig.json
+C:\Skole\H1\H1\Program_SortCharactersDecending\bin\Debug\net6.0\Program_SortCharactersDecending.dll
+C:\Skole\H1\H1\Program_SortCharactersDecending\bin\Debug\net6.0\Program_SortCharactersDecending.pdb
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\Program_SortCharactersDecending.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\Program_SortCharactersDecending.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\Program_SortCharactersDecending.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\Program_SortCharactersDecending.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\Program_SortCharactersDecending.dll
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\refint\Program_SortCharactersDecending.dll
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\Program_SortCharactersDecending.pdb
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\Program_SortCharactersDecending.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_SortCharactersDecending\obj\Debug\net6.0\ref\Program_SortCharactersDecending.dll

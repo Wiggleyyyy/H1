@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\bin\Debug\net6.0\Program_StringInReverseOrder.exe
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\bin\Debug\net6.0\Program_StringInReverseOrder.deps.json
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\bin\Debug\net6.0\Program_StringInReverseOrder.runtimeconfig.json
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\bin\Debug\net6.0\Program_StringInReverseOrder.dll
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\bin\Debug\net6.0\Program_StringInReverseOrder.pdb
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\Program_StringInReverseOrder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\Program_StringInReverseOrder.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\Program_StringInReverseOrder.AssemblyInfo.cs
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\Program_StringInReverseOrder.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\Program_StringInReverseOrder.dll
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\refint\Program_StringInReverseOrder.dll
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\Program_StringInReverseOrder.pdb
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\Program_StringInReverseOrder.genruntimeconfig.cache
+C:\Skole\H1\H1\Programmering\Strings\Program_StringInReverseOrder\obj\Debug\net6.0\ref\Program_StringInReverseOrder.dll

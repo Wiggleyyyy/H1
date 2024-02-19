@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_TheCubeOf\bin\Debug\net6.0\Program_TheCubeOf.exe
+C:\Skole\H1\H1\Program_TheCubeOf\bin\Debug\net6.0\Program_TheCubeOf.deps.json
+C:\Skole\H1\H1\Program_TheCubeOf\bin\Debug\net6.0\Program_TheCubeOf.runtimeconfig.json
+C:\Skole\H1\H1\Program_TheCubeOf\bin\Debug\net6.0\Program_TheCubeOf.dll
+C:\Skole\H1\H1\Program_TheCubeOf\bin\Debug\net6.0\Program_TheCubeOf.pdb
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\Program_TheCubeOf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\Program_TheCubeOf.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\Program_TheCubeOf.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\Program_TheCubeOf.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\Program_TheCubeOf.dll
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\refint\Program_TheCubeOf.dll
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\Program_TheCubeOf.pdb
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\Program_TheCubeOf.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_TheCubeOf\obj\Debug\net6.0\ref\Program_TheCubeOf.dll

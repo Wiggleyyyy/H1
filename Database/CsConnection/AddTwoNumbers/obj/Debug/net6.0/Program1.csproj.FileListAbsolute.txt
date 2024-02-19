@@ -1,0 +1,14 @@
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\bin\Debug\net6.0\Program1.exe
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\bin\Debug\net6.0\Program1.deps.json
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\bin\Debug\net6.0\Program1.runtimeconfig.json
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\bin\Debug\net6.0\Program1.dll
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\bin\Debug\net6.0\Program1.pdb
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\Program1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\Program1.AssemblyInfoInputs.cache
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\Program1.AssemblyInfo.cs
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\Program1.csproj.CoreCompileInputs.cache
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\Program1.dll
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\refint\Program1.dll
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\Program1.pdb
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\Program1.genruntimeconfig.cache
+C:\Skole\H1\Database_Server\CsConnection\AddTwoNumbers\obj\Debug\net6.0\ref\Program1.dll

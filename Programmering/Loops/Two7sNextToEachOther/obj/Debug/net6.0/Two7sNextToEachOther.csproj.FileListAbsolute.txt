@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\bin\Debug\net6.0\Program_Two7sNextToEachOther.exe
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\bin\Debug\net6.0\Program_Two7sNextToEachOther.deps.json
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\bin\Debug\net6.0\Program_Two7sNextToEachOther.runtimeconfig.json
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\bin\Debug\net6.0\Program_Two7sNextToEachOther.dll
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\bin\Debug\net6.0\Program_Two7sNextToEachOther.pdb
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\Program_Two7sNextToEachOther.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\Program_Two7sNextToEachOther.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\Program_Two7sNextToEachOther.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\Program_Two7sNextToEachOther.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\Program_Two7sNextToEachOther.dll
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\refint\Program_Two7sNextToEachOther.dll
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\Program_Two7sNextToEachOther.pdb
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\Program_Two7sNextToEachOther.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_Two7sNextToEachOther\obj\Debug\net6.0\ref\Program_Two7sNextToEachOther.dll

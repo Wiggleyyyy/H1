@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\bin\Debug\net6.0\Program_AddTwoNumbers1.exe
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\bin\Debug\net6.0\Program_AddTwoNumbers1.deps.json
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\bin\Debug\net6.0\Program_AddTwoNumbers1.runtimeconfig.json
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\bin\Debug\net6.0\Program_AddTwoNumbers1.dll
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\bin\Debug\net6.0\Program_AddTwoNumbers1.pdb
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\Program_AddTwoNumbers1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\Program_AddTwoNumbers1.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\Program_AddTwoNumbers1.AssemblyInfo.cs
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\Program_AddTwoNumbers1.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\Program_AddTwoNumbers1.dll
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\refint\Program_AddTwoNumbers1.dll
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\Program_AddTwoNumbers1.pdb
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\Program_AddTwoNumbers1.genruntimeconfig.cache
+C:\Skole\H1\H1\Programmering\Basic\Program_AddTwoNumbers1\obj\Debug\net6.0\ref\Program_AddTwoNumbers1.dll

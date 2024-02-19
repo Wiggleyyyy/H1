@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\bin\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.exe
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\bin\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.deps.json
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\bin\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.runtimeconfig.json
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\bin\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.dll
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\bin\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.pdb
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.dll
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\refint\Program_IfConsistsOfUppercaseLetters.dll
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.pdb
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\Program_IfConsistsOfUppercaseLetters.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_IfConsistsOfUppercaseLetters\obj\Debug\net6.0\ref\Program_IfConsistsOfUppercaseLetters.dll

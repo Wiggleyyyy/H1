@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_ToThePowerOf\bin\Debug\net6.0\Program_ToThePowerOf.exe
+C:\Skole\H1\H1\Program_ToThePowerOf\bin\Debug\net6.0\Program_ToThePowerOf.deps.json
+C:\Skole\H1\H1\Program_ToThePowerOf\bin\Debug\net6.0\Program_ToThePowerOf.runtimeconfig.json
+C:\Skole\H1\H1\Program_ToThePowerOf\bin\Debug\net6.0\Program_ToThePowerOf.dll
+C:\Skole\H1\H1\Program_ToThePowerOf\bin\Debug\net6.0\Program_ToThePowerOf.pdb
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\Program_ToThePowerOf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\Program_ToThePowerOf.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\Program_ToThePowerOf.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\Program_ToThePowerOf.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\Program_ToThePowerOf.dll
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\refint\Program_ToThePowerOf.dll
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\Program_ToThePowerOf.pdb
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\Program_ToThePowerOf.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_ToThePowerOf\obj\Debug\net6.0\ref\Program_ToThePowerOf.dll

@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_TheBiggestNumber\bin\Debug\net6.0\Program_TheBiggestNumber.exe
+C:\Skole\H1\H1\Program_TheBiggestNumber\bin\Debug\net6.0\Program_TheBiggestNumber.deps.json
+C:\Skole\H1\H1\Program_TheBiggestNumber\bin\Debug\net6.0\Program_TheBiggestNumber.runtimeconfig.json
+C:\Skole\H1\H1\Program_TheBiggestNumber\bin\Debug\net6.0\Program_TheBiggestNumber.dll
+C:\Skole\H1\H1\Program_TheBiggestNumber\bin\Debug\net6.0\Program_TheBiggestNumber.pdb
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\Program_TheBiggestNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\Program_TheBiggestNumber.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\Program_TheBiggestNumber.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\Program_TheBiggestNumber.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\Program_TheBiggestNumber.dll
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\refint\Program_TheBiggestNumber.dll
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\Program_TheBiggestNumber.pdb
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\Program_TheBiggestNumber.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_TheBiggestNumber\obj\Debug\net6.0\ref\Program_TheBiggestNumber.dll

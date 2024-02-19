@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_NumberOfWords\bin\Debug\net6.0\Program_NumberOfWords.exe
+C:\Skole\H1\H1\Program_NumberOfWords\bin\Debug\net6.0\Program_NumberOfWords.deps.json
+C:\Skole\H1\H1\Program_NumberOfWords\bin\Debug\net6.0\Program_NumberOfWords.runtimeconfig.json
+C:\Skole\H1\H1\Program_NumberOfWords\bin\Debug\net6.0\Program_NumberOfWords.dll
+C:\Skole\H1\H1\Program_NumberOfWords\bin\Debug\net6.0\Program_NumberOfWords.pdb
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\Program_NumberOfWords.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\Program_NumberOfWords.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\Program_NumberOfWords.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\Program_NumberOfWords.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\Program_NumberOfWords.dll
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\refint\Program_NumberOfWords.dll
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\Program_NumberOfWords.pdb
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\Program_NumberOfWords.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_NumberOfWords\obj\Debug\net6.0\ref\Program_NumberOfWords.dll

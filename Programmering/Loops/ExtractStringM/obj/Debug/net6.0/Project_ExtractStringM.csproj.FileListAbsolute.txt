@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Project_ExtractStringM\bin\Debug\net6.0\Project_ExtractStringM.exe
+C:\Skole\H1\H1\Project_ExtractStringM\bin\Debug\net6.0\Project_ExtractStringM.deps.json
+C:\Skole\H1\H1\Project_ExtractStringM\bin\Debug\net6.0\Project_ExtractStringM.runtimeconfig.json
+C:\Skole\H1\H1\Project_ExtractStringM\bin\Debug\net6.0\Project_ExtractStringM.dll
+C:\Skole\H1\H1\Project_ExtractStringM\bin\Debug\net6.0\Project_ExtractStringM.pdb
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\Project_ExtractStringM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\Project_ExtractStringM.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\Project_ExtractStringM.AssemblyInfo.cs
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\Project_ExtractStringM.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\Project_ExtractStringM.dll
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\refint\Project_ExtractStringM.dll
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\Project_ExtractStringM.pdb
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\Project_ExtractStringM.genruntimeconfig.cache
+C:\Skole\H1\H1\Project_ExtractStringM\obj\Debug\net6.0\ref\Project_ExtractStringM.dll

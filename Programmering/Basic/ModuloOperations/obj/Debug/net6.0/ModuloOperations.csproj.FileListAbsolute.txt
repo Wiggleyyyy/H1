@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_ModuloOperations\bin\Debug\net6.0\Program_ModuloOperations.exe
+C:\Skole\H1\H1\Program_ModuloOperations\bin\Debug\net6.0\Program_ModuloOperations.deps.json
+C:\Skole\H1\H1\Program_ModuloOperations\bin\Debug\net6.0\Program_ModuloOperations.runtimeconfig.json
+C:\Skole\H1\H1\Program_ModuloOperations\bin\Debug\net6.0\Program_ModuloOperations.dll
+C:\Skole\H1\H1\Program_ModuloOperations\bin\Debug\net6.0\Program_ModuloOperations.pdb
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\Program_ModuloOperations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\Program_ModuloOperations.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\Program_ModuloOperations.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\Program_ModuloOperations.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\Program_ModuloOperations.dll
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\refint\Program_ModuloOperations.dll
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\Program_ModuloOperations.pdb
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\Program_ModuloOperations.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_ModuloOperations\obj\Debug\net6.0\ref\Program_ModuloOperations.dll

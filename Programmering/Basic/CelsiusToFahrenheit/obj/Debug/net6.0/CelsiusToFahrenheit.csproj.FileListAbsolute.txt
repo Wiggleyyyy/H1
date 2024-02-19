@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\bin\Debug\net6.0\Program_CelsiusToFahrenheit.exe
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\bin\Debug\net6.0\Program_CelsiusToFahrenheit.deps.json
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\bin\Debug\net6.0\Program_CelsiusToFahrenheit.runtimeconfig.json
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\bin\Debug\net6.0\Program_CelsiusToFahrenheit.dll
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\bin\Debug\net6.0\Program_CelsiusToFahrenheit.pdb
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\Program_CelsiusToFahrenheit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\Program_CelsiusToFahrenheit.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\Program_CelsiusToFahrenheit.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\Program_CelsiusToFahrenheit.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\Program_CelsiusToFahrenheit.dll
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\refint\Program_CelsiusToFahrenheit.dll
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\Program_CelsiusToFahrenheit.pdb
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\Program_CelsiusToFahrenheit.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_CelsiusToFahrenheit\obj\Debug\net6.0\ref\Program_CelsiusToFahrenheit.dll

@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_HowManyOccurrences\bin\Debug\net6.0\Program_HowManyOccurrences.exe
+C:\Skole\H1\H1\Program_HowManyOccurrences\bin\Debug\net6.0\Program_HowManyOccurrences.deps.json
+C:\Skole\H1\H1\Program_HowManyOccurrences\bin\Debug\net6.0\Program_HowManyOccurrences.runtimeconfig.json
+C:\Skole\H1\H1\Program_HowManyOccurrences\bin\Debug\net6.0\Program_HowManyOccurrences.dll
+C:\Skole\H1\H1\Program_HowManyOccurrences\bin\Debug\net6.0\Program_HowManyOccurrences.pdb
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\Program_HowManyOccurrences.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\Program_HowManyOccurrences.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\Program_HowManyOccurrences.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\Program_HowManyOccurrences.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\Program_HowManyOccurrences.dll
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\refint\Program_HowManyOccurrences.dll
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\Program_HowManyOccurrences.pdb
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\Program_HowManyOccurrences.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_HowManyOccurrences\obj\Debug\net6.0\ref\Program_HowManyOccurrences.dll

@@ -1,0 +1,14 @@
+C:\Skole\H1\H1\Program_IfSortedAscending\bin\Debug\net6.0\Program_IfSortedAscending.exe
+C:\Skole\H1\H1\Program_IfSortedAscending\bin\Debug\net6.0\Program_IfSortedAscending.deps.json
+C:\Skole\H1\H1\Program_IfSortedAscending\bin\Debug\net6.0\Program_IfSortedAscending.runtimeconfig.json
+C:\Skole\H1\H1\Program_IfSortedAscending\bin\Debug\net6.0\Program_IfSortedAscending.dll
+C:\Skole\H1\H1\Program_IfSortedAscending\bin\Debug\net6.0\Program_IfSortedAscending.pdb
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\Program_IfSortedAscending.GeneratedMSBuildEditorConfig.editorconfig
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\Program_IfSortedAscending.AssemblyInfoInputs.cache
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\Program_IfSortedAscending.AssemblyInfo.cs
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\Program_IfSortedAscending.csproj.CoreCompileInputs.cache
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\Program_IfSortedAscending.dll
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\refint\Program_IfSortedAscending.dll
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\Program_IfSortedAscending.pdb
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\Program_IfSortedAscending.genruntimeconfig.cache
+C:\Skole\H1\H1\Program_IfSortedAscending\obj\Debug\net6.0\ref\Program_IfSortedAscending.dll
