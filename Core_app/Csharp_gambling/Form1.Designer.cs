@@ -88,6 +88,8 @@
             // 
             btnLoginSignup.BackColor = Color.Transparent;
             btnLoginSignup.FlatAppearance.BorderSize = 0;
+            btnLoginSignup.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnLoginSignup.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnLoginSignup.FlatStyle = FlatStyle.Flat;
             btnLoginSignup.Font = new Font("JetBrainsMono NF", 8.999999F, FontStyle.Underline, GraphicsUnit.Point);
             btnLoginSignup.ForeColor = Color.White;
@@ -100,11 +102,12 @@
             // 
             // textBoxLoginPassword
             // 
+            textBoxLoginPassword.BorderStyle = BorderStyle.None;
             textBoxLoginPassword.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxLoginPassword.Location = new Point(37, 294);
+            textBoxLoginPassword.Location = new Point(37, 285);
             textBoxLoginPassword.Name = "textBoxLoginPassword";
             textBoxLoginPassword.PlaceholderText = "Skriv adgangskode";
-            textBoxLoginPassword.Size = new Size(261, 34);
+            textBoxLoginPassword.Size = new Size(261, 27);
             textBoxLoginPassword.TabIndex = 5;
             textBoxLoginPassword.UseSystemPasswordChar = true;
             // 
@@ -112,7 +115,7 @@
             // 
             lblLoginPassword.AutoSize = true;
             lblLoginPassword.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLoginPassword.Location = new Point(37, 263);
+            lblLoginPassword.Location = new Point(31, 256);
             lblLoginPassword.Name = "lblLoginPassword";
             lblLoginPassword.Size = new Size(156, 26);
             lblLoginPassword.TabIndex = 4;
@@ -120,18 +123,19 @@
             // 
             // textBoxLoginUsername
             // 
+            textBoxLoginUsername.BorderStyle = BorderStyle.None;
             textBoxLoginUsername.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxLoginUsername.Location = new Point(37, 215);
             textBoxLoginUsername.Name = "textBoxLoginUsername";
             textBoxLoginUsername.PlaceholderText = "Skriv brugernavn";
-            textBoxLoginUsername.Size = new Size(261, 34);
+            textBoxLoginUsername.Size = new Size(261, 27);
             textBoxLoginUsername.TabIndex = 3;
             // 
             // lblLoginUsername
             // 
             lblLoginUsername.AutoSize = true;
             lblLoginUsername.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLoginUsername.Location = new Point(37, 184);
+            lblLoginUsername.Location = new Point(31, 186);
             lblLoginUsername.Name = "lblLoginUsername";
             lblLoginUsername.Size = new Size(144, 26);
             lblLoginUsername.TabIndex = 2;
@@ -182,19 +186,23 @@
             // 
             // textBoxSignupConfirmPassword
             // 
+            textBoxSignupConfirmPassword.BackColor = Color.White;
+            textBoxSignupConfirmPassword.BorderStyle = BorderStyle.None;
             textBoxSignupConfirmPassword.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSignupConfirmPassword.Location = new Point(37, 371);
+            textBoxSignupConfirmPassword.ForeColor = Color.Black;
+            textBoxSignupConfirmPassword.Location = new Point(37, 355);
             textBoxSignupConfirmPassword.Name = "textBoxSignupConfirmPassword";
-            textBoxSignupConfirmPassword.PlaceholderText = "Skriv adgangskode igen";
-            textBoxSignupConfirmPassword.Size = new Size(261, 34);
+            textBoxSignupConfirmPassword.PlaceholderText = "Gentag adgangskode";
+            textBoxSignupConfirmPassword.Size = new Size(261, 27);
             textBoxSignupConfirmPassword.TabIndex = 9;
+            textBoxSignupConfirmPassword.UseSystemPasswordChar = true;
             // 
             // lblSignupConfirmPassword
             // 
             lblSignupConfirmPassword.AutoSize = true;
             lblSignupConfirmPassword.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
             lblSignupConfirmPassword.ForeColor = Color.White;
-            lblSignupConfirmPassword.Location = new Point(37, 335);
+            lblSignupConfirmPassword.Location = new Point(31, 326);
             lblSignupConfirmPassword.Name = "lblSignupConfirmPassword";
             lblSignupConfirmPassword.Size = new Size(240, 26);
             lblSignupConfirmPassword.TabIndex = 8;
@@ -218,6 +226,8 @@
             // 
             btnSignupLogin.BackColor = Color.Transparent;
             btnSignupLogin.FlatAppearance.BorderSize = 0;
+            btnSignupLogin.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnSignupLogin.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnSignupLogin.FlatStyle = FlatStyle.Flat;
             btnSignupLogin.Font = new Font("JetBrainsMono NF", 8.999999F, FontStyle.Underline, GraphicsUnit.Point);
             btnSignupLogin.ForeColor = Color.White;
@@ -230,19 +240,23 @@
             // 
             // textBoxSignupPassword
             // 
+            textBoxSignupPassword.BackColor = Color.White;
+            textBoxSignupPassword.BorderStyle = BorderStyle.None;
             textBoxSignupPassword.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSignupPassword.Location = new Point(37, 294);
+            textBoxSignupPassword.ForeColor = Color.Black;
+            textBoxSignupPassword.Location = new Point(37, 285);
             textBoxSignupPassword.Name = "textBoxSignupPassword";
             textBoxSignupPassword.PlaceholderText = "Skriv adgangskode";
-            textBoxSignupPassword.Size = new Size(261, 34);
+            textBoxSignupPassword.Size = new Size(261, 27);
             textBoxSignupPassword.TabIndex = 5;
+            textBoxSignupPassword.UseSystemPasswordChar = true;
             // 
             // lblSignupPassword
             // 
             lblSignupPassword.AutoSize = true;
             lblSignupPassword.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
             lblSignupPassword.ForeColor = Color.White;
-            lblSignupPassword.Location = new Point(37, 263);
+            lblSignupPassword.Location = new Point(31, 256);
             lblSignupPassword.Name = "lblSignupPassword";
             lblSignupPassword.Size = new Size(156, 26);
             lblSignupPassword.TabIndex = 4;
@@ -250,11 +264,14 @@
             // 
             // textBoxSignupUsername
             // 
+            textBoxSignupUsername.BackColor = Color.White;
+            textBoxSignupUsername.BorderStyle = BorderStyle.None;
             textBoxSignupUsername.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSignupUsername.ForeColor = Color.Black;
             textBoxSignupUsername.Location = new Point(37, 215);
             textBoxSignupUsername.Name = "textBoxSignupUsername";
             textBoxSignupUsername.PlaceholderText = "Skriv brugernavn";
-            textBoxSignupUsername.Size = new Size(261, 34);
+            textBoxSignupUsername.Size = new Size(261, 27);
             textBoxSignupUsername.TabIndex = 3;
             // 
             // lblSignupUsername
@@ -262,7 +279,7 @@
             lblSignupUsername.AutoSize = true;
             lblSignupUsername.Font = new Font("JetBrainsMono NF", 15F, FontStyle.Regular, GraphicsUnit.Point);
             lblSignupUsername.ForeColor = Color.White;
-            lblSignupUsername.Location = new Point(37, 184);
+            lblSignupUsername.Location = new Point(31, 186);
             lblSignupUsername.Name = "lblSignupUsername";
             lblSignupUsername.Size = new Size(144, 26);
             lblSignupUsername.TabIndex = 2;
