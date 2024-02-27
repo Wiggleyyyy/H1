@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Client_Side",
+    "\\Core_app",
+    "\\Core_app\\Csharp_gambling",
+    "\\Database",
+    "\\Programmering"
   ],
-  "SelectedNode": "\\C:\\Users\\DavidHougesen\\Source\\Repos\\Wiggleyyyy\\H1",
+  "SelectedNode": "\\Core_app\\Csharp_gambling",
   "PreviewInSolutionExplorer": false
 }
