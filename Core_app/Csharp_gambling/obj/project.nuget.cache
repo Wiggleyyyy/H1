@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2grPaMln5Z+ZfIxRdv+4M0Ys5TGPM+OoXzjtb54seb7jmBMOyHR+pVyVgar/XyGFkoAdiPc+tze+4pR4HVtO8A==",
+  "dgSpecHash": "R9kGKqEEu41SMAb9mwPr0De1virT1e9j1l1FSrdbZNPqp12CsyIvFD+Aca/Upfpjlsc/U5CD11p5qXlGLGflqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
