@@ -1,4 +1,4 @@
-namespace Csharp_gambling_app
+namespace csharp_gambling
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Csharp_gambling_app
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form());
+            Application.Run(new Form1());
         }
     }
 }

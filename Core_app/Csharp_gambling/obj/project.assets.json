@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DavidHougesen\\source\\repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\Csharp_gambling_app.csproj",
-      "projectName": "Csharp_gambling_app",
-      "projectPath": "C:\\Users\\DavidHougesen\\source\\repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\Csharp_gambling_app.csproj",
+      "projectUniqueName": "C:\\Skole\\H1\\temp\\csharp_gambling\\csharp_gambling.csproj",
+      "projectName": "csharp_gambling",
+      "projectPath": "C:\\Skole\\H1\\temp\\csharp_gambling\\csharp_gambling.csproj",
       "packagesPath": "C:\\Users\\DavidHougesen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DavidHougesen\\source\\repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\obj\\",
+      "outputPath": "C:\\Skole\\H1\\temp\\csharp_gambling\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DavidHougesen\\AppData\\Roaming\\NuGet\\NuGet.Config",
