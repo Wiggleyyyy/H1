@@ -15,7 +15,7 @@ namespace csharp_gambling
         private string dbPassword = "AppConnection!";
 
         private string connectionString;
-        private SqlConnection cnn = new SqlConnection();
+        private SqlConnection cnn;
 
         //public void connectToDatabase()
         //{
@@ -39,6 +39,7 @@ namespace csharp_gambling
             {
                 //Open connection to database
                 connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
                 string query = "SELECT COUNT(*) FROM Main WHERE username = @Username AND password = @Password";
@@ -66,26 +67,33 @@ namespace csharp_gambling
             {
                 //Open connection to database
                 connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
                 //Check if username already exists
                 string checkQuery = "SELECT COUNT(*) FROM Main WHERE username = @Username";
                 SqlCommand checkCommand = new SqlCommand(checkQuery, cnn);
                 checkCommand.Parameters.AddWithValue("@Username", username);
-                //int existing
+                int existingUsersCount = (int)checkCommand.ExecuteScalar();
 
-                //string query = "INSERT INTO Main (balance, username, password) VALUES (100, @Username, @Password)";
-                //SqlCommand command = new SqlCommand(query, cnn);
-                //command.Parameters.AddWithValue("@Username", username);
-                //command.Parameters.AddWithValue("@Password", password);
-                //int rowsAffected = command.ExecuteNonQuery();
+                if (existingUsersCount > 0)
+                {
+                    MessageBox.Show("Brugernavn findes allerede. Indtast et nut brugernavn.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                    return false;
+                }
 
-                //return rowsAffected > 0; //If rows affected > 0, user was created
+                string query = "INSERT INTO Main (balance, username, password) VALUES (100, @Username, @Password)";
+                SqlCommand command = new SqlCommand(query, cnn);
+                command.Parameters.AddWithValue("@Username", username);
+                command.Parameters.AddWithValue("@Password", password);
+                int rowsAffected = command.ExecuteNonQuery();
 
-                return true;
+                return rowsAffected > 0; //If rows affected > 0, user was created
+
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 MessageBox.Show("Kunne ikke oprette forbindelse til database", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }

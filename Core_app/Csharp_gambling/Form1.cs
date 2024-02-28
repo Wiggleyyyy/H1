@@ -2,11 +2,14 @@
 
 //TO DO : CREATE LOGIN DATABASE
 
+using System.Text.RegularExpressions;
+
 namespace csharp_gambling
 {
     public partial class Form1 : Form
     {
-        public Dictionary<Button, Panel> buttonPanelMapLoginSignup;
+        private Database DB = new Database();
+        private Dictionary<Button, Panel> buttonPanelMapLoginSignup;
 
         public Form1()
         {
@@ -62,7 +65,8 @@ namespace csharp_gambling
                 string username = textBoxLoginUsername.Text;
                 string password = textBoxLoginPassword.Text;
 
-                //Method to check if password matches database login
+                bool isLoggedIn = DB.Login(username, password);
+                //add to show new page
             }
         }
 
@@ -75,9 +79,32 @@ namespace csharp_gambling
                 string username = textBoxSignupUsername.Text;
                 string password = textBoxSignupConfirmPassword.Text;
 
-                //Method to check if login is in database, if not create - else return error
+                //Extra requirements for password fx. length of min. 8
+                if (PasswordContainsNumber(password) == false && (password.Length >= 8) == false)
+                {
+                    MessageBox.Show("Adgangskode skal indeholde mindst 1 tal og have mindst 8 karakterer.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                bool isSignedUp = DB.Signup(username, password);
+                if (isSignedUp == true)
+                {
+                    DB.Login(username, password);
+                }
+                //add to show new page
             }
         }
         //Button functionality - end
+
+        //Password validation - start
+        private bool PasswordContainsNumber(string password)
+        {
+            string pattern = @"\d"; // \d matches any digit
+
+            Regex regex = new Regex(pattern);
+
+            return regex.IsMatch(password);
+        }
+        //Password validation - end
     }
 }
