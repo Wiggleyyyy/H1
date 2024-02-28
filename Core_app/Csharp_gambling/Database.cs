@@ -72,7 +72,7 @@ namespace csharp_gambling
                 string checkQuery = "SELECT COUNT(*) FROM Main WHERE username = @Username";
                 SqlCommand checkCommand = new SqlCommand(checkQuery, cnn);
                 checkCommand.Parameters.AddWithValue("@Username", username);
-                int existing
+                //int existing
 
                 //string query = "INSERT INTO Main (balance, username, password) VALUES (100, @Username, @Password)";
                 //SqlCommand command = new SqlCommand(query, cnn);
@@ -81,6 +81,8 @@ namespace csharp_gambling
                 //int rowsAffected = command.ExecuteNonQuery();
 
                 //return rowsAffected > 0; //If rows affected > 0, user was created
+
+                return true;
             }
             catch (Exception ex)
             {
