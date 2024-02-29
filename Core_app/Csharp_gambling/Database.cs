@@ -102,5 +102,41 @@ namespace csharp_gambling
                 cnn.Close();
             }
         }
+
+        public decimal GetCurrentBalance(string username)
+        {
+            try
+            {
+                //Open connection to database
+                connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                cnn = new SqlConnection(connectionString);
+                cnn.Open();
+
+                string query = "SELECT balance FROM Main WHERE username = @Username";
+                SqlCommand command = new SqlCommand(query, cnn);
+                command.Parameters.AddWithValue("@Username", username);
+
+                object result = command.ExecuteScalar();
+
+                if (result != null && result != DBNull.Value)
+                {
+                    return Convert.ToDecimal(result);
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Kunne ikke oprette forbindelse til database", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1;
+            }
+            finally
+            {
+                cnn.Close();
+            }
+        }
     }
 }

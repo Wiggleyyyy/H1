@@ -66,7 +66,15 @@ namespace csharp_gambling
                 string password = textBoxLoginPassword.Text;
 
                 bool isLoggedIn = DB.Login(username, password);
-                //add to show new page
+                if (isLoggedIn == true)
+                {
+                    panelLogin.Visible = false;
+                    LoadHomePage();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Brugernavn og adgangskode ugyldigt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -89,10 +97,34 @@ namespace csharp_gambling
                 bool isSignedUp = DB.Signup(username, password);
                 if (isSignedUp == true)
                 {
-                    DB.Login(username, password);
+                    bool isLoggedIn = DB.Login(username, password);
+                    if (isLoggedIn == true)
+                    {
+                        panelSignup.Visible = false;
+                        LoadHomePage();
+                    }
                 }
-                //add to show new page
             }
+            else
+            {
+                MessageBox.Show("Felter ikke udfyldt korrekt.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnHomeNavbarSignOut_Click(object sender, EventArgs e)
+        {
+            lblHomeNavbarUsername.Text = "<BRUGERNAVN>";
+            lblHomeNavbarCurrency.Text = "$<CURRENCY>";
+
+            textBoxLoginUsername.Text = "";
+            textBoxLoginPassword.Text = "";
+
+            textBoxSignupUsername.Text = "";
+            textBoxSignupPassword.Text = "";
+            textBoxSignupConfirmPassword.Text = "";
+
+            panelHomePage.Visible = false;
+            panelLogin.Visible = true;
         }
         //Button functionality - end
 
@@ -106,5 +138,48 @@ namespace csharp_gambling
             return regex.IsMatch(password);
         }
         //Password validation - end
+
+        //Loading pages - start
+        private void LoadHomePage()
+        {
+            panelHomePage.Visible = true;
+
+            string username = "";
+            decimal balanceFromDatabase = 0;
+            string balanceToWrite;
+
+            //Set username
+            if (!String.IsNullOrEmpty(textBoxLoginUsername.Text))
+            {
+                username = textBoxLoginUsername.Text;
+            }
+            else if (!String.IsNullOrEmpty(textBoxSignupUsername.Text))
+            {
+                username = textBoxSignupUsername.Text;
+            }
+
+            //Check username + get balanceFromDatabase from username
+            if (!String.IsNullOrEmpty(username))
+            {
+                lblHomeNavbarUsername.Text = username;
+                balanceFromDatabase = DB.GetCurrentBalance(username);
+                if (balanceFromDatabase < 0)
+                {
+                    balanceToWrite = "Balance: Fejl";
+                    lblHomeNavbarCurrency.Text = balanceToWrite;
+                    return;
+                }
+
+                decimal roundedBalance = Math.Round(balanceFromDatabase, 2);
+                balanceToWrite = $"Balance: {roundedBalance}kr.";
+                lblHomeNavbarCurrency.Text = balanceToWrite;
+            }
+            else
+            {
+                MessageBox.Show("Kunne ikke hente data fra databasen.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                panelHomePage.Visible = false;
+            }
+        }
+        //Loading pages - end
     }
 }

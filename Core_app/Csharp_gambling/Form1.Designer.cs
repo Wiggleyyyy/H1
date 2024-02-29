@@ -50,14 +50,14 @@
             lblSignupTitle = new Label();
             panelHomePage = new Panel();
             panelHomeNavbar = new Panel();
+            btnHomeNavbarRoulette = new Button();
+            btnHomeNavbarCrash = new Button();
+            btnHomeNavbarBlackjack = new Button();
             btnHomeNavbarMines = new Button();
             lblHomeNavbarCurrency = new Label();
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
-            btnHomeNavbarBlackjack = new Button();
-            btnHomeNavbarCrash = new Button();
-            btnHomeNavbarRoulette = new Button();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -349,6 +349,33 @@
             panelHomeNavbar.Size = new Size(1275, 100);
             panelHomeNavbar.TabIndex = 0;
             // 
+            // btnHomeNavbarRoulette
+            // 
+            btnHomeNavbarRoulette.Location = new Point(696, 57);
+            btnHomeNavbarRoulette.Name = "btnHomeNavbarRoulette";
+            btnHomeNavbarRoulette.Size = new Size(75, 23);
+            btnHomeNavbarRoulette.TabIndex = 7;
+            btnHomeNavbarRoulette.Text = "Roulette";
+            btnHomeNavbarRoulette.UseVisualStyleBackColor = true;
+            // 
+            // btnHomeNavbarCrash
+            // 
+            btnHomeNavbarCrash.Location = new Point(606, 57);
+            btnHomeNavbarCrash.Name = "btnHomeNavbarCrash";
+            btnHomeNavbarCrash.Size = new Size(75, 23);
+            btnHomeNavbarCrash.TabIndex = 6;
+            btnHomeNavbarCrash.Text = "Crash";
+            btnHomeNavbarCrash.UseVisualStyleBackColor = true;
+            // 
+            // btnHomeNavbarBlackjack
+            // 
+            btnHomeNavbarBlackjack.Location = new Point(524, 57);
+            btnHomeNavbarBlackjack.Name = "btnHomeNavbarBlackjack";
+            btnHomeNavbarBlackjack.Size = new Size(75, 23);
+            btnHomeNavbarBlackjack.TabIndex = 5;
+            btnHomeNavbarBlackjack.Text = "Blackjack";
+            btnHomeNavbarBlackjack.UseVisualStyleBackColor = true;
+            // 
             // btnHomeNavbarMines
             // 
             btnHomeNavbarMines.Location = new Point(443, 57);
@@ -385,6 +412,7 @@
             btnHomeNavbarSignOut.TabIndex = 1;
             btnHomeNavbarSignOut.Text = "Log-ud";
             btnHomeNavbarSignOut.UseVisualStyleBackColor = false;
+            btnHomeNavbarSignOut.Click += btnHomeNavbarSignOut_Click;
             // 
             // lblHomeNavbarTitle
             // 
@@ -395,33 +423,6 @@
             lblHomeNavbarTitle.Size = new Size(113, 28);
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
-            // 
-            // btnHomeNavbarBlackjack
-            // 
-            btnHomeNavbarBlackjack.Location = new Point(524, 57);
-            btnHomeNavbarBlackjack.Name = "btnHomeNavbarBlackjack";
-            btnHomeNavbarBlackjack.Size = new Size(75, 23);
-            btnHomeNavbarBlackjack.TabIndex = 5;
-            btnHomeNavbarBlackjack.Text = "Blackjack";
-            btnHomeNavbarBlackjack.UseVisualStyleBackColor = true;
-            // 
-            // btnHomeNavbarCrash
-            // 
-            btnHomeNavbarCrash.Location = new Point(606, 57);
-            btnHomeNavbarCrash.Name = "btnHomeNavbarCrash";
-            btnHomeNavbarCrash.Size = new Size(75, 23);
-            btnHomeNavbarCrash.TabIndex = 6;
-            btnHomeNavbarCrash.Text = "Crash";
-            btnHomeNavbarCrash.UseVisualStyleBackColor = true;
-            // 
-            // btnHomeNavbarRoulette
-            // 
-            btnHomeNavbarRoulette.Location = new Point(696, 57);
-            btnHomeNavbarRoulette.Name = "btnHomeNavbarRoulette";
-            btnHomeNavbarRoulette.Size = new Size(75, 23);
-            btnHomeNavbarRoulette.TabIndex = 7;
-            btnHomeNavbarRoulette.Text = "Roulette";
-            btnHomeNavbarRoulette.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
