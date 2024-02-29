@@ -48,8 +48,20 @@
             lblSignupUsername = new Label();
             lblSignupHeader = new Label();
             lblSignupTitle = new Label();
+            panelHomePage = new Panel();
+            panelHomeNavbar = new Panel();
+            btnHomeNavbarMines = new Button();
+            lblHomeNavbarCurrency = new Label();
+            lblHomeNavbarUsername = new Label();
+            btnHomeNavbarSignOut = new Button();
+            lblHomeNavbarTitle = new Label();
+            btnHomeNavbarBlackjack = new Button();
+            btnHomeNavbarCrash = new Button();
+            btnHomeNavbarRoulette = new Button();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
+            panelHomePage.SuspendLayout();
+            panelHomeNavbar.SuspendLayout();
             SuspendLayout();
             // 
             // panelLogin
@@ -312,12 +324,112 @@
             lblSignupTitle.TabIndex = 0;
             lblSignupTitle.Text = "JYTTE CASINO";
             // 
+            // panelHomePage
+            // 
+            panelHomePage.Controls.Add(panelHomeNavbar);
+            panelHomePage.Location = new Point(0, 0);
+            panelHomePage.Name = "panelHomePage";
+            panelHomePage.Size = new Size(1263, 653);
+            panelHomePage.TabIndex = 9;
+            panelHomePage.Visible = false;
+            // 
+            // panelHomeNavbar
+            // 
+            panelHomeNavbar.BackColor = SystemColors.ActiveBorder;
+            panelHomeNavbar.Controls.Add(btnHomeNavbarRoulette);
+            panelHomeNavbar.Controls.Add(btnHomeNavbarCrash);
+            panelHomeNavbar.Controls.Add(btnHomeNavbarBlackjack);
+            panelHomeNavbar.Controls.Add(btnHomeNavbarMines);
+            panelHomeNavbar.Controls.Add(lblHomeNavbarCurrency);
+            panelHomeNavbar.Controls.Add(lblHomeNavbarUsername);
+            panelHomeNavbar.Controls.Add(btnHomeNavbarSignOut);
+            panelHomeNavbar.Controls.Add(lblHomeNavbarTitle);
+            panelHomeNavbar.Location = new Point(0, 0);
+            panelHomeNavbar.Name = "panelHomeNavbar";
+            panelHomeNavbar.Size = new Size(1275, 100);
+            panelHomeNavbar.TabIndex = 0;
+            // 
+            // btnHomeNavbarMines
+            // 
+            btnHomeNavbarMines.Location = new Point(443, 57);
+            btnHomeNavbarMines.Name = "btnHomeNavbarMines";
+            btnHomeNavbarMines.Size = new Size(75, 23);
+            btnHomeNavbarMines.TabIndex = 4;
+            btnHomeNavbarMines.Text = "Mines";
+            btnHomeNavbarMines.UseVisualStyleBackColor = true;
+            // 
+            // lblHomeNavbarCurrency
+            // 
+            lblHomeNavbarCurrency.AutoSize = true;
+            lblHomeNavbarCurrency.Location = new Point(29, 48);
+            lblHomeNavbarCurrency.Name = "lblHomeNavbarCurrency";
+            lblHomeNavbarCurrency.Size = new Size(89, 15);
+            lblHomeNavbarCurrency.TabIndex = 3;
+            lblHomeNavbarCurrency.Text = "$<CURRENCY>";
+            // 
+            // lblHomeNavbarUsername
+            // 
+            lblHomeNavbarUsername.AutoSize = true;
+            lblHomeNavbarUsername.Location = new Point(25, 20);
+            lblHomeNavbarUsername.Name = "lblHomeNavbarUsername";
+            lblHomeNavbarUsername.Size = new Size(98, 15);
+            lblHomeNavbarUsername.TabIndex = 2;
+            lblHomeNavbarUsername.Text = "<BRUGERNAVN>";
+            // 
+            // btnHomeNavbarSignOut
+            // 
+            btnHomeNavbarSignOut.BackColor = Color.IndianRed;
+            btnHomeNavbarSignOut.Location = new Point(1154, 20);
+            btnHomeNavbarSignOut.Name = "btnHomeNavbarSignOut";
+            btnHomeNavbarSignOut.Size = new Size(97, 39);
+            btnHomeNavbarSignOut.TabIndex = 1;
+            btnHomeNavbarSignOut.Text = "Log-ud";
+            btnHomeNavbarSignOut.UseVisualStyleBackColor = false;
+            // 
+            // lblHomeNavbarTitle
+            // 
+            lblHomeNavbarTitle.AutoSize = true;
+            lblHomeNavbarTitle.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblHomeNavbarTitle.Location = new Point(550, 9);
+            lblHomeNavbarTitle.Name = "lblHomeNavbarTitle";
+            lblHomeNavbarTitle.Size = new Size(113, 28);
+            lblHomeNavbarTitle.TabIndex = 0;
+            lblHomeNavbarTitle.Text = "Jytte casino";
+            // 
+            // btnHomeNavbarBlackjack
+            // 
+            btnHomeNavbarBlackjack.Location = new Point(524, 57);
+            btnHomeNavbarBlackjack.Name = "btnHomeNavbarBlackjack";
+            btnHomeNavbarBlackjack.Size = new Size(75, 23);
+            btnHomeNavbarBlackjack.TabIndex = 5;
+            btnHomeNavbarBlackjack.Text = "Blackjack";
+            btnHomeNavbarBlackjack.UseVisualStyleBackColor = true;
+            // 
+            // btnHomeNavbarCrash
+            // 
+            btnHomeNavbarCrash.Location = new Point(606, 57);
+            btnHomeNavbarCrash.Name = "btnHomeNavbarCrash";
+            btnHomeNavbarCrash.Size = new Size(75, 23);
+            btnHomeNavbarCrash.TabIndex = 6;
+            btnHomeNavbarCrash.Text = "Crash";
+            btnHomeNavbarCrash.UseVisualStyleBackColor = true;
+            // 
+            // btnHomeNavbarRoulette
+            // 
+            btnHomeNavbarRoulette.Location = new Point(696, 57);
+            btnHomeNavbarRoulette.Name = "btnHomeNavbarRoulette";
+            btnHomeNavbarRoulette.Size = new Size(75, 23);
+            btnHomeNavbarRoulette.TabIndex = 7;
+            btnHomeNavbarRoulette.Text = "Roulette";
+            btnHomeNavbarRoulette.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(24, 22, 28);
             ClientSize = new Size(1263, 653);
+            Controls.Add(panelHomePage);
             Controls.Add(panelSignup);
             Controls.Add(panelLogin);
             Name = "Form1";
@@ -326,6 +438,9 @@
             panelLogin.PerformLayout();
             panelSignup.ResumeLayout(false);
             panelSignup.PerformLayout();
+            panelHomePage.ResumeLayout(false);
+            panelHomeNavbar.ResumeLayout(false);
+            panelHomeNavbar.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -351,6 +466,15 @@
         private Label lblSignupTitle;
         private TextBox textBoxSignupConfirmPassword;
         private Label lblSignupConfirmPassword;
-        private Button button1;
+        private Button btnHomeNavbarMines;
+        private Panel panelHomePage;
+        private Panel panelHomeNavbar;
+        private Button btnHomeNavbarSignOut;
+        private Label lblHomeNavbarTitle;
+        private Label lblHomeNavbarCurrency;
+        private Label lblHomeNavbarUsername;
+        private Button btnHomeNavbarRoulette;
+        private Button btnHomeNavbarCrash;
+        private Button btnHomeNavbarBlackjack;
     }
 }
