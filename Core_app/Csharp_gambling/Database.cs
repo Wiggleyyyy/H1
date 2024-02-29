@@ -103,7 +103,7 @@ namespace csharp_gambling
             }
         }
 
-        public decimal GetCurrentBalance(string username)
+        public double GetCurrentBalance(string username)
         {
             try
             {
@@ -120,7 +120,7 @@ namespace csharp_gambling
 
                 if (result != null && result != DBNull.Value)
                 {
-                    return Convert.ToDecimal(result);
+                    return (double)Convert.ToDouble(result);
                 }
                 else
                 {

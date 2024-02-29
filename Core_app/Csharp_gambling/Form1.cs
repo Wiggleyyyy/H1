@@ -10,6 +10,10 @@ namespace csharp_gambling
     {
         private Database DB = new Database();
         private Dictionary<Button, Panel> buttonPanelMapLoginSignup;
+        private Dictionary<Button, Panel> buttonPanelMapGames;
+
+        //Game data
+        private MinesData minesData = new MinesData();
 
         public Form1()
         {
@@ -18,6 +22,16 @@ namespace csharp_gambling
             //Login buttons
             InitializeButtonPanelMapLoginSignup();
             InitializeButtonEventsLoginSignup();
+
+            //Navbar games buttons
+            InitializeButtonPanelMapGames();
+            InitializeButtonEventsGames();
+
+            //Load options into minesCount, starts at 4 ends at 23
+            for (int i = 4; i <= 23; i++)
+            {
+                comboBoxMinesBettingMinesCountCustom.Items.Add($"{i}");
+            }
         }
 
         //Initialize - start
@@ -25,9 +39,8 @@ namespace csharp_gambling
         {
             buttonPanelMapLoginSignup = new Dictionary<Button, Panel>
             {
-                { btnLoginSignup, panelSignup }, //Login panel("Opret konto?") -> signup panel
+                { btnLoginSignup, panelSignup }, //Login panel("Har du ikke en konto? Opret en") -> signup panel
                 { btnSignupLogin, panelLogin } //Signup panel("Log-in?") -> login panel 
-                //More ?
             };
         }
 
@@ -35,11 +48,31 @@ namespace csharp_gambling
         {
             foreach (var pair in buttonPanelMapLoginSignup)
             {
-                pair.Key.Click += (sender, e) => SwapPanels(pair.Key);
+                pair.Key.Click += (sender, e) => SwapPanelsLoginSignup(pair.Key);
             }
         }
+
+        private void InitializeButtonEventsGames()
+        {
+            foreach (var pair in buttonPanelMapGames)
+            {
+                pair.Key.Click += (sender, e) => SwapPanelsGames(pair.Key);
+            }
+        }
+
+        private void InitializeButtonPanelMapGames()
+        {
+            buttonPanelMapGames = new Dictionary<Button, Panel>
+            {
+                { btnHomeNavbarMines,  panelHomeMines },
+                //add more panels
+                //DOING ^^
+            };
+        }
         //Initialize - end
-        private void SwapPanels(Button clickedButton)
+
+        //Button functionality - start
+        private void SwapPanelsLoginSignup(Button clickedButton)
         {
             if (buttonPanelMapLoginSignup.ContainsKey(clickedButton))
             {
@@ -56,7 +89,22 @@ namespace csharp_gambling
             }
         }
 
-        //Button functionality - start
+        private void SwapPanelsGames(Button clickedButton)
+        {
+            if (buttonPanelMapGames.ContainsKey(clickedButton))
+            {
+                Panel targetPanel = buttonPanelMapGames[clickedButton];
+
+                //Hide panels
+                foreach (var panel in buttonPanelMapGames.Values)
+                {
+                    panel.Visible = false;
+                }
+
+                targetPanel.Visible = true;
+            }
+        }
+
         private void btnLoginLogin_Click(object sender, EventArgs e)
         {
             if (!String.IsNullOrWhiteSpace(textBoxLoginUsername.Text) && //Check if username is entered
@@ -126,6 +174,87 @@ namespace csharp_gambling
             panelHomePage.Visible = false;
             panelLogin.Visible = true;
         }
+
+        private void btnMinesClose_Click(object sender, EventArgs e)
+        {
+            panelHomeMines.Visible = false;
+            //Maybe add more?
+        }
+
+        private void btnMinesBettingMinesCountMin_Click(object sender, EventArgs e)
+        {
+            minesData.NumberOfMines = 3;
+            lblMinesBettingCurrentMinesCount.Text = "3 bomber";
+            comboBoxMinesBettingMinesCountCustom.SelectedItem = null;
+        }
+
+        private void btnMinesBettingMinesCountMax_Click(object sender, EventArgs e)
+        {
+            minesData.NumberOfMines = 24;
+            lblMinesBettingCurrentMinesCount.Text = "24 bomber";
+            comboBoxMinesBettingMinesCountCustom.SelectedItem = null;
+        }
+
+        private void comboBoxMinesBettingMinesCountCustom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int numberOfMines = (int)Convert.ToInt16(comboBoxMinesBettingMinesCountCustom.Text);
+            //minesData.NumberOfMines = numberOfMines;
+            //lblMinesBettingCurrentMinesCount.Text = $"{numberOfMines} bomber";
+
+            if (int.TryParse(comboBoxMinesBettingMinesCountCustom.Text, out int numberOfMines))
+            {
+                minesData.NumberOfMines = numberOfMines;
+                lblMinesBettingCurrentMinesCount.Text = $"{numberOfMines} bomber";
+            }
+        }
+
+        private void textBoxMinesBettingBet_Leave(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(textBoxMinesBettingBet.Text))
+            {
+                double balance = DB.GetCurrentBalance(lblHomeNavbarUsername.Text);
+                double betInput = (double)Convert.ToDouble(textBoxMinesBettingBet.Text);
+
+                if (balance > betInput)
+                {
+                    minesData.MoneyBet = betInput;
+                    lblMinesBettingCurrentBet.Text = $"{betInput}kr.";
+                    textBoxMinesBettingBet.TextAlign = HorizontalAlignment.Right;
+                }
+                else
+                {
+                    MessageBox.Show("Ugyldigt bet.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                textBoxMinesBettingBet.TextAlign = HorizontalAlignment.Left;
+                textBoxMinesBettingBet.Text = "";
+            }
+        }
+
+        private void btnMinesBettingClear_Click(object sender, EventArgs e)
+        {
+            lblMinesBettingCurrentBet.Text = "0 kr.";
+            lblMinesBettingCurrentMinesCount.Text = "0 bomber";
+
+            textBoxMinesBettingBet.Text = "";
+            comboBoxMinesBettingMinesCountCustom.SelectedItem = null;
+        }
+
+        private void btnMinesBettingPlaceBet_Click(object sender, EventArgs e)
+        {
+            //Check requirements
+            if (minesData.MoneyBet! < 0 && minesData.NumberOfMines! < 3)
+            {
+                //Start game
+                MinesGame();
+            }
+            else
+            {
+                MessageBox.Show("Felter er ikke udfyldt korrekt.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         //Button functionality - end
 
         //Password validation - start
@@ -145,7 +274,7 @@ namespace csharp_gambling
             panelHomePage.Visible = true;
 
             string username = "";
-            decimal balanceFromDatabase = 0;
+            double balanceFromDatabase = 0;
             string balanceToWrite;
 
             //Set username
@@ -170,7 +299,7 @@ namespace csharp_gambling
                     return;
                 }
 
-                decimal roundedBalance = Math.Round(balanceFromDatabase, 2);
+                double roundedBalance = Math.Round(balanceFromDatabase, 2);
                 balanceToWrite = $"Balance: {roundedBalance}kr.";
                 lblHomeNavbarCurrency.Text = balanceToWrite;
             }
@@ -181,5 +310,12 @@ namespace csharp_gambling
             }
         }
         //Loading pages - end
+
+        //Game funcionality - start
+        private void MinesGame()
+        {
+
+        }
+        //Game functionality - end
     }
 }
