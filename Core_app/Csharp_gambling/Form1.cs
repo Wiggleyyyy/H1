@@ -327,43 +327,35 @@ namespace csharp_gambling
         //Game funcionality - start
         private void MinesGame()
         {
-            //minesData.GameActive = true;
-
-            //Random random = new Random();
-            //List<int> minePositions = new List<int>();
-
-            //for (int i = 0; i < minesData.NumberOfMines; i++)
-            //{
-            //    int minePosition;
-            //    do
-            //    {
-            //        minePosition = random.Next(25); // Assuming a 5x5 grid
-            //    } while (minePositions.Contains(minePosition));
-
-            //    minePositions.Add(minePosition);
-            //}
-
-            //int mineID = 1; // Start mine IDs from 1
-
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    for (int j = 0; j < 5; j++)
-            //    {
-            //        char bogstav = (char)('A' + i);
-            //        string mineName = $"mine{bogstav}{j}";
-
-            //        Field mineField = new Field
-            //        {
-            //            MineID = mineID++,
-            //            IsMine = minePositions.Contains(i * 5 + j)
-            //        };
-
-            //        minesData.Fields.Add(mineField);
-
-            //    }      
-            //}
-
             minesData.GameActive = true;
+
+            //SUBTRACT MONEY FROM BALANCE
+            double balance;
+            string balanceInput = lblHomeNavbarCurrency.Text;
+            string balanceNumeric = new string(Array.FindAll(balanceInput.ToCharArray(), char.IsDigit));
+            if (double.TryParse(balanceNumeric, out double value))
+            {
+                balance = value;
+            }
+            else
+            {
+                balance = 0; 
+                MessageBox.Show("Fejl med at indlædse balance", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+            if (balance != 0)
+            {
+                string betInput = textBoxMinesBettingBet.Text;
+                double bet = (double)Convert.ToDouble(textBoxMinesBettingBet);
+
+                balance = balance - bet;
+                //DOING - D
+            }
+            else
+            {
+                MessageBox.Show("Balance er for lavt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             Random random = new Random();
             List<int> minePositions = new List<int>();
@@ -391,7 +383,6 @@ namespace csharp_gambling
                 {
                     char rowChar = (char)('A' + i);
                     int column = j + 1;
-                    string mineName = $"mine{rowChar}{column}";
 
                     Field mineField = new Field
                     {
@@ -413,7 +404,34 @@ namespace csharp_gambling
         {
             if (minesData.GameActive)
             {
+                Button clickedButton = (Button)sender;
 
+                string buttonName = clickedButton.Name;
+
+                int rowIndex = buttonName[4] - 'A';
+                int columnIndex = int.Parse(buttonName.Substring(5)) - 1;
+
+                int position = rowIndex * 5 + columnIndex;
+
+                if (minesData.Fields[position].IsMine == true)
+                {
+                    //Is mine
+                    clickedButton.Enabled = false;
+                    clickedButton.Text = "Mine";
+                    clickedButton.BackColor = Color.Red;
+
+                    //END GAME
+                }
+                else
+                {
+                    //Safe
+                    clickedButton.Enabled = false;
+                    clickedButton.Text = "Safe";
+                    clickedButton.BackColor = Color.Green;
+
+                    //ADD TO WINNINGS
+                    //ADD TO MULTIPLIER
+                }
             }
             else
             {
