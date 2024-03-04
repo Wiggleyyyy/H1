@@ -38,7 +38,7 @@ namespace csharp_gambling
             try
             {
                 //Open connection to database
-                connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                connectionString = $@"Data Source={dbDataSource};Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
@@ -52,6 +52,7 @@ namespace csharp_gambling
             }
             catch (Exception e)
             {
+                MessageBox.Show(e.Message);
                 MessageBox.Show("Kunne ikke oprette forbindelse til database", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
@@ -66,7 +67,7 @@ namespace csharp_gambling
             try
             {
                 //Open connection to database
-                connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                connectionString = $@"Data Source={dbDataSource};Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
@@ -108,7 +109,7 @@ namespace csharp_gambling
             try
             {
                 //Open connection to database
-                connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                connectionString = $@"Data Source={dbDataSource};Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
 

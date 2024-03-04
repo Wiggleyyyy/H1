@@ -23,5 +23,5 @@ CREATE TABLE Main (
     balance MONEY DEFAULT 0.0,      
     username NVARCHAR(40) UNIQUE NOT NULL, 
     password NVARCHAR(50) NOT NULL,
-    statid INT FOREIGN KEY REFERENCES Stats(statid) NOT NULL
+    statid INT FOREIGN KEY REFERENCES Stats(statid)
 );

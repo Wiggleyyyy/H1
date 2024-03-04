@@ -51,6 +51,10 @@
             panelHomePage = new Panel();
             panelHomeMines = new Panel();
             panelMinesGame = new Panel();
+            lblMinesGameMultiplier = new Label();
+            lblMinesGameMultiplierTitle = new Label();
+            lblMinesGameWinningsTitle = new Label();
+            lblMinesGameWinnings = new Label();
             panelMinesGameMinesArea = new Panel();
             mineE5 = new Button();
             mineE4 = new Button();
@@ -101,10 +105,6 @@
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
-            lblMinesGameWinnings = new Label();
-            lblMinesGameWinningsTitle = new Label();
-            lblMinesGameMultiplierTitle = new Label();
-            lblMinesGameMultiplier = new Label();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -411,6 +411,46 @@
             panelMinesGame.Size = new Size(727, 415);
             panelMinesGame.TabIndex = 3;
             // 
+            // lblMinesGameMultiplier
+            // 
+            lblMinesGameMultiplier.AutoSize = true;
+            lblMinesGameMultiplier.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMinesGameMultiplier.Location = new Point(623, 71);
+            lblMinesGameMultiplier.Name = "lblMinesGameMultiplier";
+            lblMinesGameMultiplier.Size = new Size(47, 28);
+            lblMinesGameMultiplier.TabIndex = 4;
+            lblMinesGameMultiplier.Text = "1.0x";
+            // 
+            // lblMinesGameMultiplierTitle
+            // 
+            lblMinesGameMultiplierTitle.AutoSize = true;
+            lblMinesGameMultiplierTitle.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMinesGameMultiplierTitle.Location = new Point(518, 71);
+            lblMinesGameMultiplierTitle.Name = "lblMinesGameMultiplierTitle";
+            lblMinesGameMultiplierTitle.Size = new Size(112, 28);
+            lblMinesGameMultiplierTitle.TabIndex = 3;
+            lblMinesGameMultiplierTitle.Text = "Multiplier:";
+            // 
+            // lblMinesGameWinningsTitle
+            // 
+            lblMinesGameWinningsTitle.AutoSize = true;
+            lblMinesGameWinningsTitle.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMinesGameWinningsTitle.Location = new Point(518, 37);
+            lblMinesGameWinningsTitle.Name = "lblMinesGameWinningsTitle";
+            lblMinesGameWinningsTitle.Size = new Size(106, 28);
+            lblMinesGameWinningsTitle.TabIndex = 2;
+            lblMinesGameWinningsTitle.Text = "Winnings:";
+            // 
+            // lblMinesGameWinnings
+            // 
+            lblMinesGameWinnings.AutoSize = true;
+            lblMinesGameWinnings.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMinesGameWinnings.Location = new Point(618, 37);
+            lblMinesGameWinnings.Name = "lblMinesGameWinnings";
+            lblMinesGameWinnings.Size = new Size(49, 28);
+            lblMinesGameWinnings.TabIndex = 1;
+            lblMinesGameWinnings.Text = "0 kr.";
+            // 
             // panelMinesGameMinesArea
             // 
             panelMinesGameMinesArea.BackColor = SystemColors.ControlDarkDark;
@@ -452,6 +492,7 @@
             mineE5.TabIndex = 24;
             mineE5.Text = "E5";
             mineE5.UseVisualStyleBackColor = true;
+            mineE5.Click += btnMinesMine_Click;
             // 
             // mineE4
             // 
@@ -461,6 +502,7 @@
             mineE4.TabIndex = 23;
             mineE4.Text = "E4";
             mineE4.UseVisualStyleBackColor = true;
+            mineE4.Click += btnMinesMine_Click;
             // 
             // mineE3
             // 
@@ -470,6 +512,7 @@
             mineE3.TabIndex = 22;
             mineE3.Text = "E3";
             mineE3.UseVisualStyleBackColor = true;
+            mineE3.Click += btnMinesMine_Click;
             // 
             // mineE2
             // 
@@ -479,6 +522,7 @@
             mineE2.TabIndex = 21;
             mineE2.Text = "E2";
             mineE2.UseVisualStyleBackColor = true;
+            mineE2.Click += btnMinesMine_Click;
             // 
             // mineE1
             // 
@@ -488,6 +532,7 @@
             mineE1.TabIndex = 20;
             mineE1.Text = "E1";
             mineE1.UseVisualStyleBackColor = true;
+            mineE1.Click += btnMinesMine_Click;
             // 
             // mineD5
             // 
@@ -497,6 +542,7 @@
             mineD5.TabIndex = 19;
             mineD5.Text = "D5";
             mineD5.UseVisualStyleBackColor = true;
+            mineD5.Click += btnMinesMine_Click;
             // 
             // mineD4
             // 
@@ -506,6 +552,7 @@
             mineD4.TabIndex = 18;
             mineD4.Text = "D4";
             mineD4.UseVisualStyleBackColor = true;
+            mineD4.Click += btnMinesMine_Click;
             // 
             // mineD3
             // 
@@ -515,6 +562,7 @@
             mineD3.TabIndex = 17;
             mineD3.Text = "D3";
             mineD3.UseVisualStyleBackColor = true;
+            mineD3.Click += btnMinesMine_Click;
             // 
             // mineD2
             // 
@@ -524,6 +572,7 @@
             mineD2.TabIndex = 16;
             mineD2.Text = "D2";
             mineD2.UseVisualStyleBackColor = true;
+            mineD2.Click += btnMinesMine_Click;
             // 
             // mineD1
             // 
@@ -533,6 +582,7 @@
             mineD1.TabIndex = 15;
             mineD1.Text = "D1";
             mineD1.UseVisualStyleBackColor = true;
+            mineD1.Click += btnMinesMine_Click;
             // 
             // mineC5
             // 
@@ -542,6 +592,7 @@
             mineC5.TabIndex = 14;
             mineC5.Text = "C5";
             mineC5.UseVisualStyleBackColor = true;
+            mineC5.Click += btnMinesMine_Click;
             // 
             // mineC4
             // 
@@ -551,6 +602,7 @@
             mineC4.TabIndex = 13;
             mineC4.Text = "C4";
             mineC4.UseVisualStyleBackColor = true;
+            mineC4.Click += btnMinesMine_Click;
             // 
             // mineC3
             // 
@@ -560,6 +612,7 @@
             mineC3.TabIndex = 12;
             mineC3.Text = "C3";
             mineC3.UseVisualStyleBackColor = true;
+            mineC3.Click += btnMinesMine_Click;
             // 
             // mineC2
             // 
@@ -569,6 +622,7 @@
             mineC2.TabIndex = 11;
             mineC2.Text = "C2";
             mineC2.UseVisualStyleBackColor = true;
+            mineC2.Click += btnMinesMine_Click;
             // 
             // mineC1
             // 
@@ -578,6 +632,7 @@
             mineC1.TabIndex = 10;
             mineC1.Text = "C1";
             mineC1.UseVisualStyleBackColor = true;
+            mineC1.Click += btnMinesMine_Click;
             // 
             // mineB5
             // 
@@ -587,6 +642,7 @@
             mineB5.TabIndex = 9;
             mineB5.Text = "B5";
             mineB5.UseVisualStyleBackColor = true;
+            mineB5.Click += btnMinesMine_Click;
             // 
             // mineB4
             // 
@@ -596,6 +652,7 @@
             mineB4.TabIndex = 8;
             mineB4.Text = "B4";
             mineB4.UseVisualStyleBackColor = true;
+            mineB4.Click += btnMinesMine_Click;
             // 
             // mineB3
             // 
@@ -605,6 +662,7 @@
             mineB3.TabIndex = 7;
             mineB3.Text = "B3";
             mineB3.UseVisualStyleBackColor = true;
+            mineB3.Click += btnMinesMine_Click;
             // 
             // mineB2
             // 
@@ -614,6 +672,7 @@
             mineB2.TabIndex = 6;
             mineB2.Text = "B2";
             mineB2.UseVisualStyleBackColor = true;
+            mineB2.Click += btnMinesMine_Click;
             // 
             // mineB1
             // 
@@ -623,6 +682,7 @@
             mineB1.TabIndex = 5;
             mineB1.Text = "B1";
             mineB1.UseVisualStyleBackColor = true;
+            mineB1.Click += btnMinesMine_Click;
             // 
             // mineA5
             // 
@@ -632,6 +692,7 @@
             mineA5.TabIndex = 4;
             mineA5.Text = "A5";
             mineA5.UseVisualStyleBackColor = true;
+            mineA5.Click += btnMinesMine_Click;
             // 
             // mineA4
             // 
@@ -641,6 +702,7 @@
             mineA4.TabIndex = 3;
             mineA4.Text = "A4";
             mineA4.UseVisualStyleBackColor = true;
+            mineA4.Click += btnMinesMine_Click;
             // 
             // mineA3
             // 
@@ -650,6 +712,7 @@
             mineA3.TabIndex = 2;
             mineA3.Text = "A3";
             mineA3.UseVisualStyleBackColor = true;
+            mineA3.Click += btnMinesMine_Click;
             // 
             // mineA2
             // 
@@ -659,6 +722,7 @@
             mineA2.TabIndex = 1;
             mineA2.Text = "A2";
             mineA2.UseVisualStyleBackColor = true;
+            mineA2.Click += btnMinesMine_Click;
             // 
             // mineA1
             // 
@@ -668,6 +732,7 @@
             mineA1.TabIndex = 0;
             mineA1.Text = "A1";
             mineA1.UseVisualStyleBackColor = true;
+            mineA1.Click += btnMinesMine_Click;
             // 
             // panelMinesBetting
             // 
@@ -921,46 +986,6 @@
             lblHomeNavbarTitle.Size = new Size(113, 28);
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
-            // 
-            // lblMinesGameWinnings
-            // 
-            lblMinesGameWinnings.AutoSize = true;
-            lblMinesGameWinnings.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMinesGameWinnings.Location = new Point(618, 37);
-            lblMinesGameWinnings.Name = "lblMinesGameWinnings";
-            lblMinesGameWinnings.Size = new Size(49, 28);
-            lblMinesGameWinnings.TabIndex = 1;
-            lblMinesGameWinnings.Text = "0 kr.";
-            // 
-            // lblMinesGameWinningsTitle
-            // 
-            lblMinesGameWinningsTitle.AutoSize = true;
-            lblMinesGameWinningsTitle.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            lblMinesGameWinningsTitle.Location = new Point(518, 37);
-            lblMinesGameWinningsTitle.Name = "lblMinesGameWinningsTitle";
-            lblMinesGameWinningsTitle.Size = new Size(106, 28);
-            lblMinesGameWinningsTitle.TabIndex = 2;
-            lblMinesGameWinningsTitle.Text = "Winnings:";
-            // 
-            // lblMinesGameMultiplierTitle
-            // 
-            lblMinesGameMultiplierTitle.AutoSize = true;
-            lblMinesGameMultiplierTitle.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            lblMinesGameMultiplierTitle.Location = new Point(518, 71);
-            lblMinesGameMultiplierTitle.Name = "lblMinesGameMultiplierTitle";
-            lblMinesGameMultiplierTitle.Size = new Size(112, 28);
-            lblMinesGameMultiplierTitle.TabIndex = 3;
-            lblMinesGameMultiplierTitle.Text = "Multiplier:";
-            // 
-            // lblMinesGameMultiplier
-            // 
-            lblMinesGameMultiplier.AutoSize = true;
-            lblMinesGameMultiplier.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMinesGameMultiplier.Location = new Point(623, 71);
-            lblMinesGameMultiplier.Name = "lblMinesGameMultiplier";
-            lblMinesGameMultiplier.Size = new Size(47, 28);
-            lblMinesGameMultiplier.TabIndex = 4;
-            lblMinesGameMultiplier.Text = "1.0x";
             // 
             // Form1
             // 
