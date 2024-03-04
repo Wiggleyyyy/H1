@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DavidHougesen\\Source\\Repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj": {}
+    "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DavidHougesen\\Source\\Repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj": {
+    "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DavidHougesen\\Source\\Repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj",
         "projectName": "csharp_gambling",
-        "projectPath": "C:\\Users\\DavidHougesen\\Source\\Repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj",
-        "packagesPath": "C:\\Users\\DavidHougesen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DavidHougesen\\Source\\Repos\\Wiggleyyyy\\H1\\Core_app\\Csharp_gambling\\obj\\",
+        "projectPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\csharp_gambling.csproj",
+        "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DavidHougesen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HFGF\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -28,7 +28,7 @@ namespace csharp_gambling
             InitializeButtonEventsGames();
 
             //Load options into minesCount, starts at 4 ends at 23
-            for (int i = 4; i <= 23; i++)
+            for (int i = 3; i <= 24; i++)
             {
                 comboBoxMinesBettingMinesCountCustom.Items.Add($"{i}");
             }
@@ -244,8 +244,11 @@ namespace csharp_gambling
 
         private void btnMinesBettingPlaceBet_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show("Moneybet: "+minesData.MoneyBet+" Number of mines: "+ minesData.NumberOfMines);
+
             //Check requirements
-            if (minesData.MoneyBet! < 0 && minesData.NumberOfMines! < 3)
+            if (minesData.MoneyBet > 0 && minesData.NumberOfMines > 3)
             {
                 //Start game
                 MinesGame();
@@ -314,7 +317,54 @@ namespace csharp_gambling
         //Game funcionality - start
         private void MinesGame()
         {
+            minesData.GameActive = true;
 
+            Random random = new Random();
+            List<int> minePositions = new List<int>();
+
+            for (int i = 0; i < minesData.NumberOfMines; i++)
+            {
+                int minePosition;
+                do
+                {
+                    minePosition = random.Next(25); // Assuming a 5x5 grid
+                } while (minePositions.Contains(minePosition));
+
+                minePositions.Add(minePosition);
+            }
+
+            int mineID = 1; // Start mine IDs from 1
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    char bogstav = (char)('A' + i);
+                    string mineName = $"mine{bogstav}{j}";
+
+                    Field mineField = new Field
+                    {
+                        MineID = mineID++,
+                        IsMine = minePositions.Contains(i * 5 + j)
+                    };
+
+                    minesData.Fields.Add(mineField);
+
+                }      
+            }
+
+        }
+
+        private void btnMinesMine_Click(object sender, EventArgs e)
+        {
+            if(minesData.GameActive)
+            {
+
+            }
+            else 
+            {
+                MessageBox.Show("Gamet er ikke startet", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //Game functionality - end
     }
