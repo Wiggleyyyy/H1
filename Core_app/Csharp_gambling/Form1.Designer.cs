@@ -105,6 +105,7 @@
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
+            btnMinesCashOut = new Button();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -401,6 +402,7 @@
             // panelMinesGame
             // 
             panelMinesGame.BackColor = SystemColors.ButtonShadow;
+            panelMinesGame.Controls.Add(btnMinesCashOut);
             panelMinesGame.Controls.Add(lblMinesGameMultiplier);
             panelMinesGame.Controls.Add(lblMinesGameMultiplierTitle);
             panelMinesGame.Controls.Add(lblMinesGameWinningsTitle);
@@ -832,7 +834,7 @@
             comboBoxMinesBettingMinesCountCustom.Name = "comboBoxMinesBettingMinesCountCustom";
             comboBoxMinesBettingMinesCountCustom.Size = new Size(121, 25);
             comboBoxMinesBettingMinesCountCustom.TabIndex = 4;
-            comboBoxMinesBettingMinesCountCustom.SelectedIndexChanged += comboBoxMinesBettingMinesCountCustom_SelectedIndexChanged;
+            comboBoxMinesBettingMinesCountCustom.Leave += comboBoxMinesBettingMinesCountCustom_Leave;
             // 
             // btnMinesBettingMinesCountMax
             // 
@@ -987,6 +989,17 @@
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
             // 
+            // btnMinesCashOut
+            // 
+            btnMinesCashOut.BackColor = Color.LawnGreen;
+            btnMinesCashOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesCashOut.Location = new Point(518, 364);
+            btnMinesCashOut.Name = "btnMinesCashOut";
+            btnMinesCashOut.Size = new Size(173, 37);
+            btnMinesCashOut.TabIndex = 12;
+            btnMinesCashOut.Text = "Cash ud";
+            btnMinesCashOut.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1094,5 +1107,6 @@
         private Label lblMinesGameMultiplierTitle;
         private Label lblMinesGameWinningsTitle;
         private Label lblMinesGameWinnings;
+        private Button btnMinesCashOut;
     }
 }

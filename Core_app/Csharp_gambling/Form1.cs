@@ -13,7 +13,7 @@ namespace csharp_gambling
         private Dictionary<Button, Panel> buttonPanelMapGames;
 
         //Game data
-        private MinesData minesData = new MinesData();
+        public MinesData minesData = new MinesData();
 
         public Form1()
         {
@@ -195,12 +195,22 @@ namespace csharp_gambling
             comboBoxMinesBettingMinesCountCustom.SelectedItem = null;
         }
 
-        private void comboBoxMinesBettingMinesCountCustom_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //int numberOfMines = (int)Convert.ToInt16(comboBoxMinesBettingMinesCountCustom.Text);
-            //minesData.NumberOfMines = numberOfMines;
-            //lblMinesBettingCurrentMinesCount.Text = $"{numberOfMines} bomber";
+        //ERROR
+        //private void comboBoxMinesBettingMinesCountCustom_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //int numberOfMines = (int)Convert.ToInt16(comboBoxMinesBettingMinesCountCustom.Text);
+        //    //minesData.NumberOfMines = numberOfMines;
+        //    //lblMinesBettingCurrentMinesCount.Text = $"{numberOfMines} bomber";
 
+        //    if (int.TryParse(comboBoxMinesBettingMinesCountCustom.Text, out int numberOfMines))
+        //    {
+        //        minesData.NumberOfMines = numberOfMines;
+        //        lblMinesBettingCurrentMinesCount.Text = $"{numberOfMines} bomber";
+        //    }
+        //}
+
+        private void comboBoxMinesBettingMinesCountCustom_Leave(object sender, EventArgs e)
+        {
             if (int.TryParse(comboBoxMinesBettingMinesCountCustom.Text, out int numberOfMines))
             {
                 minesData.NumberOfMines = numberOfMines;
@@ -245,10 +255,10 @@ namespace csharp_gambling
         private void btnMinesBettingPlaceBet_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Moneybet: "+minesData.MoneyBet+" Number of mines: "+ minesData.NumberOfMines);
+            MessageBox.Show("Money bet: " + minesData.MoneyBet + " Number of mines: " + minesData.NumberOfMines);
 
             //Check requirements
-            if (minesData.MoneyBet > 0 && minesData.NumberOfMines > 3)
+            if (minesData.MoneyBet > 0 && minesData.NumberOfMines >= 3)
             {
                 //Start game
                 MinesGame();
@@ -317,51 +327,95 @@ namespace csharp_gambling
         //Game funcionality - start
         private void MinesGame()
         {
+            //minesData.GameActive = true;
+
+            //Random random = new Random();
+            //List<int> minePositions = new List<int>();
+
+            //for (int i = 0; i < minesData.NumberOfMines; i++)
+            //{
+            //    int minePosition;
+            //    do
+            //    {
+            //        minePosition = random.Next(25); // Assuming a 5x5 grid
+            //    } while (minePositions.Contains(minePosition));
+
+            //    minePositions.Add(minePosition);
+            //}
+
+            //int mineID = 1; // Start mine IDs from 1
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    for (int j = 0; j < 5; j++)
+            //    {
+            //        char bogstav = (char)('A' + i);
+            //        string mineName = $"mine{bogstav}{j}";
+
+            //        Field mineField = new Field
+            //        {
+            //            MineID = mineID++,
+            //            IsMine = minePositions.Contains(i * 5 + j)
+            //        };
+
+            //        minesData.Fields.Add(mineField);
+
+            //    }      
+            //}
+
             minesData.GameActive = true;
 
             Random random = new Random();
             List<int> minePositions = new List<int>();
+
+            int gridSize = 5;
+            int totalCells = gridSize * gridSize;
 
             for (int i = 0; i < minesData.NumberOfMines; i++)
             {
                 int minePosition;
                 do
                 {
-                    minePosition = random.Next(25); // Assuming a 5x5 grid
+                    minePosition = random.Next(totalCells);
                 } while (minePositions.Contains(minePosition));
 
                 minePositions.Add(minePosition);
             }
 
-            int mineID = 1; // Start mine IDs from 1
+            int mineID = 1;
+            List<Field> tempFields = new List<Field>();
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < gridSize; i++)
             {
-                for (int j = 0; j < 5; j++)
+                for (int j = 0; j < gridSize; j++)
                 {
-                    char bogstav = (char)('A' + i);
-                    string mineName = $"mine{bogstav}{j}";
+                    char rowChar = (char)('A' + i);
+                    int column = j + 1;
+                    string mineName = $"mine{rowChar}{column}";
 
                     Field mineField = new Field
                     {
                         MineID = mineID++,
-                        IsMine = minePositions.Contains(i * 5 + j)
+                        IsMine = minePositions.Contains(i * gridSize + j)
                     };
 
-                    minesData.Fields.Add(mineField);
-
-                }      
+                    tempFields.Add(mineField);
+                }
             }
 
+            if (tempFields.Count > 0)
+            {
+                minesData.Fields = tempFields;
+            }
         }
 
         private void btnMinesMine_Click(object sender, EventArgs e)
         {
-            if(minesData.GameActive)
+            if (minesData.GameActive)
             {
 
             }
-            else 
+            else
             {
                 MessageBox.Show("Gamet er ikke startet", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

@@ -10,7 +10,7 @@ namespace csharp_gambling
     {
         public int NumberOfMines { get; set; }
         public double MoneyBet { get; set; }
-        List<Field> Fields { get; set; }
+        public List<Field> Fields { get; set; }
         public bool GameActive { get; set; }
         //Maybe add multiplier method here?
         public MinesData()
