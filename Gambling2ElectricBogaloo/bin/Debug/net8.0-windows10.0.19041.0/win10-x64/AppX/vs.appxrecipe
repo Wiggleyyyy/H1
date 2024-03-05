@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-T8O1VV3</Machine>
+    <Machine>DESKTOP-HNBBSN4</Machine>
     <WindowsUser>HFGF</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -30,281 +30,289 @@
     <AppXManifest Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-04T12:14:53.021</Modified>
+      <Modified>2024-03-05T12:07:37.025</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-04T12:14:32.098</Modified>
+      <Modified>2024-03-05T11:56:27.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Gambling2ElectricBogaloo.runtimeconfig.json">
       <PackagePath>Gambling2ElectricBogaloo.runtimeconfig.json</PackagePath>
-      <Modified>2024-03-04T12:14:31.760</Modified>
+      <Modified>2024-03-05T11:16:48.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Gambling2ElectricBogaloo.dll">
       <PackagePath>Gambling2ElectricBogaloo.dll</PackagePath>
-      <Modified>2024-03-04T12:14:30.740</Modified>
+      <Modified>2024-03-05T12:07:36.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Gambling2ElectricBogaloo.exe</PackagePath>
-      <Modified>2024-03-04T12:14:30.760</Modified>
+      <Modified>2024-03-05T12:07:36.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-03-04T12:13:26.937</Modified>
+      <Modified>2024-03-05T07:49:15.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
-      <Modified>2024-03-04T12:13:26.767</Modified>
+      <Modified>2024-03-05T07:49:16.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
-      <Modified>2024-03-04T12:13:26.769</Modified>
+      <Modified>2024-03-05T07:49:16.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
-      <Modified>2024-03-04T12:13:26.801</Modified>
+      <Modified>2024-03-05T07:49:16.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\css\loginstyle.css">
+      <PackagePath>wwwroot\css\loginstyle.css</PackagePath>
+      <Modified>2024-03-05T12:06:49.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\favicon.png">
       <PackagePath>wwwroot\favicon.png</PackagePath>
-      <Modified>2024-03-04T12:13:26.764</Modified>
+      <Modified>2024-03-05T07:49:16.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2024-03-04T12:13:26.766</Modified>
+      <Modified>2024-03-05T09:59:22.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\index.html.__projection.g.js">
+      <PackagePath>wwwroot\index.html.__projection.g.js</PackagePath>
+      <Modified>2024-03-05T09:53:29.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.579</Modified>
+      <Modified>2024-03-05T07:49:16.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.600</Modified>
+      <Modified>2024-03-05T07:49:16.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.624</Modified>
+      <Modified>2024-03-05T07:49:16.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.660</Modified>
+      <Modified>2024-03-05T07:49:16.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.798</Modified>
+      <Modified>2024-03-05T07:49:16.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-03-04T12:13:26.928</Modified>
+      <Modified>2024-03-05T07:49:16.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-03-04T12:14:28.894</Modified>
+      <Modified>2024-03-05T07:49:16.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.487</Modified>
+      <Modified>2024-03-05T07:49:16.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.515</Modified>
+      <Modified>2024-03-05T07:49:16.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.540</Modified>
+      <Modified>2024-03-05T07:49:16.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.578</Modified>
+      <Modified>2024-03-05T07:49:16.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.710</Modified>
+      <Modified>2024-03-05T07:49:16.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.068</Modified>
+      <Modified>2024-03-05T07:49:16.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.074</Modified>
+      <Modified>2024-03-05T07:49:16.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.113</Modified>
+      <Modified>2024-03-05T07:49:16.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.084</Modified>
+      <Modified>2024-03-05T07:49:16.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.094</Modified>
+      <Modified>2024-03-05T07:49:16.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.013</Modified>
+      <Modified>2024-03-05T07:49:16.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.022</Modified>
+      <Modified>2024-03-05T07:49:16.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.060</Modified>
+      <Modified>2024-03-05T07:49:16.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.028</Modified>
+      <Modified>2024-03-05T07:49:16.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.038</Modified>
+      <Modified>2024-03-05T07:49:16.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.911</Modified>
+      <Modified>2024-03-05T07:49:16.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.917</Modified>
+      <Modified>2024-03-05T07:49:16.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.928</Modified>
+      <Modified>2024-03-05T07:49:16.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.940</Modified>
+      <Modified>2024-03-05T07:49:16.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.956</Modified>
+      <Modified>2024-03-05T07:49:16.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.965</Modified>
+      <Modified>2024-03-05T07:49:16.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.973</Modified>
+      <Modified>2024-03-05T07:49:16.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.006</Modified>
+      <Modified>2024-03-05T07:49:16.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.978</Modified>
+      <Modified>2024-03-05T07:49:16.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.988</Modified>
+      <Modified>2024-03-05T07:49:16.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.230</Modified>
+      <Modified>2024-03-05T07:49:16.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.241</Modified>
+      <Modified>2024-03-05T07:49:16.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.258</Modified>
+      <Modified>2024-03-05T07:49:16.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.278</Modified>
+      <Modified>2024-03-05T07:49:16.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.320</Modified>
+      <Modified>2024-03-05T07:49:16.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.171</Modified>
+      <Modified>2024-03-05T07:49:16.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.179</Modified>
+      <Modified>2024-03-05T07:49:16.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.188</Modified>
+      <Modified>2024-03-05T07:49:16.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.199</Modified>
+      <Modified>2024-03-05T07:49:16.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.219</Modified>
+      <Modified>2024-03-05T07:49:16.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.120</Modified>
+      <Modified>2024-03-05T07:49:16.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.128</Modified>
+      <Modified>2024-03-05T07:49:16.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.137</Modified>
+      <Modified>2024-03-05T07:49:16.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.147</Modified>
+      <Modified>2024-03-05T07:49:16.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.162</Modified>
+      <Modified>2024-03-05T07:49:16.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.333</Modified>
+      <Modified>2024-03-05T07:49:16.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.350</Modified>
+      <Modified>2024-03-05T07:49:16.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.371</Modified>
+      <Modified>2024-03-05T07:49:16.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.400</Modified>
+      <Modified>2024-03-05T07:49:16.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.465</Modified>
+      <Modified>2024-03-05T07:49:16.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.950</Modified>
+      <Modified>2024-03-05T07:49:16.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.965</Modified>
+      <Modified>2024-03-05T07:49:16.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-03-04T12:14:28.978</Modified>
+      <Modified>2024-03-05T07:49:16.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.002</Modified>
+      <Modified>2024-03-05T07:49:16.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-03-04T12:14:29.063</Modified>
+      <Modified>2024-03-05T07:49:16.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Gambling2ElectricBogaloo.deps.json">
       <PackagePath>Gambling2ElectricBogaloo.deps.json</PackagePath>
-      <Modified>2024-03-04T12:14:31.732</Modified>
+      <Modified>2024-03-05T11:16:48.954</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -668,19 +676,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\Gambling2ElectricBogaloo.styles.css">
       <PackagePath>wwwroot\Gambling2ElectricBogaloo.styles.css</PackagePath>
-      <Modified>2024-03-04T12:14:14.529</Modified>
+      <Modified>2024-03-05T11:55:13.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\Gambling2ElectricBogaloo.bundle.scp.css">
       <PackagePath>wwwroot\Gambling2ElectricBogaloo.bundle.scp.css</PackagePath>
-      <Modified>2024-03-04T12:14:14.530</Modified>
+      <Modified>2024-03-05T11:55:13.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
-      <Modified>2024-03-04T12:13:26.765</Modified>
+      <Modified>2024-03-05T07:49:15.224</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Components\Layout\MinimalLayout.razor.css">
+      <PackagePath>Components\Layout\MinimalLayout.razor.css</PackagePath>
+      <Modified>2024-03-05T07:49:15.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
-      <Modified>2024-03-04T12:13:26.768</Modified>
+      <Modified>2024-03-05T07:49:15.225</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

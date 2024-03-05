@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Core_app",
     "\\Core_app\\Csharp_gambling",
-    "\\Core_app\\Csharp_gambling\\SQL"
+    "\\Core_app\\Csharp_gambling\\SQL",
+    "\\Gambling2ElectricBogaloo"
   ],
-  "SelectedNode": "\\Core_app\\Csharp_gambling\\Form1.cs",
+  "SelectedNode": "\\Gambling2ElectricBogaloo\\Gambling2ElectricBogaloo.sln",
   "PreviewInSolutionExplorer": false
 }

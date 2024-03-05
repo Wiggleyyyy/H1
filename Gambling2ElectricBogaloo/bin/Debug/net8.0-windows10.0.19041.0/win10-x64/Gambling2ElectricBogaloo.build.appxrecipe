@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-T8O1VV3</Machine>
+    <Machine>DESKTOP-HNBBSN4</Machine>
     <WindowsUser>HFGF</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -49,11 +49,17 @@
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\css\loginstyle.css">
+      <PackagePath>wwwroot\css\loginstyle.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\favicon.png">
       <PackagePath>wwwroot\favicon.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\wwwroot\index.html.__projection.g.js">
+      <PackagePath>wwwroot\index.html.__projection.g.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -507,6 +513,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Components\Layout\MinimalLayout.razor.css">
+      <PackagePath>Components\Layout\MinimalLayout.razor.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>

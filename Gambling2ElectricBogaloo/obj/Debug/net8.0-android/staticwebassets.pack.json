@@ -17,12 +17,20 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\wwwroot\\css\\loginstyle.css",
+      "PackagePath": "staticwebassets\\css\\loginstyle.css"
+    },
+    {
       "Id": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
       "Id": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\wwwroot\\index.html.__projection.g.js",
+      "PackagePath": "staticwebassets\\index.html.__projection.g.js"
     },
     {
       "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.Gambling2ElectricBogaloo.Microsoft.AspNetCore.StaticWebAssets.props",

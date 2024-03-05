@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Test_StringInReverseOrder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0133b0cbf893a898c87d19a58c359023432738dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Test_StringInReverseOrder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Test_StringInReverseOrder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
