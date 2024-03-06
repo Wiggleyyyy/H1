@@ -1,6 +1,13 @@
 ﻿@page "/login"
 @layout MinimalLayout
 
+
+@* @inject Gambling2ElectricBogaloo.Components.Classes.Database Database
+@using Gambling2ElectricBogaloo.Components.Classes *@
+
+
+
+
 <html lang="en">
 
 <head>
@@ -61,6 +68,7 @@
     </script>
 
     @code {
+        private string errorMessage;
 
         private string registerUsername;
         private string registerPassword;
@@ -80,8 +88,15 @@
             // You can use these variables to pass user input to your sign-in logic
             // Example: Call a service to perform user sign-in
         }
+
+
     }
 
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <p class="error">@errorMessage</p>
+    }
 </body>
 
 </html>
