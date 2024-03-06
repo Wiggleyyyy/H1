@@ -1,6 +1,10 @@
-// TO DO : remove bet from database
+// TO DO : ONLY ENTER DIGITS IN BET
 
-// TO DO : cashout button mines
+// TO DO : BLACK JACK
+// TO DO : BETTING IN BLACKJACK
+// TO DO : CARD FLOW IN BLACKJACK
+// TO DO : WINNINGS IN BLACKJACK
+// TO DO : NEW BALANCE IN BLACKJACK
 
 using System.DirectoryServices.ActiveDirectory;
 using System.Text.RegularExpressions;
@@ -29,9 +33,6 @@ namespace csharp_gambling
             //Navbar games buttons
             InitializeButtonPanelMapGames();
             InitializeButtonEventsGames();
-
-            //Mines buttons
-            //InitializeMinesButtonMap();
 
             //Load options into minesCount, starts at 4 ends at 23
             for (int i = 3; i <= 24; i++)
@@ -71,25 +72,11 @@ namespace csharp_gambling
             buttonPanelMapGames = new Dictionary<Button, Panel>
             {
                 { btnHomeNavbarMines,  panelHomeMines },
+                { btnHomeNavbarBlackjack, panelBlackJack }
                 //add more panels
                 //DOING ^^
             };
         }
-
-        //private void InitializeMinesButtonMap()
-        //{
-        //    minesButtonMap = new Dictionary<Button, Field>();
-
-        //    GetGridPositionFromMines();
-
-        //    foreach (Field field in minesData.Fields)
-        //    {
-        //        string buttonName = field.MineName;
-        //        Button button = Controls.Find(buttonName, true).FirstOrDefault() as Button;
-
-        //        minesButtonMap.Add(button, field);
-        //    }
-        //}
         //Initialize - end
 
         //Button functionality - start
@@ -199,7 +186,11 @@ namespace csharp_gambling
         private void btnMinesClose_Click(object sender, EventArgs e)
         {
             panelHomeMines.Visible = false;
-            //Maybe add more?
+        }
+
+        private void btnBlackJackClose_Click(object sender, EventArgs e)
+        {
+            panelBlackJack.Visible = false;
         }
 
         private void btnMinesBettingMinesCountMin_Click(object sender, EventArgs e)
@@ -334,6 +325,7 @@ namespace csharp_gambling
         //Loading pages - end
 
         //Game funcionality - start
+        //Mines - start
         private void MinesGame()
         {
             minesData.GameActive = true;
@@ -348,7 +340,7 @@ namespace csharp_gambling
             {
                 double currentBalance = DB.GetCurrentBalance(username);
                 double newBalance = currentBalance - bet;
-                
+
                 DB.InsertNewBalance(username, newBalance);
                 currentBalance = DB.GetCurrentBalance(username);
                 string balanceToWrite = $"Balance: {currentBalance}kr.";
@@ -597,13 +589,13 @@ namespace csharp_gambling
         {
             if (minesData.Fields.Where(x => x.IsRevealed == true).Count() > 0)
             {
-                string winningsInput = lblMinesGameWinnings.Text.Replace("kr.","");
+                string winningsInput = lblMinesGameWinnings.Text.Replace("kr.", "");
                 double winnings = (double)Convert.ToDouble(winningsInput);
 
                 string username = lblHomeNavbarUsername.Text;
                 double currentBalance = DB.GetCurrentBalance(username);
                 double newBalance = currentBalance + winnings;
-                
+
                 DB.InsertNewBalance(username, newBalance);
                 currentBalance = DB.GetCurrentBalance(username);
                 string balanceToWrite = $"Balance: {currentBalance}kr.";
@@ -618,6 +610,11 @@ namespace csharp_gambling
                 MessageBox.Show("Du skal klikke på mindst et felt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        //Mines - end
+
+        //Blackjack - start
+
+        //Blackjack - end
         //Game functionality - end
     }
 }

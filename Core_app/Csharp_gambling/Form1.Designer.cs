@@ -49,6 +49,54 @@
             lblSignupHeader = new Label();
             lblSignupTitle = new Label();
             panelHomePage = new Panel();
+            panelBlackJack = new Panel();
+            btnBlackJackClose = new Button();
+            panelBlackJackGame = new Panel();
+            panelBlackJackGameCard1 = new Panel();
+            btnCard1Stand = new Button();
+            lblCard1CardsCount = new Label();
+            btnCard1Hit = new Button();
+            lblCard1TotalValue = new Label();
+            panelCard1 = new Panel();
+            lblCard1Bust = new Label();
+            labelCard1CardValue = new Label();
+            lblCard1CardType = new Label();
+            panelBlackJackGameDealer = new Panel();
+            lblDealerCardsCount = new Label();
+            lblDealerTotalValue = new Label();
+            panelDealerCard = new Panel();
+            lblDealerCardValue = new Label();
+            lblDealerCardType = new Label();
+            lblDealerTitle = new Label();
+            panelBlackJackGameCard2 = new Panel();
+            btnCard3Stand = new Button();
+            lblCard3CardsCount = new Label();
+            btnCard3Hit = new Button();
+            lblCard3TotalValue = new Label();
+            panelCard3 = new Panel();
+            lblCard3Bust = new Label();
+            lblCard3CardValue = new Label();
+            lblCard3CardType = new Label();
+            panelBlackJacGamekCard2 = new Panel();
+            btnCard2Stand = new Button();
+            lblCard2CardsCount = new Label();
+            btnCard2Hit = new Button();
+            lblCard2TotalValue = new Label();
+            panelCard2 = new Panel();
+            lblCard2Bust = new Label();
+            lblCard2CardValue = new Label();
+            lblCard2CardType = new Label();
+            panelBlackJackBetting = new Panel();
+            comboBox1 = new ComboBox();
+            lblBettingsHands = new Label();
+            lblBettingHandsHeader = new Label();
+            btnBlackJackBettingBet = new Button();
+            lblBlackJackBettingBet = new Label();
+            lblBlackJackBettingBetEnding = new Label();
+            textBoxBlackJackBettingBet = new TextBox();
+            lblBlackJackBettingBetTitle = new Label();
+            lblBlackJackBettingTitle = new Label();
+            lblBlackJackTitle = new Label();
             panelHomeMines = new Panel();
             panelMinesGame = new Panel();
             btnMinesCashOut = new Button();
@@ -109,6 +157,17 @@
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
+            panelBlackJack.SuspendLayout();
+            panelBlackJackGame.SuspendLayout();
+            panelBlackJackGameCard1.SuspendLayout();
+            panelCard1.SuspendLayout();
+            panelBlackJackGameDealer.SuspendLayout();
+            panelDealerCard.SuspendLayout();
+            panelBlackJackGameCard2.SuspendLayout();
+            panelCard3.SuspendLayout();
+            panelBlackJacGamekCard2.SuspendLayout();
+            panelCard2.SuspendLayout();
+            panelBlackJackBetting.SuspendLayout();
             panelHomeMines.SuspendLayout();
             panelMinesGame.SuspendLayout();
             panelMinesGameMinesArea.SuspendLayout();
@@ -378,6 +437,7 @@
             // 
             // panelHomePage
             // 
+            panelHomePage.Controls.Add(panelBlackJack);
             panelHomePage.Controls.Add(panelHomeMines);
             panelHomePage.Controls.Add(panelHomeNavbar);
             panelHomePage.Location = new Point(0, 0);
@@ -385,6 +445,534 @@
             panelHomePage.Size = new Size(1263, 653);
             panelHomePage.TabIndex = 9;
             panelHomePage.Visible = false;
+            // 
+            // panelBlackJack
+            // 
+            panelBlackJack.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJack.Controls.Add(btnBlackJackClose);
+            panelBlackJack.Controls.Add(panelBlackJackGame);
+            panelBlackJack.Controls.Add(panelBlackJackBetting);
+            panelBlackJack.Controls.Add(lblBlackJackTitle);
+            panelBlackJack.Location = new Point(37, 120);
+            panelBlackJack.Name = "panelBlackJack";
+            panelBlackJack.Size = new Size(1195, 506);
+            panelBlackJack.TabIndex = 4;
+            panelBlackJack.Visible = false;
+            // 
+            // btnBlackJackClose
+            // 
+            btnBlackJackClose.Location = new Point(33, 19);
+            btnBlackJackClose.Name = "btnBlackJackClose";
+            btnBlackJackClose.Size = new Size(75, 23);
+            btnBlackJackClose.TabIndex = 13;
+            btnBlackJackClose.Text = "Luk";
+            btnBlackJackClose.UseVisualStyleBackColor = true;
+            btnBlackJackClose.Click += btnBlackJackClose_Click;
+            // 
+            // panelBlackJackGame
+            // 
+            panelBlackJackGame.BackColor = Color.FromArgb(24, 22, 28);
+            panelBlackJackGame.Controls.Add(panelBlackJackGameCard1);
+            panelBlackJackGame.Controls.Add(panelBlackJackGameDealer);
+            panelBlackJackGame.Controls.Add(panelBlackJackGameCard2);
+            panelBlackJackGame.Controls.Add(panelBlackJacGamekCard2);
+            panelBlackJackGame.Location = new Point(429, 53);
+            panelBlackJackGame.Name = "panelBlackJackGame";
+            panelBlackJackGame.Size = new Size(710, 415);
+            panelBlackJackGame.TabIndex = 12;
+            // 
+            // panelBlackJackGameCard1
+            // 
+            panelBlackJackGameCard1.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameCard1.Controls.Add(btnCard1Stand);
+            panelBlackJackGameCard1.Controls.Add(lblCard1CardsCount);
+            panelBlackJackGameCard1.Controls.Add(btnCard1Hit);
+            panelBlackJackGameCard1.Controls.Add(lblCard1TotalValue);
+            panelBlackJackGameCard1.Controls.Add(panelCard1);
+            panelBlackJackGameCard1.Location = new Point(27, 150);
+            panelBlackJackGameCard1.Name = "panelBlackJackGameCard1";
+            panelBlackJackGameCard1.Size = new Size(191, 263);
+            panelBlackJackGameCard1.TabIndex = 6;
+            panelBlackJackGameCard1.Visible = false;
+            // 
+            // btnCard1Stand
+            // 
+            btnCard1Stand.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCard1Stand.Location = new Point(131, 29);
+            btnCard1Stand.Name = "btnCard1Stand";
+            btnCard1Stand.Size = new Size(42, 23);
+            btnCard1Stand.TabIndex = 5;
+            btnCard1Stand.Text = "STÅ";
+            btnCard1Stand.UseVisualStyleBackColor = true;
+            // 
+            // lblCard1CardsCount
+            // 
+            lblCard1CardsCount.AutoSize = true;
+            lblCard1CardsCount.ForeColor = Color.White;
+            lblCard1CardsCount.Location = new Point(5, 27);
+            lblCard1CardsCount.Name = "lblCard1CardsCount";
+            lblCard1CardsCount.Size = new Size(110, 15);
+            lblCard1CardsCount.TabIndex = 1;
+            lblCard1CardsCount.Text = "<NumberOfCards>";
+            // 
+            // btnCard1Hit
+            // 
+            btnCard1Hit.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCard1Hit.Location = new Point(131, 4);
+            btnCard1Hit.Name = "btnCard1Hit";
+            btnCard1Hit.Size = new Size(42, 23);
+            btnCard1Hit.TabIndex = 4;
+            btnCard1Hit.Text = "HIT";
+            btnCard1Hit.UseVisualStyleBackColor = true;
+            // 
+            // lblCard1TotalValue
+            // 
+            lblCard1TotalValue.AutoSize = true;
+            lblCard1TotalValue.ForeColor = Color.White;
+            lblCard1TotalValue.Location = new Point(3, 8);
+            lblCard1TotalValue.Name = "lblCard1TotalValue";
+            lblCard1TotalValue.Size = new Size(76, 15);
+            lblCard1TotalValue.TabIndex = 0;
+            lblCard1TotalValue.Text = "<TotalValue>";
+            // 
+            // panelCard1
+            // 
+            panelCard1.BackColor = Color.White;
+            panelCard1.Controls.Add(lblCard1Bust);
+            panelCard1.Controls.Add(labelCard1CardValue);
+            panelCard1.Controls.Add(lblCard1CardType);
+            panelCard1.Location = new Point(17, 56);
+            panelCard1.Name = "panelCard1";
+            panelCard1.Size = new Size(156, 207);
+            panelCard1.TabIndex = 0;
+            // 
+            // lblCard1Bust
+            // 
+            lblCard1Bust.AutoSize = true;
+            lblCard1Bust.BackColor = Color.Black;
+            lblCard1Bust.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCard1Bust.ForeColor = Color.Red;
+            lblCard1Bust.Location = new Point(34, 72);
+            lblCard1Bust.Name = "lblCard1Bust";
+            lblCard1Bust.Size = new Size(79, 37);
+            lblCard1Bust.TabIndex = 2;
+            lblCard1Bust.Text = "BUST";
+            lblCard1Bust.Visible = false;
+            // 
+            // labelCard1CardValue
+            // 
+            labelCard1CardValue.AutoSize = true;
+            labelCard1CardValue.BackColor = Color.Transparent;
+            labelCard1CardValue.Location = new Point(31, 43);
+            labelCard1CardValue.Name = "labelCard1CardValue";
+            labelCard1CardValue.Size = new Size(76, 15);
+            labelCard1CardValue.TabIndex = 1;
+            labelCard1CardValue.Text = "<CardValue>";
+            // 
+            // lblCard1CardType
+            // 
+            lblCard1CardType.AutoSize = true;
+            lblCard1CardType.BackColor = Color.Transparent;
+            lblCard1CardType.Location = new Point(34, 21);
+            lblCard1CardType.Name = "lblCard1CardType";
+            lblCard1CardType.Size = new Size(72, 15);
+            lblCard1CardType.TabIndex = 0;
+            lblCard1CardType.Text = "<CardType>";
+            // 
+            // panelBlackJackGameDealer
+            // 
+            panelBlackJackGameDealer.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameDealer.Controls.Add(lblDealerCardsCount);
+            panelBlackJackGameDealer.Controls.Add(lblDealerTotalValue);
+            panelBlackJackGameDealer.Controls.Add(panelDealerCard);
+            panelBlackJackGameDealer.Controls.Add(lblDealerTitle);
+            panelBlackJackGameDealer.Location = new Point(27, 27);
+            panelBlackJackGameDealer.Name = "panelBlackJackGameDealer";
+            panelBlackJackGameDealer.Size = new Size(663, 100);
+            panelBlackJackGameDealer.TabIndex = 5;
+            panelBlackJackGameDealer.Visible = false;
+            // 
+            // lblDealerCardsCount
+            // 
+            lblDealerCardsCount.AutoSize = true;
+            lblDealerCardsCount.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDealerCardsCount.ForeColor = Color.White;
+            lblDealerCardsCount.Location = new Point(343, 47);
+            lblDealerCardsCount.Name = "lblDealerCardsCount";
+            lblDealerCardsCount.RightToLeft = RightToLeft.No;
+            lblDealerCardsCount.Size = new Size(182, 28);
+            lblDealerCardsCount.TabIndex = 4;
+            lblDealerCardsCount.Text = "<NumberOfCards>";
+            // 
+            // lblDealerTotalValue
+            // 
+            lblDealerTotalValue.AutoSize = true;
+            lblDealerTotalValue.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDealerTotalValue.ForeColor = Color.White;
+            lblDealerTotalValue.Location = new Point(343, 14);
+            lblDealerTotalValue.Name = "lblDealerTotalValue";
+            lblDealerTotalValue.RightToLeft = RightToLeft.No;
+            lblDealerTotalValue.Size = new Size(129, 28);
+            lblDealerTotalValue.TabIndex = 3;
+            lblDealerTotalValue.Text = "<TotalValue>";
+            // 
+            // panelDealerCard
+            // 
+            panelDealerCard.BackColor = Color.White;
+            panelDealerCard.Controls.Add(lblDealerCardValue);
+            panelDealerCard.Controls.Add(lblDealerCardType);
+            panelDealerCard.Location = new Point(181, 4);
+            panelDealerCard.Name = "panelDealerCard";
+            panelDealerCard.Size = new Size(156, 87);
+            panelDealerCard.TabIndex = 2;
+            // 
+            // lblDealerCardValue
+            // 
+            lblDealerCardValue.AutoSize = true;
+            lblDealerCardValue.BackColor = Color.Transparent;
+            lblDealerCardValue.Location = new Point(31, 43);
+            lblDealerCardValue.Name = "lblDealerCardValue";
+            lblDealerCardValue.Size = new Size(76, 15);
+            lblDealerCardValue.TabIndex = 1;
+            lblDealerCardValue.Text = "<CardValue>";
+            // 
+            // lblDealerCardType
+            // 
+            lblDealerCardType.AutoSize = true;
+            lblDealerCardType.BackColor = Color.Transparent;
+            lblDealerCardType.Location = new Point(34, 21);
+            lblDealerCardType.Name = "lblDealerCardType";
+            lblDealerCardType.Size = new Size(72, 15);
+            lblDealerCardType.TabIndex = 0;
+            lblDealerCardType.Text = "<CardType>";
+            // 
+            // lblDealerTitle
+            // 
+            lblDealerTitle.AutoSize = true;
+            lblDealerTitle.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDealerTitle.ForeColor = Color.White;
+            lblDealerTitle.Location = new Point(7, 6);
+            lblDealerTitle.Name = "lblDealerTitle";
+            lblDealerTitle.Size = new Size(72, 28);
+            lblDealerTitle.TabIndex = 0;
+            lblDealerTitle.Text = "Dealer:";
+            // 
+            // panelBlackJackGameCard2
+            // 
+            panelBlackJackGameCard2.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameCard2.Controls.Add(btnCard3Stand);
+            panelBlackJackGameCard2.Controls.Add(lblCard3CardsCount);
+            panelBlackJackGameCard2.Controls.Add(btnCard3Hit);
+            panelBlackJackGameCard2.Controls.Add(lblCard3TotalValue);
+            panelBlackJackGameCard2.Controls.Add(panelCard3);
+            panelBlackJackGameCard2.Location = new Point(499, 150);
+            panelBlackJackGameCard2.Name = "panelBlackJackGameCard2";
+            panelBlackJackGameCard2.Size = new Size(191, 265);
+            panelBlackJackGameCard2.TabIndex = 6;
+            panelBlackJackGameCard2.Visible = false;
+            // 
+            // btnCard3Stand
+            // 
+            btnCard3Stand.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCard3Stand.Location = new Point(132, 30);
+            btnCard3Stand.Name = "btnCard3Stand";
+            btnCard3Stand.Size = new Size(42, 23);
+            btnCard3Stand.TabIndex = 8;
+            btnCard3Stand.Text = "STÅ";
+            btnCard3Stand.UseVisualStyleBackColor = true;
+            // 
+            // lblCard3CardsCount
+            // 
+            lblCard3CardsCount.AutoSize = true;
+            lblCard3CardsCount.ForeColor = Color.White;
+            lblCard3CardsCount.Location = new Point(5, 27);
+            lblCard3CardsCount.Name = "lblCard3CardsCount";
+            lblCard3CardsCount.Size = new Size(110, 15);
+            lblCard3CardsCount.TabIndex = 1;
+            lblCard3CardsCount.Text = "<NumberOfCards>";
+            // 
+            // btnCard3Hit
+            // 
+            btnCard3Hit.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCard3Hit.Location = new Point(132, 5);
+            btnCard3Hit.Name = "btnCard3Hit";
+            btnCard3Hit.Size = new Size(42, 23);
+            btnCard3Hit.TabIndex = 7;
+            btnCard3Hit.Text = "HIT";
+            btnCard3Hit.UseVisualStyleBackColor = true;
+            // 
+            // lblCard3TotalValue
+            // 
+            lblCard3TotalValue.AutoSize = true;
+            lblCard3TotalValue.ForeColor = Color.White;
+            lblCard3TotalValue.Location = new Point(3, 8);
+            lblCard3TotalValue.Name = "lblCard3TotalValue";
+            lblCard3TotalValue.Size = new Size(76, 15);
+            lblCard3TotalValue.TabIndex = 0;
+            lblCard3TotalValue.Text = "<TotalValue>";
+            // 
+            // panelCard3
+            // 
+            panelCard3.BackColor = Color.White;
+            panelCard3.Controls.Add(lblCard3Bust);
+            panelCard3.Controls.Add(lblCard3CardValue);
+            panelCard3.Controls.Add(lblCard3CardType);
+            panelCard3.Location = new Point(20, 56);
+            panelCard3.Name = "panelCard3";
+            panelCard3.Size = new Size(156, 207);
+            panelCard3.TabIndex = 0;
+            // 
+            // lblCard3Bust
+            // 
+            lblCard3Bust.AutoSize = true;
+            lblCard3Bust.BackColor = Color.Black;
+            lblCard3Bust.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCard3Bust.ForeColor = Color.Red;
+            lblCard3Bust.Location = new Point(34, 72);
+            lblCard3Bust.Name = "lblCard3Bust";
+            lblCard3Bust.Size = new Size(79, 37);
+            lblCard3Bust.TabIndex = 4;
+            lblCard3Bust.Text = "BUST";
+            lblCard3Bust.Visible = false;
+            // 
+            // lblCard3CardValue
+            // 
+            lblCard3CardValue.AutoSize = true;
+            lblCard3CardValue.BackColor = Color.Transparent;
+            lblCard3CardValue.Location = new Point(31, 43);
+            lblCard3CardValue.Name = "lblCard3CardValue";
+            lblCard3CardValue.Size = new Size(76, 15);
+            lblCard3CardValue.TabIndex = 1;
+            lblCard3CardValue.Text = "<CardValue>";
+            // 
+            // lblCard3CardType
+            // 
+            lblCard3CardType.AutoSize = true;
+            lblCard3CardType.BackColor = Color.Transparent;
+            lblCard3CardType.Location = new Point(34, 21);
+            lblCard3CardType.Name = "lblCard3CardType";
+            lblCard3CardType.Size = new Size(72, 15);
+            lblCard3CardType.TabIndex = 0;
+            lblCard3CardType.Text = "<CardType>";
+            // 
+            // panelBlackJacGamekCard2
+            // 
+            panelBlackJacGamekCard2.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJacGamekCard2.Controls.Add(btnCard2Stand);
+            panelBlackJacGamekCard2.Controls.Add(lblCard2CardsCount);
+            panelBlackJacGamekCard2.Controls.Add(btnCard2Hit);
+            panelBlackJacGamekCard2.Controls.Add(lblCard2TotalValue);
+            panelBlackJacGamekCard2.Controls.Add(panelCard2);
+            panelBlackJacGamekCard2.Location = new Point(268, 150);
+            panelBlackJacGamekCard2.Name = "panelBlackJacGamekCard2";
+            panelBlackJacGamekCard2.Size = new Size(191, 263);
+            panelBlackJacGamekCard2.TabIndex = 5;
+            panelBlackJacGamekCard2.Visible = false;
+            // 
+            // btnCard2Stand
+            // 
+            btnCard2Stand.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCard2Stand.Location = new Point(131, 29);
+            btnCard2Stand.Name = "btnCard2Stand";
+            btnCard2Stand.Size = new Size(42, 23);
+            btnCard2Stand.TabIndex = 5;
+            btnCard2Stand.Text = "STÅ";
+            btnCard2Stand.UseVisualStyleBackColor = true;
+            // 
+            // lblCard2CardsCount
+            // 
+            lblCard2CardsCount.AutoSize = true;
+            lblCard2CardsCount.ForeColor = Color.White;
+            lblCard2CardsCount.Location = new Point(5, 27);
+            lblCard2CardsCount.Name = "lblCard2CardsCount";
+            lblCard2CardsCount.Size = new Size(110, 15);
+            lblCard2CardsCount.TabIndex = 1;
+            lblCard2CardsCount.Text = "<NumberOfCards>";
+            // 
+            // btnCard2Hit
+            // 
+            btnCard2Hit.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCard2Hit.Location = new Point(131, 4);
+            btnCard2Hit.Name = "btnCard2Hit";
+            btnCard2Hit.Size = new Size(42, 23);
+            btnCard2Hit.TabIndex = 4;
+            btnCard2Hit.Text = "HIT";
+            btnCard2Hit.UseVisualStyleBackColor = true;
+            // 
+            // lblCard2TotalValue
+            // 
+            lblCard2TotalValue.AutoSize = true;
+            lblCard2TotalValue.ForeColor = Color.White;
+            lblCard2TotalValue.Location = new Point(3, 8);
+            lblCard2TotalValue.Name = "lblCard2TotalValue";
+            lblCard2TotalValue.Size = new Size(76, 15);
+            lblCard2TotalValue.TabIndex = 0;
+            lblCard2TotalValue.Text = "<TotalValue>";
+            // 
+            // panelCard2
+            // 
+            panelCard2.BackColor = Color.White;
+            panelCard2.Controls.Add(lblCard2Bust);
+            panelCard2.Controls.Add(lblCard2CardValue);
+            panelCard2.Controls.Add(lblCard2CardType);
+            panelCard2.Location = new Point(17, 56);
+            panelCard2.Name = "panelCard2";
+            panelCard2.Size = new Size(156, 207);
+            panelCard2.TabIndex = 0;
+            // 
+            // lblCard2Bust
+            // 
+            lblCard2Bust.AutoSize = true;
+            lblCard2Bust.BackColor = Color.Black;
+            lblCard2Bust.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCard2Bust.ForeColor = Color.Red;
+            lblCard2Bust.Location = new Point(34, 72);
+            lblCard2Bust.Name = "lblCard2Bust";
+            lblCard2Bust.Size = new Size(79, 37);
+            lblCard2Bust.TabIndex = 3;
+            lblCard2Bust.Text = "BUST";
+            lblCard2Bust.Visible = false;
+            // 
+            // lblCard2CardValue
+            // 
+            lblCard2CardValue.AutoSize = true;
+            lblCard2CardValue.BackColor = Color.Transparent;
+            lblCard2CardValue.Location = new Point(31, 43);
+            lblCard2CardValue.Name = "lblCard2CardValue";
+            lblCard2CardValue.Size = new Size(76, 15);
+            lblCard2CardValue.TabIndex = 1;
+            lblCard2CardValue.Text = "<CardValue>";
+            // 
+            // lblCard2CardType
+            // 
+            lblCard2CardType.AutoSize = true;
+            lblCard2CardType.BackColor = Color.Transparent;
+            lblCard2CardType.Location = new Point(34, 21);
+            lblCard2CardType.Name = "lblCard2CardType";
+            lblCard2CardType.Size = new Size(72, 15);
+            lblCard2CardType.TabIndex = 0;
+            lblCard2CardType.Text = "<CardType>";
+            // 
+            // panelBlackJackBetting
+            // 
+            panelBlackJackBetting.BackColor = Color.FromArgb(24, 22, 28);
+            panelBlackJackBetting.Controls.Add(comboBox1);
+            panelBlackJackBetting.Controls.Add(lblBettingsHands);
+            panelBlackJackBetting.Controls.Add(lblBettingHandsHeader);
+            panelBlackJackBetting.Controls.Add(btnBlackJackBettingBet);
+            panelBlackJackBetting.Controls.Add(lblBlackJackBettingBet);
+            panelBlackJackBetting.Controls.Add(lblBlackJackBettingBetEnding);
+            panelBlackJackBetting.Controls.Add(textBoxBlackJackBettingBet);
+            panelBlackJackBetting.Controls.Add(lblBlackJackBettingBetTitle);
+            panelBlackJackBetting.Controls.Add(lblBlackJackBettingTitle);
+            panelBlackJackBetting.Location = new Point(33, 53);
+            panelBlackJackBetting.Name = "panelBlackJackBetting";
+            panelBlackJackBetting.Size = new Size(305, 415);
+            panelBlackJackBetting.TabIndex = 3;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(13, 188);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(175, 25);
+            comboBox1.TabIndex = 16;
+            // 
+            // lblBettingsHands
+            // 
+            lblBettingsHands.AutoSize = true;
+            lblBettingsHands.ForeColor = Color.White;
+            lblBettingsHands.Location = new Point(52, 170);
+            lblBettingsHands.Name = "lblBettingsHands";
+            lblBettingsHands.Size = new Size(13, 15);
+            lblBettingsHands.TabIndex = 15;
+            lblBettingsHands.Text = "0";
+            // 
+            // lblBettingHandsHeader
+            // 
+            lblBettingHandsHeader.AutoSize = true;
+            lblBettingHandsHeader.ForeColor = Color.White;
+            lblBettingHandsHeader.Location = new Point(13, 170);
+            lblBettingHandsHeader.Name = "lblBettingHandsHeader";
+            lblBettingHandsHeader.Size = new Size(44, 15);
+            lblBettingHandsHeader.TabIndex = 12;
+            lblBettingHandsHeader.Text = "Hands:";
+            // 
+            // btnBlackJackBettingBet
+            // 
+            btnBlackJackBettingBet.BackColor = Color.LimeGreen;
+            btnBlackJackBettingBet.FlatAppearance.BorderSize = 0;
+            btnBlackJackBettingBet.FlatStyle = FlatStyle.Flat;
+            btnBlackJackBettingBet.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBlackJackBettingBet.ForeColor = Color.White;
+            btnBlackJackBettingBet.Location = new Point(14, 364);
+            btnBlackJackBettingBet.Name = "btnBlackJackBettingBet";
+            btnBlackJackBettingBet.Size = new Size(277, 37);
+            btnBlackJackBettingBet.TabIndex = 11;
+            btnBlackJackBettingBet.Text = "Bet";
+            btnBlackJackBettingBet.UseVisualStyleBackColor = false;
+            // 
+            // lblBlackJackBettingBet
+            // 
+            lblBlackJackBettingBet.AutoSize = true;
+            lblBlackJackBettingBet.ForeColor = Color.White;
+            lblBlackJackBettingBet.Location = new Point(38, 106);
+            lblBlackJackBettingBet.Name = "lblBlackJackBettingBet";
+            lblBlackJackBettingBet.Size = new Size(26, 15);
+            lblBlackJackBettingBet.TabIndex = 8;
+            lblBlackJackBettingBet.Text = "0kr.";
+            // 
+            // lblBlackJackBettingBetEnding
+            // 
+            lblBlackJackBettingBetEnding.AutoSize = true;
+            lblBlackJackBettingBetEnding.ForeColor = Color.White;
+            lblBlackJackBettingBetEnding.Location = new Point(188, 129);
+            lblBlackJackBettingBetEnding.Name = "lblBlackJackBettingBetEnding";
+            lblBlackJackBettingBetEnding.Size = new Size(21, 15);
+            lblBlackJackBettingBetEnding.TabIndex = 7;
+            lblBlackJackBettingBetEnding.Text = "Kr.";
+            // 
+            // textBoxBlackJackBettingBet
+            // 
+            textBoxBlackJackBettingBet.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxBlackJackBettingBet.Location = new Point(13, 124);
+            textBoxBlackJackBettingBet.Name = "textBoxBlackJackBettingBet";
+            textBoxBlackJackBettingBet.PlaceholderText = "Indtast beløb";
+            textBoxBlackJackBettingBet.Size = new Size(175, 25);
+            textBoxBlackJackBettingBet.TabIndex = 6;
+            // 
+            // lblBlackJackBettingBetTitle
+            // 
+            lblBlackJackBettingBetTitle.AutoSize = true;
+            lblBlackJackBettingBetTitle.ForeColor = Color.White;
+            lblBlackJackBettingBetTitle.Location = new Point(13, 106);
+            lblBlackJackBettingBetTitle.Name = "lblBlackJackBettingBetTitle";
+            lblBlackJackBettingBetTitle.Size = new Size(27, 15);
+            lblBlackJackBettingBetTitle.TabIndex = 5;
+            lblBlackJackBettingBetTitle.Text = "Bet:";
+            // 
+            // lblBlackJackBettingTitle
+            // 
+            lblBlackJackBettingTitle.AutoSize = true;
+            lblBlackJackBettingTitle.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            lblBlackJackBettingTitle.ForeColor = Color.White;
+            lblBlackJackBettingTitle.Location = new Point(113, 21);
+            lblBlackJackBettingTitle.Name = "lblBlackJackBettingTitle";
+            lblBlackJackBettingTitle.Size = new Size(75, 25);
+            lblBlackJackBettingTitle.TabIndex = 0;
+            lblBlackJackBettingTitle.Text = "Betting";
+            // 
+            // lblBlackJackTitle
+            // 
+            lblBlackJackTitle.AutoSize = true;
+            lblBlackJackTitle.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBlackJackTitle.ForeColor = SystemColors.ButtonHighlight;
+            lblBlackJackTitle.Location = new Point(495, 4);
+            lblBlackJackTitle.Name = "lblBlackJackTitle";
+            lblBlackJackTitle.Size = new Size(159, 46);
+            lblBlackJackTitle.TabIndex = 0;
+            lblBlackJackTitle.Text = "BlackJack";
             // 
             // panelHomeMines
             // 
@@ -415,12 +1003,11 @@
             // 
             // btnMinesCashOut
             // 
-
             btnMinesCashOut.BackColor = Color.LimeGreen;
             btnMinesCashOut.FlatAppearance.BorderColor = Color.Lime;
             btnMinesCashOut.FlatAppearance.BorderSize = 0;
             btnMinesCashOut.FlatStyle = FlatStyle.Flat;
-            btnMinesCashOut.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesCashOut.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesCashOut.ForeColor = Color.White;
             btnMinesCashOut.Location = new Point(518, 364);
             btnMinesCashOut.Name = "btnMinesCashOut";
@@ -511,7 +1098,7 @@
             // 
             mineE5.BackColor = Color.FromArgb(56, 51, 66);
             mineE5.FlatStyle = FlatStyle.Flat;
-            mineE5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE5.ForeColor = Color.FromArgb(41, 38, 49);
             mineE5.Location = new Point(370, 314);
             mineE5.Name = "mineE5";
@@ -525,7 +1112,7 @@
             // 
             mineE4.BackColor = Color.FromArgb(56, 51, 66);
             mineE4.FlatStyle = FlatStyle.Flat;
-            mineE4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE4.ForeColor = Color.FromArgb(41, 38, 49);
             mineE4.Location = new Point(288, 314);
             mineE4.Name = "mineE4";
@@ -539,7 +1126,7 @@
             // 
             mineE3.BackColor = Color.FromArgb(56, 51, 66);
             mineE3.FlatStyle = FlatStyle.Flat;
-            mineE3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE3.ForeColor = Color.FromArgb(41, 38, 49);
             mineE3.Location = new Point(206, 314);
             mineE3.Name = "mineE3";
@@ -553,7 +1140,7 @@
             // 
             mineE2.BackColor = Color.FromArgb(56, 51, 66);
             mineE2.FlatStyle = FlatStyle.Flat;
-            mineE2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE2.ForeColor = Color.FromArgb(41, 38, 49);
             mineE2.Location = new Point(124, 314);
             mineE2.Name = "mineE2";
@@ -567,7 +1154,7 @@
             // 
             mineE1.BackColor = Color.FromArgb(56, 51, 66);
             mineE1.FlatStyle = FlatStyle.Flat;
-            mineE1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE1.ForeColor = Color.FromArgb(41, 38, 49);
             mineE1.Location = new Point(42, 314);
             mineE1.Name = "mineE1";
@@ -581,7 +1168,7 @@
             // 
             mineD5.BackColor = Color.FromArgb(56, 51, 66);
             mineD5.FlatStyle = FlatStyle.Flat;
-            mineD5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD5.ForeColor = Color.FromArgb(41, 38, 49);
             mineD5.Location = new Point(370, 237);
             mineD5.Name = "mineD5";
@@ -595,7 +1182,7 @@
             // 
             mineD4.BackColor = Color.FromArgb(56, 51, 66);
             mineD4.FlatStyle = FlatStyle.Flat;
-            mineD4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD4.ForeColor = Color.FromArgb(41, 38, 49);
             mineD4.Location = new Point(288, 237);
             mineD4.Name = "mineD4";
@@ -609,7 +1196,7 @@
             // 
             mineD3.BackColor = Color.FromArgb(56, 51, 66);
             mineD3.FlatStyle = FlatStyle.Flat;
-            mineD3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD3.ForeColor = Color.FromArgb(41, 38, 49);
             mineD3.Location = new Point(206, 237);
             mineD3.Name = "mineD3";
@@ -623,7 +1210,7 @@
             // 
             mineD2.BackColor = Color.FromArgb(56, 51, 66);
             mineD2.FlatStyle = FlatStyle.Flat;
-            mineD2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD2.ForeColor = Color.FromArgb(41, 38, 49);
             mineD2.Location = new Point(124, 237);
             mineD2.Name = "mineD2";
@@ -637,7 +1224,7 @@
             // 
             mineD1.BackColor = Color.FromArgb(56, 51, 66);
             mineD1.FlatStyle = FlatStyle.Flat;
-            mineD1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD1.ForeColor = Color.FromArgb(41, 38, 49);
             mineD1.Location = new Point(42, 237);
             mineD1.Name = "mineD1";
@@ -651,7 +1238,7 @@
             // 
             mineC5.BackColor = Color.FromArgb(56, 51, 66);
             mineC5.FlatStyle = FlatStyle.Flat;
-            mineC5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC5.ForeColor = Color.FromArgb(41, 38, 49);
             mineC5.Location = new Point(370, 161);
             mineC5.Name = "mineC5";
@@ -665,7 +1252,7 @@
             // 
             mineC4.BackColor = Color.FromArgb(56, 51, 66);
             mineC4.FlatStyle = FlatStyle.Flat;
-            mineC4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC4.ForeColor = Color.FromArgb(41, 38, 49);
             mineC4.Location = new Point(288, 161);
             mineC4.Name = "mineC4";
@@ -679,7 +1266,7 @@
             // 
             mineC3.BackColor = Color.FromArgb(56, 51, 66);
             mineC3.FlatStyle = FlatStyle.Flat;
-            mineC3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC3.ForeColor = Color.FromArgb(41, 38, 49);
             mineC3.Location = new Point(206, 161);
             mineC3.Name = "mineC3";
@@ -693,7 +1280,7 @@
             // 
             mineC2.BackColor = Color.FromArgb(56, 51, 66);
             mineC2.FlatStyle = FlatStyle.Flat;
-            mineC2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC2.ForeColor = Color.FromArgb(41, 38, 49);
             mineC2.Location = new Point(124, 161);
             mineC2.Name = "mineC2";
@@ -707,7 +1294,7 @@
             // 
             mineC1.BackColor = Color.FromArgb(56, 51, 66);
             mineC1.FlatStyle = FlatStyle.Flat;
-            mineC1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC1.ForeColor = Color.FromArgb(41, 38, 49);
             mineC1.Location = new Point(42, 161);
             mineC1.Name = "mineC1";
@@ -721,7 +1308,7 @@
             // 
             mineB5.BackColor = Color.FromArgb(56, 51, 66);
             mineB5.FlatStyle = FlatStyle.Flat;
-            mineB5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB5.ForeColor = Color.FromArgb(41, 38, 49);
             mineB5.Location = new Point(370, 84);
             mineB5.Name = "mineB5";
@@ -735,7 +1322,7 @@
             // 
             mineB4.BackColor = Color.FromArgb(56, 51, 66);
             mineB4.FlatStyle = FlatStyle.Flat;
-            mineB4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB4.ForeColor = Color.FromArgb(41, 38, 49);
             mineB4.Location = new Point(288, 84);
             mineB4.Name = "mineB4";
@@ -749,7 +1336,7 @@
             // 
             mineB3.BackColor = Color.FromArgb(56, 51, 66);
             mineB3.FlatStyle = FlatStyle.Flat;
-            mineB3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB3.ForeColor = Color.FromArgb(41, 38, 49);
             mineB3.Location = new Point(206, 84);
             mineB3.Name = "mineB3";
@@ -763,7 +1350,7 @@
             // 
             mineB2.BackColor = Color.FromArgb(56, 51, 66);
             mineB2.FlatStyle = FlatStyle.Flat;
-            mineB2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB2.ForeColor = Color.FromArgb(41, 38, 49);
             mineB2.Location = new Point(124, 84);
             mineB2.Name = "mineB2";
@@ -777,7 +1364,7 @@
             // 
             mineB1.BackColor = Color.FromArgb(56, 51, 66);
             mineB1.FlatStyle = FlatStyle.Flat;
-            mineB1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB1.ForeColor = Color.FromArgb(41, 38, 49);
             mineB1.Location = new Point(42, 84);
             mineB1.Name = "mineB1";
@@ -793,7 +1380,7 @@
             mineA5.FlatAppearance.BorderColor = Color.FromArgb(51, 50, 51);
             mineA5.FlatAppearance.BorderSize = 0;
             mineA5.FlatStyle = FlatStyle.Flat;
-            mineA5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA5.ForeColor = Color.FromArgb(41, 38, 49);
             mineA5.Location = new Point(370, 7);
             mineA5.Name = "mineA5";
@@ -807,7 +1394,7 @@
             // 
             mineA4.BackColor = Color.FromArgb(56, 51, 66);
             mineA4.FlatStyle = FlatStyle.Flat;
-            mineA4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA4.ForeColor = Color.FromArgb(41, 38, 49);
             mineA4.Location = new Point(288, 7);
             mineA4.Name = "mineA4";
@@ -821,7 +1408,7 @@
             // 
             mineA3.BackColor = Color.FromArgb(56, 51, 66);
             mineA3.FlatStyle = FlatStyle.Flat;
-            mineA3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA3.ForeColor = Color.FromArgb(41, 38, 49);
             mineA3.Location = new Point(206, 7);
             mineA3.Name = "mineA3";
@@ -835,7 +1422,7 @@
             // 
             mineA2.BackColor = Color.FromArgb(56, 51, 66);
             mineA2.FlatStyle = FlatStyle.Flat;
-            mineA2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA2.ForeColor = Color.FromArgb(41, 38, 49);
             mineA2.Location = new Point(124, 7);
             mineA2.Name = "mineA2";
@@ -849,7 +1436,7 @@
             // 
             mineA1.BackColor = Color.FromArgb(56, 51, 66);
             mineA1.FlatStyle = FlatStyle.Flat;
-            mineA1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA1.ForeColor = Color.FromArgb(41, 38, 49);
             mineA1.Location = new Point(42, 7);
             mineA1.Name = "mineA1";
@@ -884,7 +1471,7 @@
             btnMinesBettingPlaceBet.BackColor = Color.LimeGreen;
             btnMinesBettingPlaceBet.FlatAppearance.BorderSize = 0;
             btnMinesBettingPlaceBet.FlatStyle = FlatStyle.Flat;
-            btnMinesBettingPlaceBet.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingPlaceBet.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesBettingPlaceBet.ForeColor = Color.White;
             btnMinesBettingPlaceBet.Location = new Point(14, 364);
             btnMinesBettingPlaceBet.Name = "btnMinesBettingPlaceBet";
@@ -899,7 +1486,7 @@
             btnMinesBettingClear.BackColor = Color.IndianRed;
             btnMinesBettingClear.FlatAppearance.BorderSize = 0;
             btnMinesBettingClear.FlatStyle = FlatStyle.Flat;
-            btnMinesBettingClear.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingClear.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesBettingClear.ForeColor = Color.White;
             btnMinesBettingClear.Location = new Point(13, 224);
             btnMinesBettingClear.Name = "btnMinesBettingClear";
@@ -1015,11 +1602,11 @@
             // lblMinesTitle
             // 
             lblMinesTitle.AutoSize = true;
-            lblMinesTitle.Font = new Font("JetBrainsMono NF", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMinesTitle.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
             lblMinesTitle.ForeColor = Color.White;
             lblMinesTitle.Location = new Point(533, 3);
             lblMinesTitle.Name = "lblMinesTitle";
-            lblMinesTitle.Size = new Size(143, 53);
+            lblMinesTitle.Size = new Size(126, 46);
             lblMinesTitle.TabIndex = 1;
             lblMinesTitle.Text = "Mines";
             // 
@@ -1141,6 +1728,27 @@
             panelSignup.ResumeLayout(false);
             panelSignup.PerformLayout();
             panelHomePage.ResumeLayout(false);
+            panelBlackJack.ResumeLayout(false);
+            panelBlackJack.PerformLayout();
+            panelBlackJackGame.ResumeLayout(false);
+            panelBlackJackGameCard1.ResumeLayout(false);
+            panelBlackJackGameCard1.PerformLayout();
+            panelCard1.ResumeLayout(false);
+            panelCard1.PerformLayout();
+            panelBlackJackGameDealer.ResumeLayout(false);
+            panelBlackJackGameDealer.PerformLayout();
+            panelDealerCard.ResumeLayout(false);
+            panelDealerCard.PerformLayout();
+            panelBlackJackGameCard2.ResumeLayout(false);
+            panelBlackJackGameCard2.PerformLayout();
+            panelCard3.ResumeLayout(false);
+            panelCard3.PerformLayout();
+            panelBlackJacGamekCard2.ResumeLayout(false);
+            panelBlackJacGamekCard2.PerformLayout();
+            panelCard2.ResumeLayout(false);
+            panelCard2.PerformLayout();
+            panelBlackJackBetting.ResumeLayout(false);
+            panelBlackJackBetting.PerformLayout();
             panelHomeMines.ResumeLayout(false);
             panelHomeMines.PerformLayout();
             panelMinesGame.ResumeLayout(false);
@@ -1233,5 +1841,58 @@
         private Label lblMinesGameWinningsTitle;
         private Label lblMinesGameWinnings;
         private Button btnMinesCashOut;
+        private Panel panelBlackJack;
+        private Panel panelBlackJackBetting;
+        private Button btnBlackJackBettingBet;
+        private Label lblBlackJackBettingBet;
+        private Label lblBlackJackBettingBetEnding;
+        private TextBox textBoxBlackJackBettingBet;
+        private Label lblBlackJackBettingBetTitle;
+        private Label lblBlackJackBettingTitle;
+        private Label lblBlackJackTitle;
+        private Panel panelBlackJackGame;
+        private Panel panel3;
+        private Panel panelBlackJackCard3;
+        private Label lblCard3CardValue;
+        private Label lblCard3CardType;
+        private Button btnCard3Stand;
+        private Button btnCard3Hit;
+        private Button btnCard2Stand;
+        private Button btnCard2Hit;
+        private Panel panelBlackJackGameDealer;
+        private Label lblDealerTitle;
+        private Label lblCard2CardValue;
+        private Label lblCard2CardType;
+        private Panel panelBlackJackGameCard2;
+        private Label lblCard3CardsCount;
+        private Label lblCard3TotalValue;
+        private Panel panelCard3;
+        private Label lblBettingHandsHeader;
+        private Label label4;
+        private Label lblDealerCardType;
+        private Panel panelBlackJacGamekCard2;
+        private Label lblCard2CardsCount;
+        private Label lblCard2TotalValue;
+        private Panel panelCard2;
+        private Label label5;
+        private Label label6;
+        private Panel panelBlackJackGameCard1;
+        private Button btnCard1Stand;
+        private Label lblCard1CardsCount;
+        private Button btnCard1Hit;
+        private Label lblCard1TotalValue;
+        private Panel panelCard1;
+        private Label labelCard1CardValue;
+        private Label lblCard1CardType;
+        private Panel panelDealerCard;
+        private Label lblDealerCardValue;
+        private Label lblDealerTotalValue;
+        private Label lblDealerCardsCount;
+        private Label lblBettingsHands;
+        private Label lblCard1Bust;
+        private Label lblCard3Bust;
+        private Label lblCard2Bust;
+        private ComboBox comboBox1;
+        private Button btnBlackJackClose;
     }
 }
