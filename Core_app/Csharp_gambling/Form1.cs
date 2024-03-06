@@ -1,7 +1,8 @@
-//TO DO : LOGIN CHECK DATABASE
+// TO DO : remove bet from database
 
-//TO DO : CREATE LOGIN DATABASE
+// TO DO : cashout button mines
 
+using System.DirectoryServices.ActiveDirectory;
 using System.Text.RegularExpressions;
 
 namespace csharp_gambling
@@ -11,6 +12,8 @@ namespace csharp_gambling
         private Database DB = new Database();
         private Dictionary<Button, Panel> buttonPanelMapLoginSignup;
         private Dictionary<Button, Panel> buttonPanelMapGames;
+
+        //ADD CASHOUT
 
         //Game data
         public MinesData minesData = new MinesData();
@@ -26,6 +29,9 @@ namespace csharp_gambling
             //Navbar games buttons
             InitializeButtonPanelMapGames();
             InitializeButtonEventsGames();
+
+            //Mines buttons
+            //InitializeMinesButtonMap();
 
             //Load options into minesCount, starts at 4 ends at 23
             for (int i = 3; i <= 24; i++)
@@ -69,6 +75,21 @@ namespace csharp_gambling
                 //DOING ^^
             };
         }
+
+        //private void InitializeMinesButtonMap()
+        //{
+        //    minesButtonMap = new Dictionary<Button, Field>();
+
+        //    GetGridPositionFromMines();
+
+        //    foreach (Field field in minesData.Fields)
+        //    {
+        //        string buttonName = field.MineName;
+        //        Button button = Controls.Find(buttonName, true).FirstOrDefault() as Button;
+
+        //        minesButtonMap.Add(button, field);
+        //    }
+        //}
         //Initialize - end
 
         //Button functionality - start
@@ -195,20 +216,6 @@ namespace csharp_gambling
             comboBoxMinesBettingMinesCountCustom.SelectedItem = null;
         }
 
-        //ERROR
-        //private void comboBoxMinesBettingMinesCountCustom_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    //int numberOfMines = (int)Convert.ToInt16(comboBoxMinesBettingMinesCountCustom.Text);
-        //    //minesData.NumberOfMines = numberOfMines;
-        //    //lblMinesBettingCurrentMinesCount.Text = $"{numberOfMines} bomber";
-
-        //    if (int.TryParse(comboBoxMinesBettingMinesCountCustom.Text, out int numberOfMines))
-        //    {
-        //        minesData.NumberOfMines = numberOfMines;
-        //        lblMinesBettingCurrentMinesCount.Text = $"{numberOfMines} bomber";
-        //    }
-        //}
-
         private void comboBoxMinesBettingMinesCountCustom_Leave(object sender, EventArgs e)
         {
             if (int.TryParse(comboBoxMinesBettingMinesCountCustom.Text, out int numberOfMines))
@@ -225,7 +232,7 @@ namespace csharp_gambling
                 double balance = DB.GetCurrentBalance(lblHomeNavbarUsername.Text);
                 double betInput = (double)Convert.ToDouble(textBoxMinesBettingBet.Text);
 
-                if (balance > betInput)
+                if (balance >= betInput)
                 {
                     minesData.MoneyBet = betInput;
                     lblMinesBettingCurrentBet.Text = $"{betInput}kr.";
@@ -265,7 +272,7 @@ namespace csharp_gambling
             }
             else
             {
-                MessageBox.Show("Felter er ikke udfyldt korrekt.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Felter er ikke udfyldt korrekt, eller bet er for lavt.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //Button functionality - end
@@ -328,29 +335,22 @@ namespace csharp_gambling
         private void MinesGame()
         {
             minesData.GameActive = true;
+            minesData.CleardFields = 0;
 
-            //SUBTRACT MONEY FROM BALANCE
-            double balance;
-            string balanceInput = lblHomeNavbarCurrency.Text;
-            string balanceNumeric = new string(Array.FindAll(balanceInput.ToCharArray(), char.IsDigit));
-            if (double.TryParse(balanceNumeric, out double value))
-            {
-                balance = value;
-            }
-            else
-            {
-                balance = 0; 
-                MessageBox.Show("Fejl med at indlædse balance", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+            string username = lblHomeNavbarUsername.Text;
+            double balance = DB.GetCurrentBalance(username);
+            string betInput = textBoxMinesBettingBet.Text;
+            double bet = (double)Convert.ToDouble(betInput);
 
             if (balance != 0)
             {
-                string betInput = textBoxMinesBettingBet.Text;
-                double bet = (double)Convert.ToDouble(textBoxMinesBettingBet);
-
-                balance = balance - bet;
-                //DOING - D
+                double currentBalance = DB.GetCurrentBalance(username);
+                double newBalance = currentBalance - bet;
+                
+                DB.InsertNewBalance(username, newBalance);
+                currentBalance = DB.GetCurrentBalance(username);
+                string balanceToWrite = $"Balance: {currentBalance}kr.";
+                lblHomeNavbarCurrency.Text = balanceToWrite;
             }
             else
             {
@@ -398,11 +398,13 @@ namespace csharp_gambling
             {
                 minesData.Fields = tempFields;
             }
+            GetGridPositionFromMines();
+            HideMines();
         }
 
         private void btnMinesMine_Click(object sender, EventArgs e)
         {
-            if (minesData.GameActive)
+            if (minesData.GameActive == true)
             {
                 Button clickedButton = (Button)sender;
 
@@ -420,7 +422,15 @@ namespace csharp_gambling
                     clickedButton.Text = "Mine";
                     clickedButton.BackColor = Color.Red;
 
-                    //END GAME
+                    Field currentField = minesData.Fields.Where(x => x.MineName == clickedButton.Name).FirstOrDefault();
+                    currentField.IsRevealed = true;
+
+                    RevealAllMines();
+
+                    lblMinesGameWinnings.Text = "0kr.";
+                    lblMinesGameMultiplier.Text = "x1.0";
+
+                    minesData.GameActive = false;
                 }
                 else
                 {
@@ -429,13 +439,181 @@ namespace csharp_gambling
                     clickedButton.Text = "Safe";
                     clickedButton.BackColor = Color.Green;
 
-                    //ADD TO WINNINGS
-                    //ADD TO MULTIPLIER
+                    minesData.CleardFields++;
+
+                    double multiplier = CalculateMineMultiplier(minesData.NumberOfMines, minesData.CleardFields);
+                    lblMinesGameMultiplier.Text = $"x{multiplier}";
+
+                    double bet = minesData.MoneyBet;
+                    double winnings = bet * multiplier;
+                    lblMinesGameWinnings.Text = $"{Math.Round(winnings, 2)}kr.";
+
+                    Field currentField = minesData.Fields.Where(x => x.MineName == clickedButton.Name).FirstOrDefault();
+                    currentField.IsRevealed = true;
                 }
             }
             else
             {
                 MessageBox.Show("Gamet er ikke startet", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private double CalculateMineMultiplier(int numBombs, int clearedFields, double baseMultiplier = 1, double incrementFactor = 0.2)
+        {
+            double scaledIncrementFactor = incrementFactor * numBombs / 3.0;
+
+            if (clearedFields == 1)
+            {
+                return baseMultiplier;
+            }
+            else
+            {
+                return Math.Round(baseMultiplier + (clearedFields - 1) * scaledIncrementFactor, 2);
+            }
+        }
+
+        private void RevealAllMines()
+        {
+            foreach (Field field in minesData.Fields)
+            {
+                if (field.IsRevealed == false)
+                {
+                    Button button = FindButtonByName(this, field.MineName);
+
+                    if (field.IsMine == true)
+                    {
+                        if (button.Enabled == true)
+                        {
+                            button.Enabled = false;
+                        }
+                        button.Text = "Mine";
+                        button.BackColor = Color.Red;
+                        field.IsRevealed = true;
+                    }
+                    else
+                    {
+                        if (button.Enabled == true)
+                        {
+                            button.Enabled = false;
+                        }
+                        button.Text = "Safe";
+                        button.BackColor = Color.Green;
+                        field.IsRevealed = true;
+                    }
+                }
+            }
+        }
+
+        private void HideMines()
+        {
+            foreach (Field field in minesData.Fields)
+            {
+                Button button = FindButtonByName(this, field.MineName);
+
+                button.Enabled = true;
+                button.Text = field.MineName.Replace("mine", "");
+                button.BackColor = default;
+                field.IsRevealed = false;
+            }
+        }
+
+        private Button FindButtonByName(Control parent, string name)
+        {
+            foreach (Control control in parent.Controls)
+            {
+                if (control is Button button && button.Name == name)
+                {
+                    return button;
+                }
+                else if (control.HasChildren)
+                {
+                    Button childButton = FindButtonByName(control, name);
+                    if (childButton != null)
+                    {
+                        return childButton;
+                    }
+                }
+            }
+            return null;
+        }
+
+        private void GetGridPositionFromMines()
+        {
+            List<Button> minesButtons = new List<Button>();
+
+            int row = 1;
+            string rowChar = "";
+            for (int i = 0; i < 25; i++)
+            {
+                if (i % 5 == 0 && i > 0)
+                {
+                    row++;
+                }
+
+                int column = (i % 5) + 1;
+
+                switch (row)
+                {
+                    case 1:
+                        {
+                            rowChar = "A";
+                            break;
+                        }
+                    case 2:
+                        {
+                            rowChar = "B";
+                            break;
+                        }
+                    case 3:
+                        {
+                            rowChar = "C";
+                            break;
+                        }
+                    case 4:
+                        {
+                            rowChar = "D";
+                            break;
+                        }
+                    case 5:
+                        {
+                            rowChar = "E";
+                            break;
+                        }
+                }
+
+                if (!String.IsNullOrEmpty(rowChar))
+                {
+                    string mineName = $"mine{rowChar}{column}";
+
+                    Field field = minesData.Fields[i];
+                    field.MineName = mineName;
+                }
+            }
+        }
+
+        private void btnMinesCashOut_Click(object sender, EventArgs e)
+        {
+            if (minesData.Fields.Where(x => x.IsRevealed == true).Count() > 0)
+            {
+                string winningsInput = lblMinesGameWinnings.Text.Replace("kr.","");
+                double winnings = (double)Convert.ToDouble(winningsInput);
+
+                string username = lblHomeNavbarUsername.Text;
+                double currentBalance = DB.GetCurrentBalance(username);
+                double newBalance = currentBalance + winnings;
+                
+                DB.InsertNewBalance(username, newBalance);
+                currentBalance = DB.GetCurrentBalance(username);
+                string balanceToWrite = $"Balance: {currentBalance}kr.";
+                lblHomeNavbarCurrency.Text = balanceToWrite;
+
+                MessageBox.Show($"Du vandt {winnings}kr.", "Tillykke!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblMinesGameWinnings.Text = "0kr.";
+                lblMinesGameMultiplier.Text = "x1.0";
+            }
+            else
+            {
+                MessageBox.Show("Du skal klikke på mindst et felt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //Game functionality - end

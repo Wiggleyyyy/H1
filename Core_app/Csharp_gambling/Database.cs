@@ -14,7 +14,7 @@ namespace csharp_gambling
         private string dbUserID = "ConnectionUser";
         private string dbPassword = "AppConnection!";
 
-        private string connectionString;
+        private string connectionString = "";
         private SqlConnection cnn;
 
         //public void connectToDatabase()
@@ -67,7 +67,7 @@ namespace csharp_gambling
             try
             {
                 //Open connection to database
-                connectionString = $@"Data Source={dbDataSource};Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
@@ -109,7 +109,7 @@ namespace csharp_gambling
             try
             {
                 //Open connection to database
-                connectionString = $@"Data Source={dbDataSource};Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+                connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
@@ -138,6 +138,21 @@ namespace csharp_gambling
             {
                 cnn.Close();
             }
+        }
+
+        public void InsertNewBalance(string username, double newBalance)
+        {
+            //Open connection to database
+            connectionString = $@"Data Source={dbDataSource},1434;Initial Catalog={dbName};User ID={dbUserID};Password={dbPassword};Integrated Security=True"; // *1434* = 
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            string query = "UPDATE Main SET balance = @NewBalance WHERE username = @Username";
+            SqlCommand command = new SqlCommand(query, cnn);
+            command.Parameters.AddWithValue("@NewBalance", newBalance);
+            command.Parameters.AddWithValue("@Username", username);
+
+            command.ExecuteNonQuery();
         }
     }
 }

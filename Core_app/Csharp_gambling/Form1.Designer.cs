@@ -51,6 +51,7 @@
             panelHomePage = new Panel();
             panelHomeMines = new Panel();
             panelMinesGame = new Panel();
+            btnMinesCashOut = new Button();
             lblMinesGameMultiplier = new Label();
             lblMinesGameMultiplierTitle = new Label();
             lblMinesGameWinningsTitle = new Label();
@@ -105,7 +106,6 @@
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
-            btnMinesCashOut = new Button();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -412,6 +412,18 @@
             panelMinesGame.Name = "panelMinesGame";
             panelMinesGame.Size = new Size(727, 415);
             panelMinesGame.TabIndex = 3;
+            // 
+            // btnMinesCashOut
+            // 
+            btnMinesCashOut.BackColor = Color.LawnGreen;
+            btnMinesCashOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesCashOut.Location = new Point(518, 364);
+            btnMinesCashOut.Name = "btnMinesCashOut";
+            btnMinesCashOut.Size = new Size(173, 37);
+            btnMinesCashOut.TabIndex = 12;
+            btnMinesCashOut.Text = "Cash ud";
+            btnMinesCashOut.UseVisualStyleBackColor = false;
+            btnMinesCashOut.Click += btnMinesCashOut_Click;
             // 
             // lblMinesGameMultiplier
             // 
@@ -988,17 +1000,6 @@
             lblHomeNavbarTitle.Size = new Size(113, 28);
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
-            // 
-            // btnMinesCashOut
-            // 
-            btnMinesCashOut.BackColor = Color.LawnGreen;
-            btnMinesCashOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMinesCashOut.Location = new Point(518, 364);
-            btnMinesCashOut.Name = "btnMinesCashOut";
-            btnMinesCashOut.Size = new Size(173, 37);
-            btnMinesCashOut.TabIndex = 12;
-            btnMinesCashOut.Text = "Cash ud";
-            btnMinesCashOut.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
