@@ -154,6 +154,7 @@
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
+            lblDealerBust = new Label();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -582,6 +583,7 @@
             // panelBlackJackGameDealer
             // 
             panelBlackJackGameDealer.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameDealer.Controls.Add(lblDealerBust);
             panelBlackJackGameDealer.Controls.Add(lblDealerCardsCount);
             panelBlackJackGameDealer.Controls.Add(lblDealerTotalValue);
             panelBlackJackGameDealer.Controls.Add(panelDealerCard);
@@ -1712,6 +1714,19 @@
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
             // 
+            // lblDealerBust
+            // 
+            lblDealerBust.AutoSize = true;
+            lblDealerBust.BackColor = Color.Black;
+            lblDealerBust.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDealerBust.ForeColor = Color.Red;
+            lblDealerBust.Location = new Point(51, 45);
+            lblDealerBust.Name = "lblDealerBust";
+            lblDealerBust.Size = new Size(79, 37);
+            lblDealerBust.TabIndex = 4;
+            lblDealerBust.Text = "BUST";
+            lblDealerBust.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1894,5 +1909,6 @@
         private Label lblCard2Bust;
         private ComboBox comboBox1;
         private Button btnBlackJackClose;
+        private Label lblDealerBust;
     }
 }
