@@ -207,6 +207,7 @@ namespace csharp_gambling
             minesData.NumberOfMines = 3;
             lblMinesBettingCurrentMinesCount.Text = "3 bomber";
             comboBoxMinesBettingMinesCountCustom.SelectedItem = null;
+            comboBoxMinesBettingMinesCountCustom.Text = "3";
         }
 
         private void btnMinesBettingMinesCountMax_Click(object sender, EventArgs e)
@@ -214,6 +215,7 @@ namespace csharp_gambling
             minesData.NumberOfMines = 24;
             lblMinesBettingCurrentMinesCount.Text = "24 bomber";
             comboBoxMinesBettingMinesCountCustom.SelectedItem = null;
+            comboBoxMinesBettingMinesCountCustom.Text = "24";
         }
 
         private void comboBoxMinesBettingMinesCountCustom_Leave(object sender, EventArgs e)

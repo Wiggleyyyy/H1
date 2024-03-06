@@ -388,7 +388,7 @@
             // 
             // panelHomeMines
             // 
-            panelHomeMines.BackColor = SystemColors.ActiveBorder;
+            panelHomeMines.BackColor = Color.FromArgb(51, 50, 51);
             panelHomeMines.Controls.Add(panelMinesGame);
             panelHomeMines.Controls.Add(panelMinesBetting);
             panelHomeMines.Controls.Add(lblMinesTitle);
@@ -401,7 +401,7 @@
             // 
             // panelMinesGame
             // 
-            panelMinesGame.BackColor = SystemColors.ButtonShadow;
+            panelMinesGame.BackColor = Color.FromArgb(24, 22, 28);
             panelMinesGame.Controls.Add(btnMinesCashOut);
             panelMinesGame.Controls.Add(lblMinesGameMultiplier);
             panelMinesGame.Controls.Add(lblMinesGameMultiplierTitle);
@@ -415,8 +415,13 @@
             // 
             // btnMinesCashOut
             // 
-            btnMinesCashOut.BackColor = Color.LawnGreen;
-            btnMinesCashOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+
+            btnMinesCashOut.BackColor = Color.LimeGreen;
+            btnMinesCashOut.FlatAppearance.BorderColor = Color.Lime;
+            btnMinesCashOut.FlatAppearance.BorderSize = 0;
+            btnMinesCashOut.FlatStyle = FlatStyle.Flat;
+            btnMinesCashOut.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesCashOut.ForeColor = Color.White;
             btnMinesCashOut.Location = new Point(518, 364);
             btnMinesCashOut.Name = "btnMinesCashOut";
             btnMinesCashOut.Size = new Size(173, 37);
@@ -429,6 +434,7 @@
             // 
             lblMinesGameMultiplier.AutoSize = true;
             lblMinesGameMultiplier.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMinesGameMultiplier.ForeColor = Color.LawnGreen;
             lblMinesGameMultiplier.Location = new Point(623, 71);
             lblMinesGameMultiplier.Name = "lblMinesGameMultiplier";
             lblMinesGameMultiplier.Size = new Size(47, 28);
@@ -439,6 +445,7 @@
             // 
             lblMinesGameMultiplierTitle.AutoSize = true;
             lblMinesGameMultiplierTitle.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMinesGameMultiplierTitle.ForeColor = Color.White;
             lblMinesGameMultiplierTitle.Location = new Point(518, 71);
             lblMinesGameMultiplierTitle.Name = "lblMinesGameMultiplierTitle";
             lblMinesGameMultiplierTitle.Size = new Size(112, 28);
@@ -449,6 +456,7 @@
             // 
             lblMinesGameWinningsTitle.AutoSize = true;
             lblMinesGameWinningsTitle.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMinesGameWinningsTitle.ForeColor = Color.White;
             lblMinesGameWinningsTitle.Location = new Point(518, 37);
             lblMinesGameWinningsTitle.Name = "lblMinesGameWinningsTitle";
             lblMinesGameWinningsTitle.Size = new Size(106, 28);
@@ -459,6 +467,7 @@
             // 
             lblMinesGameWinnings.AutoSize = true;
             lblMinesGameWinnings.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMinesGameWinnings.ForeColor = Color.White;
             lblMinesGameWinnings.Location = new Point(618, 37);
             lblMinesGameWinnings.Name = "lblMinesGameWinnings";
             lblMinesGameWinnings.Size = new Size(49, 28);
@@ -467,7 +476,7 @@
             // 
             // panelMinesGameMinesArea
             // 
-            panelMinesGameMinesArea.BackColor = SystemColors.ControlDarkDark;
+            panelMinesGameMinesArea.BackColor = Color.FromArgb(24, 22, 28);
             panelMinesGameMinesArea.Controls.Add(mineE5);
             panelMinesGameMinesArea.Controls.Add(mineE4);
             panelMinesGameMinesArea.Controls.Add(mineE3);
@@ -500,257 +509,359 @@
             // 
             // mineE5
             // 
-            mineE5.Location = new Point(377, 311);
+            mineE5.BackColor = Color.FromArgb(56, 51, 66);
+            mineE5.FlatStyle = FlatStyle.Flat;
+            mineE5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE5.ForeColor = Color.FromArgb(41, 38, 49);
+            mineE5.Location = new Point(370, 314);
             mineE5.Name = "mineE5";
-            mineE5.Size = new Size(74, 24);
+            mineE5.Size = new Size(65, 65);
             mineE5.TabIndex = 24;
-            mineE5.Text = "E5";
-            mineE5.UseVisualStyleBackColor = true;
+            mineE5.Text = "?";
+            mineE5.UseVisualStyleBackColor = false;
             mineE5.Click += btnMinesMine_Click;
             // 
             // mineE4
             // 
-            mineE4.Location = new Point(290, 310);
+            mineE4.BackColor = Color.FromArgb(56, 51, 66);
+            mineE4.FlatStyle = FlatStyle.Flat;
+            mineE4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE4.ForeColor = Color.FromArgb(41, 38, 49);
+            mineE4.Location = new Point(288, 314);
             mineE4.Name = "mineE4";
-            mineE4.Size = new Size(74, 24);
+            mineE4.Size = new Size(65, 65);
             mineE4.TabIndex = 23;
-            mineE4.Text = "E4";
-            mineE4.UseVisualStyleBackColor = true;
+            mineE4.Text = "?";
+            mineE4.UseVisualStyleBackColor = false;
             mineE4.Click += btnMinesMine_Click;
             // 
             // mineE3
             // 
-            mineE3.Location = new Point(203, 311);
+            mineE3.BackColor = Color.FromArgb(56, 51, 66);
+            mineE3.FlatStyle = FlatStyle.Flat;
+            mineE3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE3.ForeColor = Color.FromArgb(41, 38, 49);
+            mineE3.Location = new Point(206, 314);
             mineE3.Name = "mineE3";
-            mineE3.Size = new Size(74, 24);
+            mineE3.Size = new Size(65, 65);
             mineE3.TabIndex = 22;
-            mineE3.Text = "E3";
-            mineE3.UseVisualStyleBackColor = true;
+            mineE3.Text = "?";
+            mineE3.UseVisualStyleBackColor = false;
             mineE3.Click += btnMinesMine_Click;
             // 
             // mineE2
             // 
-            mineE2.Location = new Point(112, 311);
+            mineE2.BackColor = Color.FromArgb(56, 51, 66);
+            mineE2.FlatStyle = FlatStyle.Flat;
+            mineE2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE2.ForeColor = Color.FromArgb(41, 38, 49);
+            mineE2.Location = new Point(124, 314);
             mineE2.Name = "mineE2";
-            mineE2.Size = new Size(74, 24);
+            mineE2.Size = new Size(65, 65);
             mineE2.TabIndex = 21;
-            mineE2.Text = "E2";
-            mineE2.UseVisualStyleBackColor = true;
+            mineE2.Text = "?";
+            mineE2.UseVisualStyleBackColor = false;
             mineE2.Click += btnMinesMine_Click;
             // 
             // mineE1
             // 
-            mineE1.Location = new Point(22, 310);
+            mineE1.BackColor = Color.FromArgb(56, 51, 66);
+            mineE1.FlatStyle = FlatStyle.Flat;
+            mineE1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineE1.ForeColor = Color.FromArgb(41, 38, 49);
+            mineE1.Location = new Point(42, 314);
             mineE1.Name = "mineE1";
-            mineE1.Size = new Size(74, 24);
+            mineE1.Size = new Size(65, 65);
             mineE1.TabIndex = 20;
-            mineE1.Text = "E1";
-            mineE1.UseVisualStyleBackColor = true;
+            mineE1.Text = "?";
+            mineE1.UseVisualStyleBackColor = false;
             mineE1.Click += btnMinesMine_Click;
             // 
             // mineD5
             // 
-            mineD5.Location = new Point(377, 256);
+            mineD5.BackColor = Color.FromArgb(56, 51, 66);
+            mineD5.FlatStyle = FlatStyle.Flat;
+            mineD5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD5.ForeColor = Color.FromArgb(41, 38, 49);
+            mineD5.Location = new Point(370, 237);
             mineD5.Name = "mineD5";
-            mineD5.Size = new Size(74, 24);
+            mineD5.Size = new Size(65, 65);
             mineD5.TabIndex = 19;
-            mineD5.Text = "D5";
-            mineD5.UseVisualStyleBackColor = true;
+            mineD5.Text = "?";
+            mineD5.UseVisualStyleBackColor = false;
             mineD5.Click += btnMinesMine_Click;
             // 
             // mineD4
             // 
-            mineD4.Location = new Point(290, 255);
+            mineD4.BackColor = Color.FromArgb(56, 51, 66);
+            mineD4.FlatStyle = FlatStyle.Flat;
+            mineD4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD4.ForeColor = Color.FromArgb(41, 38, 49);
+            mineD4.Location = new Point(288, 237);
             mineD4.Name = "mineD4";
-            mineD4.Size = new Size(74, 24);
+            mineD4.Size = new Size(65, 65);
             mineD4.TabIndex = 18;
-            mineD4.Text = "D4";
-            mineD4.UseVisualStyleBackColor = true;
+            mineD4.Text = "?";
+            mineD4.UseVisualStyleBackColor = false;
             mineD4.Click += btnMinesMine_Click;
             // 
             // mineD3
             // 
-            mineD3.Location = new Point(203, 256);
+            mineD3.BackColor = Color.FromArgb(56, 51, 66);
+            mineD3.FlatStyle = FlatStyle.Flat;
+            mineD3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD3.ForeColor = Color.FromArgb(41, 38, 49);
+            mineD3.Location = new Point(206, 237);
             mineD3.Name = "mineD3";
-            mineD3.Size = new Size(74, 24);
+            mineD3.Size = new Size(65, 65);
             mineD3.TabIndex = 17;
-            mineD3.Text = "D3";
-            mineD3.UseVisualStyleBackColor = true;
+            mineD3.Text = "?";
+            mineD3.UseVisualStyleBackColor = false;
             mineD3.Click += btnMinesMine_Click;
             // 
             // mineD2
             // 
-            mineD2.Location = new Point(112, 256);
+            mineD2.BackColor = Color.FromArgb(56, 51, 66);
+            mineD2.FlatStyle = FlatStyle.Flat;
+            mineD2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD2.ForeColor = Color.FromArgb(41, 38, 49);
+            mineD2.Location = new Point(124, 237);
             mineD2.Name = "mineD2";
-            mineD2.Size = new Size(74, 24);
+            mineD2.Size = new Size(65, 65);
             mineD2.TabIndex = 16;
-            mineD2.Text = "D2";
-            mineD2.UseVisualStyleBackColor = true;
+            mineD2.Text = "?";
+            mineD2.UseVisualStyleBackColor = false;
             mineD2.Click += btnMinesMine_Click;
             // 
             // mineD1
             // 
-            mineD1.Location = new Point(22, 255);
+            mineD1.BackColor = Color.FromArgb(56, 51, 66);
+            mineD1.FlatStyle = FlatStyle.Flat;
+            mineD1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineD1.ForeColor = Color.FromArgb(41, 38, 49);
+            mineD1.Location = new Point(42, 237);
             mineD1.Name = "mineD1";
-            mineD1.Size = new Size(74, 24);
+            mineD1.Size = new Size(65, 65);
             mineD1.TabIndex = 15;
-            mineD1.Text = "D1";
-            mineD1.UseVisualStyleBackColor = true;
+            mineD1.Text = "?";
+            mineD1.UseVisualStyleBackColor = false;
             mineD1.Click += btnMinesMine_Click;
             // 
             // mineC5
             // 
-            mineC5.Location = new Point(377, 192);
+            mineC5.BackColor = Color.FromArgb(56, 51, 66);
+            mineC5.FlatStyle = FlatStyle.Flat;
+            mineC5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC5.ForeColor = Color.FromArgb(41, 38, 49);
+            mineC5.Location = new Point(370, 161);
             mineC5.Name = "mineC5";
-            mineC5.Size = new Size(74, 24);
+            mineC5.Size = new Size(65, 65);
             mineC5.TabIndex = 14;
-            mineC5.Text = "C5";
-            mineC5.UseVisualStyleBackColor = true;
+            mineC5.Text = "?";
+            mineC5.UseVisualStyleBackColor = false;
             mineC5.Click += btnMinesMine_Click;
             // 
             // mineC4
             // 
-            mineC4.Location = new Point(290, 191);
+            mineC4.BackColor = Color.FromArgb(56, 51, 66);
+            mineC4.FlatStyle = FlatStyle.Flat;
+            mineC4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC4.ForeColor = Color.FromArgb(41, 38, 49);
+            mineC4.Location = new Point(288, 161);
             mineC4.Name = "mineC4";
-            mineC4.Size = new Size(74, 24);
+            mineC4.Size = new Size(65, 65);
             mineC4.TabIndex = 13;
-            mineC4.Text = "C4";
-            mineC4.UseVisualStyleBackColor = true;
+            mineC4.Text = "?";
+            mineC4.UseVisualStyleBackColor = false;
             mineC4.Click += btnMinesMine_Click;
             // 
             // mineC3
             // 
-            mineC3.Location = new Point(203, 192);
+            mineC3.BackColor = Color.FromArgb(56, 51, 66);
+            mineC3.FlatStyle = FlatStyle.Flat;
+            mineC3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC3.ForeColor = Color.FromArgb(41, 38, 49);
+            mineC3.Location = new Point(206, 161);
             mineC3.Name = "mineC3";
-            mineC3.Size = new Size(74, 24);
+            mineC3.Size = new Size(65, 65);
             mineC3.TabIndex = 12;
-            mineC3.Text = "C3";
-            mineC3.UseVisualStyleBackColor = true;
+            mineC3.Text = "?";
+            mineC3.UseVisualStyleBackColor = false;
             mineC3.Click += btnMinesMine_Click;
             // 
             // mineC2
             // 
-            mineC2.Location = new Point(112, 192);
+            mineC2.BackColor = Color.FromArgb(56, 51, 66);
+            mineC2.FlatStyle = FlatStyle.Flat;
+            mineC2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC2.ForeColor = Color.FromArgb(41, 38, 49);
+            mineC2.Location = new Point(124, 161);
             mineC2.Name = "mineC2";
-            mineC2.Size = new Size(74, 24);
+            mineC2.Size = new Size(65, 65);
             mineC2.TabIndex = 11;
-            mineC2.Text = "C2";
-            mineC2.UseVisualStyleBackColor = true;
+            mineC2.Text = "?";
+            mineC2.UseVisualStyleBackColor = false;
             mineC2.Click += btnMinesMine_Click;
             // 
             // mineC1
             // 
-            mineC1.Location = new Point(22, 191);
+            mineC1.BackColor = Color.FromArgb(56, 51, 66);
+            mineC1.FlatStyle = FlatStyle.Flat;
+            mineC1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineC1.ForeColor = Color.FromArgb(41, 38, 49);
+            mineC1.Location = new Point(42, 161);
             mineC1.Name = "mineC1";
-            mineC1.Size = new Size(74, 24);
+            mineC1.Size = new Size(65, 65);
             mineC1.TabIndex = 10;
-            mineC1.Text = "C1";
-            mineC1.UseVisualStyleBackColor = true;
+            mineC1.Text = "?";
+            mineC1.UseVisualStyleBackColor = false;
             mineC1.Click += btnMinesMine_Click;
             // 
             // mineB5
             // 
-            mineB5.Location = new Point(377, 129);
+            mineB5.BackColor = Color.FromArgb(56, 51, 66);
+            mineB5.FlatStyle = FlatStyle.Flat;
+            mineB5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB5.ForeColor = Color.FromArgb(41, 38, 49);
+            mineB5.Location = new Point(370, 84);
             mineB5.Name = "mineB5";
-            mineB5.Size = new Size(74, 24);
+            mineB5.Size = new Size(65, 65);
             mineB5.TabIndex = 9;
-            mineB5.Text = "B5";
-            mineB5.UseVisualStyleBackColor = true;
+            mineB5.Text = "?";
+            mineB5.UseVisualStyleBackColor = false;
             mineB5.Click += btnMinesMine_Click;
             // 
             // mineB4
             // 
-            mineB4.Location = new Point(290, 128);
+            mineB4.BackColor = Color.FromArgb(56, 51, 66);
+            mineB4.FlatStyle = FlatStyle.Flat;
+            mineB4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB4.ForeColor = Color.FromArgb(41, 38, 49);
+            mineB4.Location = new Point(288, 84);
             mineB4.Name = "mineB4";
-            mineB4.Size = new Size(74, 24);
+            mineB4.Size = new Size(65, 65);
             mineB4.TabIndex = 8;
-            mineB4.Text = "B4";
-            mineB4.UseVisualStyleBackColor = true;
+            mineB4.Text = "?";
+            mineB4.UseVisualStyleBackColor = false;
             mineB4.Click += btnMinesMine_Click;
             // 
             // mineB3
             // 
-            mineB3.Location = new Point(203, 129);
+            mineB3.BackColor = Color.FromArgb(56, 51, 66);
+            mineB3.FlatStyle = FlatStyle.Flat;
+            mineB3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB3.ForeColor = Color.FromArgb(41, 38, 49);
+            mineB3.Location = new Point(206, 84);
             mineB3.Name = "mineB3";
-            mineB3.Size = new Size(74, 24);
+            mineB3.Size = new Size(65, 65);
             mineB3.TabIndex = 7;
-            mineB3.Text = "B3";
-            mineB3.UseVisualStyleBackColor = true;
+            mineB3.Text = "?";
+            mineB3.UseVisualStyleBackColor = false;
             mineB3.Click += btnMinesMine_Click;
             // 
             // mineB2
             // 
-            mineB2.Location = new Point(112, 129);
+            mineB2.BackColor = Color.FromArgb(56, 51, 66);
+            mineB2.FlatStyle = FlatStyle.Flat;
+            mineB2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB2.ForeColor = Color.FromArgb(41, 38, 49);
+            mineB2.Location = new Point(124, 84);
             mineB2.Name = "mineB2";
-            mineB2.Size = new Size(74, 24);
+            mineB2.Size = new Size(65, 65);
             mineB2.TabIndex = 6;
-            mineB2.Text = "B2";
-            mineB2.UseVisualStyleBackColor = true;
+            mineB2.Text = "?";
+            mineB2.UseVisualStyleBackColor = false;
             mineB2.Click += btnMinesMine_Click;
             // 
             // mineB1
             // 
-            mineB1.Location = new Point(22, 128);
+            mineB1.BackColor = Color.FromArgb(56, 51, 66);
+            mineB1.FlatStyle = FlatStyle.Flat;
+            mineB1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineB1.ForeColor = Color.FromArgb(41, 38, 49);
+            mineB1.Location = new Point(42, 84);
             mineB1.Name = "mineB1";
-            mineB1.Size = new Size(74, 24);
+            mineB1.Size = new Size(65, 65);
             mineB1.TabIndex = 5;
-            mineB1.Text = "B1";
-            mineB1.UseVisualStyleBackColor = true;
+            mineB1.Text = "?";
+            mineB1.UseVisualStyleBackColor = false;
             mineB1.Click += btnMinesMine_Click;
             // 
             // mineA5
             // 
-            mineA5.Location = new Point(377, 56);
+            mineA5.BackColor = Color.FromArgb(56, 51, 66);
+            mineA5.FlatAppearance.BorderColor = Color.FromArgb(51, 50, 51);
+            mineA5.FlatAppearance.BorderSize = 0;
+            mineA5.FlatStyle = FlatStyle.Flat;
+            mineA5.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA5.ForeColor = Color.FromArgb(41, 38, 49);
+            mineA5.Location = new Point(370, 7);
             mineA5.Name = "mineA5";
-            mineA5.Size = new Size(74, 24);
+            mineA5.Size = new Size(65, 65);
             mineA5.TabIndex = 4;
-            mineA5.Text = "A5";
-            mineA5.UseVisualStyleBackColor = true;
+            mineA5.Text = "?";
+            mineA5.UseVisualStyleBackColor = false;
             mineA5.Click += btnMinesMine_Click;
             // 
             // mineA4
             // 
-            mineA4.Location = new Point(290, 55);
+            mineA4.BackColor = Color.FromArgb(56, 51, 66);
+            mineA4.FlatStyle = FlatStyle.Flat;
+            mineA4.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA4.ForeColor = Color.FromArgb(41, 38, 49);
+            mineA4.Location = new Point(288, 7);
             mineA4.Name = "mineA4";
-            mineA4.Size = new Size(74, 24);
+            mineA4.Size = new Size(65, 65);
             mineA4.TabIndex = 3;
-            mineA4.Text = "A4";
-            mineA4.UseVisualStyleBackColor = true;
+            mineA4.Text = "?";
+            mineA4.UseVisualStyleBackColor = false;
             mineA4.Click += btnMinesMine_Click;
             // 
             // mineA3
             // 
-            mineA3.Location = new Point(203, 56);
+            mineA3.BackColor = Color.FromArgb(56, 51, 66);
+            mineA3.FlatStyle = FlatStyle.Flat;
+            mineA3.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA3.ForeColor = Color.FromArgb(41, 38, 49);
+            mineA3.Location = new Point(206, 7);
             mineA3.Name = "mineA3";
-            mineA3.Size = new Size(74, 24);
+            mineA3.Size = new Size(65, 65);
             mineA3.TabIndex = 2;
-            mineA3.Text = "A3";
-            mineA3.UseVisualStyleBackColor = true;
+            mineA3.Text = "?";
+            mineA3.UseVisualStyleBackColor = false;
             mineA3.Click += btnMinesMine_Click;
             // 
             // mineA2
             // 
-            mineA2.Location = new Point(112, 56);
+            mineA2.BackColor = Color.FromArgb(56, 51, 66);
+            mineA2.FlatStyle = FlatStyle.Flat;
+            mineA2.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA2.ForeColor = Color.FromArgb(41, 38, 49);
+            mineA2.Location = new Point(124, 7);
             mineA2.Name = "mineA2";
-            mineA2.Size = new Size(74, 24);
+            mineA2.Size = new Size(65, 65);
             mineA2.TabIndex = 1;
-            mineA2.Text = "A2";
-            mineA2.UseVisualStyleBackColor = true;
+            mineA2.Text = "?";
+            mineA2.UseVisualStyleBackColor = false;
             mineA2.Click += btnMinesMine_Click;
             // 
             // mineA1
             // 
-            mineA1.Location = new Point(22, 55);
+            mineA1.BackColor = Color.FromArgb(56, 51, 66);
+            mineA1.FlatStyle = FlatStyle.Flat;
+            mineA1.Font = new Font("JetBrainsMono NF", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            mineA1.ForeColor = Color.FromArgb(41, 38, 49);
+            mineA1.Location = new Point(42, 7);
             mineA1.Name = "mineA1";
-            mineA1.Size = new Size(74, 24);
+            mineA1.Size = new Size(65, 65);
             mineA1.TabIndex = 0;
-            mineA1.Text = "A1";
-            mineA1.UseVisualStyleBackColor = true;
+            mineA1.Text = "?";
+            mineA1.UseVisualStyleBackColor = false;
             mineA1.Click += btnMinesMine_Click;
             // 
             // panelMinesBetting
             // 
-            panelMinesBetting.BackColor = SystemColors.ButtonShadow;
+            panelMinesBetting.BackColor = Color.FromArgb(24, 22, 28);
             panelMinesBetting.Controls.Add(btnMinesBettingPlaceBet);
             panelMinesBetting.Controls.Add(btnMinesBettingClear);
             panelMinesBetting.Controls.Add(lblMinesBettingCurrentMinesCount);
@@ -770,9 +881,12 @@
             // 
             // btnMinesBettingPlaceBet
             // 
-            btnMinesBettingPlaceBet.BackColor = Color.LawnGreen;
-            btnMinesBettingPlaceBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMinesBettingPlaceBet.Location = new Point(11, 354);
+            btnMinesBettingPlaceBet.BackColor = Color.LimeGreen;
+            btnMinesBettingPlaceBet.FlatAppearance.BorderSize = 0;
+            btnMinesBettingPlaceBet.FlatStyle = FlatStyle.Flat;
+            btnMinesBettingPlaceBet.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingPlaceBet.ForeColor = Color.White;
+            btnMinesBettingPlaceBet.Location = new Point(14, 364);
             btnMinesBettingPlaceBet.Name = "btnMinesBettingPlaceBet";
             btnMinesBettingPlaceBet.Size = new Size(277, 37);
             btnMinesBettingPlaceBet.TabIndex = 11;
@@ -783,10 +897,13 @@
             // btnMinesBettingClear
             // 
             btnMinesBettingClear.BackColor = Color.IndianRed;
-            btnMinesBettingClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingClear.FlatAppearance.BorderSize = 0;
+            btnMinesBettingClear.FlatStyle = FlatStyle.Flat;
+            btnMinesBettingClear.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingClear.ForeColor = Color.White;
             btnMinesBettingClear.Location = new Point(13, 224);
             btnMinesBettingClear.Name = "btnMinesBettingClear";
-            btnMinesBettingClear.Size = new Size(279, 23);
+            btnMinesBettingClear.Size = new Size(279, 30);
             btnMinesBettingClear.TabIndex = 10;
             btnMinesBettingClear.Text = "Clear";
             btnMinesBettingClear.UseVisualStyleBackColor = false;
@@ -795,6 +912,7 @@
             // lblMinesBettingCurrentMinesCount
             // 
             lblMinesBettingCurrentMinesCount.AutoSize = true;
+            lblMinesBettingCurrentMinesCount.ForeColor = Color.White;
             lblMinesBettingCurrentMinesCount.Location = new Point(93, 168);
             lblMinesBettingCurrentMinesCount.Name = "lblMinesBettingCurrentMinesCount";
             lblMinesBettingCurrentMinesCount.Size = new Size(58, 15);
@@ -804,6 +922,7 @@
             // lblMinesBettingCurrentBet
             // 
             lblMinesBettingCurrentBet.AutoSize = true;
+            lblMinesBettingCurrentBet.ForeColor = Color.White;
             lblMinesBettingCurrentBet.Location = new Point(38, 106);
             lblMinesBettingCurrentBet.Name = "lblMinesBettingCurrentBet";
             lblMinesBettingCurrentBet.Size = new Size(29, 15);
@@ -813,6 +932,7 @@
             // lblMinesBettingBetEnding
             // 
             lblMinesBettingBetEnding.AutoSize = true;
+            lblMinesBettingBetEnding.ForeColor = Color.White;
             lblMinesBettingBetEnding.Location = new Point(188, 129);
             lblMinesBettingBetEnding.Name = "lblMinesBettingBetEnding";
             lblMinesBettingBetEnding.Size = new Size(21, 15);
@@ -832,6 +952,7 @@
             // lblMinesBettingBet
             // 
             lblMinesBettingBet.AutoSize = true;
+            lblMinesBettingBet.ForeColor = Color.White;
             lblMinesBettingBet.Location = new Point(13, 106);
             lblMinesBettingBet.Name = "lblMinesBettingBet";
             lblMinesBettingBet.Size = new Size(27, 15);
@@ -873,6 +994,7 @@
             // lblMinesBettingMinesCount
             // 
             lblMinesBettingMinesCount.AutoSize = true;
+            lblMinesBettingMinesCount.ForeColor = Color.White;
             lblMinesBettingMinesCount.Location = new Point(11, 168);
             lblMinesBettingMinesCount.Name = "lblMinesBettingMinesCount";
             lblMinesBettingMinesCount.Size = new Size(83, 15);
@@ -883,6 +1005,7 @@
             // 
             lblMinesBettingTitle.AutoSize = true;
             lblMinesBettingTitle.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMinesBettingTitle.ForeColor = Color.White;
             lblMinesBettingTitle.Location = new Point(113, 21);
             lblMinesBettingTitle.Name = "lblMinesBettingTitle";
             lblMinesBettingTitle.Size = new Size(75, 25);
@@ -892,10 +1015,11 @@
             // lblMinesTitle
             // 
             lblMinesTitle.AutoSize = true;
-            lblMinesTitle.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMinesTitle.Font = new Font("JetBrainsMono NF", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMinesTitle.ForeColor = Color.White;
             lblMinesTitle.Location = new Point(533, 3);
             lblMinesTitle.Name = "lblMinesTitle";
-            lblMinesTitle.Size = new Size(64, 28);
+            lblMinesTitle.Size = new Size(143, 53);
             lblMinesTitle.TabIndex = 1;
             lblMinesTitle.Text = "Mines";
             // 
