@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gambling2ElectricBogaloo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9fd116a17025e5010590d08bf5c70e2eaf445f94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3a47798083c464f211b31c6bd722cb397e35df55")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gambling2ElectricBogaloo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gambling2ElectricBogaloo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

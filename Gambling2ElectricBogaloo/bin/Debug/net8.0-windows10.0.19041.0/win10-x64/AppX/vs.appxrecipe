@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-06T13:11:54.947</Modified>
+      <Modified>2024-03-07T09:39:41.065</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-06T11:18:22.583</Modified>
+      <Modified>2024-03-07T09:20:09.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Gambling2ElectricBogaloo.runtimeconfig.json">
       <PackagePath>Gambling2ElectricBogaloo.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Gambling2ElectricBogaloo.dll">
       <PackagePath>Gambling2ElectricBogaloo.dll</PackagePath>
-      <Modified>2024-03-06T13:11:54.716</Modified>
+      <Modified>2024-03-07T09:39:40.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Gambling2ElectricBogaloo.exe</PackagePath>
-      <Modified>2024-03-06T13:11:54.720</Modified>
+      <Modified>2024-03-07T09:39:40.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HFGF\Documents\GitHub\H1\Gambling2ElectricBogaloo\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

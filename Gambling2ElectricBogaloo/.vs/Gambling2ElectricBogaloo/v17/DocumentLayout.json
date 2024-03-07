@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|c:\\users\\hfgf\\documents\\github\\h1\\gambling2electricbogaloo\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|c:\\users\\hfgf\\documents\\github\\h1\\gambling2electricbogaloo\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|solutionrelative:components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\components\\classes\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|solutionrelative:components\\classes\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|c:\\users\\hfgf\\documents\\github\\h1\\gambling2electricbogaloo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|c:\\users\\hfgf\\documents\\github\\h1\\gambling2electricbogaloo\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|c:\\users\\hfgf\\documents\\github\\h1\\gambling2electricbogaloo\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F12BE766-041A-4B2B-B4C7-BA3D5C0BB237}|Gambling2ElectricBogaloo.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,33 +50,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:17:06.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:17:03.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T09:16:09.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:11:46.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\Classes\\Database.cs",
               "RelativeDocumentMoniker": "Components\\Classes\\Database.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\Classes\\Database.cs",
               "RelativeToolTip": "Components\\Classes\\Database.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwHAAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T09:48:58.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Login.razor",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\Pages\\Login.razor",
               "RelativeToolTip": "Components\\Pages\\Login.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-05T09:11:25.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Counter.razor",
@@ -68,12 +136,11 @@
               "RelativeToolTip": "Components\\Pages\\Counter.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T07:54:34.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T07:54:34.578Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Gambling2ElectricBogaloo\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
@@ -81,8 +148,7 @@
               "RelativeToolTip": "Components\\Pages\\Home.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-04T12:13:38.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-04T12:13:38.679Z"
             }
           ]
         }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 
-namespace Gambling2ElectricBogaloo.Components.Classes
+namespace Gambling2ElectricBogaloo.Components.Classes.Database
 {
     public class Database
     {
