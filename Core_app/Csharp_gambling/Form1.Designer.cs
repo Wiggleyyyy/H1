@@ -1114,7 +1114,7 @@
             // 
             // mineE5
             // 
-            mineE5.BackColor = Color.FromArgb(56, 51, 66);
+            mineE5.BackColor = Color.FromArgb(24, 22, 28);
             mineE5.FlatStyle = FlatStyle.Flat;
             mineE5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE5.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1128,7 +1128,7 @@
             // 
             // mineE4
             // 
-            mineE4.BackColor = Color.FromArgb(56, 51, 66);
+            mineE4.BackColor = Color.FromArgb(24, 22, 28);
             mineE4.FlatStyle = FlatStyle.Flat;
             mineE4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE4.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1142,7 +1142,7 @@
             // 
             // mineE3
             // 
-            mineE3.BackColor = Color.FromArgb(56, 51, 66);
+            mineE3.BackColor = Color.FromArgb(24, 22, 28);
             mineE3.FlatStyle = FlatStyle.Flat;
             mineE3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE3.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1156,7 +1156,7 @@
             // 
             // mineE2
             // 
-            mineE2.BackColor = Color.FromArgb(56, 51, 66);
+            mineE2.BackColor = Color.FromArgb(24, 22, 28);
             mineE2.FlatStyle = FlatStyle.Flat;
             mineE2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE2.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1170,7 +1170,7 @@
             // 
             // mineE1
             // 
-            mineE1.BackColor = Color.FromArgb(56, 51, 66);
+            mineE1.BackColor = Color.FromArgb(24, 22, 28);
             mineE1.FlatStyle = FlatStyle.Flat;
             mineE1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineE1.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1184,7 +1184,7 @@
             // 
             // mineD5
             // 
-            mineD5.BackColor = Color.FromArgb(56, 51, 66);
+            mineD5.BackColor = Color.FromArgb(24, 22, 28);
             mineD5.FlatStyle = FlatStyle.Flat;
             mineD5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD5.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1198,7 +1198,7 @@
             // 
             // mineD4
             // 
-            mineD4.BackColor = Color.FromArgb(56, 51, 66);
+            mineD4.BackColor = Color.FromArgb(24, 22, 28);
             mineD4.FlatStyle = FlatStyle.Flat;
             mineD4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD4.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1212,7 +1212,7 @@
             // 
             // mineD3
             // 
-            mineD3.BackColor = Color.FromArgb(56, 51, 66);
+            mineD3.BackColor = Color.FromArgb(24, 22, 28);
             mineD3.FlatStyle = FlatStyle.Flat;
             mineD3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD3.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1226,7 +1226,7 @@
             // 
             // mineD2
             // 
-            mineD2.BackColor = Color.FromArgb(56, 51, 66);
+            mineD2.BackColor = Color.FromArgb(24, 22, 28);
             mineD2.FlatStyle = FlatStyle.Flat;
             mineD2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD2.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1240,7 +1240,7 @@
             // 
             // mineD1
             // 
-            mineD1.BackColor = Color.FromArgb(56, 51, 66);
+            mineD1.BackColor = Color.FromArgb(24, 22, 28);
             mineD1.FlatStyle = FlatStyle.Flat;
             mineD1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineD1.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1254,7 +1254,7 @@
             // 
             // mineC5
             // 
-            mineC5.BackColor = Color.FromArgb(56, 51, 66);
+            mineC5.BackColor = Color.FromArgb(24, 22, 28);
             mineC5.FlatStyle = FlatStyle.Flat;
             mineC5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC5.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1268,7 +1268,7 @@
             // 
             // mineC4
             // 
-            mineC4.BackColor = Color.FromArgb(56, 51, 66);
+            mineC4.BackColor = Color.FromArgb(24, 22, 28);
             mineC4.FlatStyle = FlatStyle.Flat;
             mineC4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC4.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1282,7 +1282,7 @@
             // 
             // mineC3
             // 
-            mineC3.BackColor = Color.FromArgb(56, 51, 66);
+            mineC3.BackColor = Color.FromArgb(24, 22, 28);
             mineC3.FlatStyle = FlatStyle.Flat;
             mineC3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC3.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1296,7 +1296,7 @@
             // 
             // mineC2
             // 
-            mineC2.BackColor = Color.FromArgb(56, 51, 66);
+            mineC2.BackColor = Color.FromArgb(24, 22, 28);
             mineC2.FlatStyle = FlatStyle.Flat;
             mineC2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC2.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1310,7 +1310,7 @@
             // 
             // mineC1
             // 
-            mineC1.BackColor = Color.FromArgb(56, 51, 66);
+            mineC1.BackColor = Color.FromArgb(24, 22, 28);
             mineC1.FlatStyle = FlatStyle.Flat;
             mineC1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineC1.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1324,7 +1324,7 @@
             // 
             // mineB5
             // 
-            mineB5.BackColor = Color.FromArgb(56, 51, 66);
+            mineB5.BackColor = Color.FromArgb(24, 22, 28);
             mineB5.FlatStyle = FlatStyle.Flat;
             mineB5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB5.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1338,7 +1338,7 @@
             // 
             // mineB4
             // 
-            mineB4.BackColor = Color.FromArgb(56, 51, 66);
+            mineB4.BackColor = Color.FromArgb(24, 22, 28);
             mineB4.FlatStyle = FlatStyle.Flat;
             mineB4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB4.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1352,7 +1352,7 @@
             // 
             // mineB3
             // 
-            mineB3.BackColor = Color.FromArgb(56, 51, 66);
+            mineB3.BackColor = Color.FromArgb(24, 22, 28);
             mineB3.FlatStyle = FlatStyle.Flat;
             mineB3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB3.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1366,7 +1366,7 @@
             // 
             // mineB2
             // 
-            mineB2.BackColor = Color.FromArgb(56, 51, 66);
+            mineB2.BackColor = Color.FromArgb(24, 22, 28);
             mineB2.FlatStyle = FlatStyle.Flat;
             mineB2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB2.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1380,7 +1380,7 @@
             // 
             // mineB1
             // 
-            mineB1.BackColor = Color.FromArgb(56, 51, 66);
+            mineB1.BackColor = Color.FromArgb(24, 22, 28);
             mineB1.FlatStyle = FlatStyle.Flat;
             mineB1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineB1.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1394,9 +1394,8 @@
             // 
             // mineA5
             // 
-            mineA5.BackColor = Color.FromArgb(56, 51, 66);
+            mineA5.BackColor = Color.FromArgb(24, 22, 28);
             mineA5.FlatAppearance.BorderColor = Color.FromArgb(51, 50, 51);
-            mineA5.FlatAppearance.BorderSize = 0;
             mineA5.FlatStyle = FlatStyle.Flat;
             mineA5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA5.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1410,7 +1409,7 @@
             // 
             // mineA4
             // 
-            mineA4.BackColor = Color.FromArgb(56, 51, 66);
+            mineA4.BackColor = Color.FromArgb(24, 22, 28);
             mineA4.FlatStyle = FlatStyle.Flat;
             mineA4.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA4.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1424,7 +1423,7 @@
             // 
             // mineA3
             // 
-            mineA3.BackColor = Color.FromArgb(56, 51, 66);
+            mineA3.BackColor = Color.FromArgb(24, 22, 28);
             mineA3.FlatStyle = FlatStyle.Flat;
             mineA3.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA3.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1438,7 +1437,7 @@
             // 
             // mineA2
             // 
-            mineA2.BackColor = Color.FromArgb(56, 51, 66);
+            mineA2.BackColor = Color.FromArgb(24, 22, 28);
             mineA2.FlatStyle = FlatStyle.Flat;
             mineA2.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA2.ForeColor = Color.FromArgb(41, 38, 49);
@@ -1452,7 +1451,7 @@
             // 
             // mineA1
             // 
-            mineA1.BackColor = Color.FromArgb(56, 51, 66);
+            mineA1.BackColor = Color.FromArgb(24, 22, 28);
             mineA1.FlatStyle = FlatStyle.Flat;
             mineA1.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point);
             mineA1.ForeColor = Color.FromArgb(41, 38, 49);
