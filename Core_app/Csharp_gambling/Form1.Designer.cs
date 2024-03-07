@@ -454,7 +454,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(37, 120);
+            panelBlackJack.Location = new Point(385, 632);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;
@@ -566,7 +566,7 @@
             labelCard1CardValue.BackColor = Color.Transparent;
             labelCard1CardValue.Location = new Point(31, 43);
             labelCard1CardValue.Name = "labelCard1CardValue";
-            labelCard1CardValue.Size = new Size(76, 15);
+            labelCard1CardValue.Size = new Size(74, 15);
             labelCard1CardValue.TabIndex = 1;
             labelCard1CardValue.Text = "<CardRank>";
             // 
@@ -647,7 +647,7 @@
             lblDealerCardValue.BackColor = Color.Transparent;
             lblDealerCardValue.Location = new Point(31, 43);
             lblDealerCardValue.Name = "lblDealerCardValue";
-            lblDealerCardValue.Size = new Size(76, 15);
+            lblDealerCardValue.Size = new Size(74, 15);
             lblDealerCardValue.TabIndex = 1;
             lblDealerCardValue.Text = "<CardRank>";
             // 
@@ -756,7 +756,7 @@
             lblCard3CardValue.BackColor = Color.Transparent;
             lblCard3CardValue.Location = new Point(31, 43);
             lblCard3CardValue.Name = "lblCard3CardValue";
-            lblCard3CardValue.Size = new Size(76, 15);
+            lblCard3CardValue.Size = new Size(74, 15);
             lblCard3CardValue.TabIndex = 1;
             lblCard3CardValue.Text = "<CardRank>";
             // 
@@ -854,7 +854,7 @@
             lblCard2CardValue.BackColor = Color.Transparent;
             lblCard2CardValue.Location = new Point(31, 43);
             lblCard2CardValue.Name = "lblCard2CardValue";
-            lblCard2CardValue.Size = new Size(76, 15);
+            lblCard2CardValue.Size = new Size(74, 15);
             lblCard2CardValue.TabIndex = 1;
             lblCard2CardValue.Text = "<CardRank>";
             // 
@@ -994,7 +994,7 @@
             // 
             // panelHomeMines
             // 
-            panelHomeMines.BackColor = Color.FromArgb(51, 50, 51);
+            panelHomeMines.BackColor = Color.FromArgb(41, 38, 49);
             panelHomeMines.Controls.Add(panelMinesGame);
             panelHomeMines.Controls.Add(panelMinesBetting);
             panelHomeMines.Controls.Add(lblMinesTitle);
@@ -1025,7 +1025,7 @@
             btnMinesCashOut.FlatAppearance.BorderColor = Color.Lime;
             btnMinesCashOut.FlatAppearance.BorderSize = 0;
             btnMinesCashOut.FlatStyle = FlatStyle.Flat;
-            btnMinesCashOut.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesCashOut.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesCashOut.ForeColor = Color.White;
             btnMinesCashOut.Location = new Point(518, 364);
             btnMinesCashOut.Name = "btnMinesCashOut";
@@ -1489,7 +1489,7 @@
             btnMinesBettingPlaceBet.BackColor = Color.LimeGreen;
             btnMinesBettingPlaceBet.FlatAppearance.BorderSize = 0;
             btnMinesBettingPlaceBet.FlatStyle = FlatStyle.Flat;
-            btnMinesBettingPlaceBet.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingPlaceBet.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesBettingPlaceBet.ForeColor = Color.White;
             btnMinesBettingPlaceBet.Location = new Point(14, 364);
             btnMinesBettingPlaceBet.Name = "btnMinesBettingPlaceBet";
@@ -1504,7 +1504,7 @@
             btnMinesBettingClear.BackColor = Color.IndianRed;
             btnMinesBettingClear.FlatAppearance.BorderSize = 0;
             btnMinesBettingClear.FlatStyle = FlatStyle.Flat;
-            btnMinesBettingClear.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingClear.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesBettingClear.ForeColor = Color.White;
             btnMinesBettingClear.Location = new Point(13, 224);
             btnMinesBettingClear.Name = "btnMinesBettingClear";
@@ -1631,7 +1631,11 @@
             // 
             // btnMinesClose
             // 
-            btnMinesClose.BackColor = SystemColors.ButtonFace;
+            btnMinesClose.BackColor = Color.FromArgb(24, 22, 28);
+            btnMinesClose.FlatAppearance.BorderSize = 0;
+            btnMinesClose.FlatStyle = FlatStyle.Flat;
+            btnMinesClose.Font = new Font("JetBrainsMono NF", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMinesClose.ForeColor = Color.White;
             btnMinesClose.Location = new Point(19, 19);
             btnMinesClose.Name = "btnMinesClose";
             btnMinesClose.Size = new Size(93, 28);

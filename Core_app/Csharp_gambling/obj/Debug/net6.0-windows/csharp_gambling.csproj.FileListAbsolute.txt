@@ -62,5 +62,6 @@ C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\bin\Debug\net6.0-wind
 C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\obj\Debug\net6.0-windows\csharp_gambling.csproj.AssemblyReference.cache
-C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\obj\Debug\net6.0-windows\csharp_gambling.csproj.CopyComplete
 C:\Users\DavidHougesen\Source\Repos\Wiggleyyyy\H1\Core_app\Csharp_gambling\obj\Debug\net6.0-windows\csharp_gambling.Properties.Resources.resources
+C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\obj\Debug\net6.0-windows\csharp_gambling.Properties.Resources.resources
+C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\obj\Debug\net6.0-windows\csharp_g.63EB976F.Up2Date

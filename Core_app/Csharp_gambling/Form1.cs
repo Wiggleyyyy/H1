@@ -514,7 +514,8 @@ namespace csharp_gambling
                 {
                     //Is mine
                     clickedButton.Enabled = false;
-                    clickedButton.Text = "Mine";
+                    clickedButton.Text = "*";
+                    clickedButton.ForeColor = Color.DarkRed;
                     clickedButton.BackColor = Color.Red;
 
                     Field currentField = minesData.Fields.Where(x => x.MineName == clickedButton.Name).FirstOrDefault();
