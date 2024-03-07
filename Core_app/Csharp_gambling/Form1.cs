@@ -425,6 +425,61 @@ namespace csharp_gambling
         }
         //Loading pages - end
 
+
+        //Withdraw and deposit - start
+
+        private void btnWithdraw_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string username = lblHomeNavbarUsername.Text;
+                double balance = DB.GetCurrentBalance(username);
+                string WithdrawInput = WithdrawDepositText.Text;
+                double Witdraw = (double)Convert.ToDouble(WithdrawInput);
+
+                if (Witdraw >= 0 && balance >= Witdraw)
+                {
+                    balance -= Witdraw;
+                    DB.InsertNewBalance(username, balance);
+                }
+                double roundedBalance = Math.Round(balance, 2);
+                string balanceToWrite = $"Balance: {roundedBalance}kr.";
+                lblHomeNavbarCurrency.Text = balanceToWrite;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kunne ikke hente data fra databasen.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                panelHomePage.Visible = false;
+            }
+        }
+
+        private void btnDeposit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string username = lblHomeNavbarUsername.Text;
+                double balance = DB.GetCurrentBalance(username);
+                string DepositInput = WithdrawDepositText.Text;
+                double Deposit = (double)Convert.ToDouble(DepositInput);
+
+                if (Deposit >= 0)
+                {
+                    balance += Deposit;
+                    DB.InsertNewBalance(username, balance);
+                }
+                double roundedBalance = Math.Round(balance, 2);
+                string balanceToWrite = $"Balance: {roundedBalance}kr.";
+                lblHomeNavbarCurrency.Text = balanceToWrite;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kunne ikke hente data fra databasen.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                panelHomePage.Visible = false;
+            }
+        }
+        //Withdraw and deposit - end
+
+
         //Game funcionality - start
         //Mines - start
         private void MinesGame()

@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BedreDB_Connection
-build_property.ProjectDir = C:\Users\DavidHougesen\Source\Repos\Wiggleyyyy\H1\Database\CsConnection\BedreDB-Connection\
+build_property.ProjectDir = C:\Users\HFGF\Documents\GitHub\H1\Database\CsConnection\BedreDB-Connection\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

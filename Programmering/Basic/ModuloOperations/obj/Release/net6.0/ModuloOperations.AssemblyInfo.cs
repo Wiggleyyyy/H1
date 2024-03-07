@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModuloOperations")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ef6eefbd23d4738ebf64f3d6ce8756f249fefcc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModuloOperations")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModuloOperations")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

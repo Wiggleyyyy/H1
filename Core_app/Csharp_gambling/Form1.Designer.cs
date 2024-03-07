@@ -155,6 +155,10 @@
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
+            panel1 = new Panel();
+            Withdrawbutton = new Button();
+            Depositbotton = new Button();
+            WithdrawDepositText = new TextBox();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -174,6 +178,7 @@
             panelMinesGameMinesArea.SuspendLayout();
             panelMinesBetting.SuspendLayout();
             panelHomeNavbar.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panelLogin
@@ -438,6 +443,7 @@
             // 
             // panelHomePage
             // 
+            panelHomePage.Controls.Add(panel1);
             panelHomePage.Controls.Add(panelBlackJack);
             panelHomePage.Controls.Add(panelHomeMines);
             panelHomePage.Controls.Add(panelHomeNavbar);
@@ -454,7 +460,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(385, 632);
+            panelBlackJack.Location = new Point(399, 632);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;
@@ -1025,7 +1031,7 @@
             btnMinesCashOut.FlatAppearance.BorderColor = Color.Lime;
             btnMinesCashOut.FlatAppearance.BorderSize = 0;
             btnMinesCashOut.FlatStyle = FlatStyle.Flat;
-            btnMinesCashOut.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesCashOut.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesCashOut.ForeColor = Color.White;
             btnMinesCashOut.Location = new Point(518, 364);
             btnMinesCashOut.Name = "btnMinesCashOut";
@@ -1489,7 +1495,7 @@
             btnMinesBettingPlaceBet.BackColor = Color.LimeGreen;
             btnMinesBettingPlaceBet.FlatAppearance.BorderSize = 0;
             btnMinesBettingPlaceBet.FlatStyle = FlatStyle.Flat;
-            btnMinesBettingPlaceBet.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingPlaceBet.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesBettingPlaceBet.ForeColor = Color.White;
             btnMinesBettingPlaceBet.Location = new Point(14, 364);
             btnMinesBettingPlaceBet.Name = "btnMinesBettingPlaceBet";
@@ -1504,7 +1510,7 @@
             btnMinesBettingClear.BackColor = Color.IndianRed;
             btnMinesBettingClear.FlatAppearance.BorderSize = 0;
             btnMinesBettingClear.FlatStyle = FlatStyle.Flat;
-            btnMinesBettingClear.Font = new Font("JetBrainsMono NF", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMinesBettingClear.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMinesBettingClear.ForeColor = Color.White;
             btnMinesBettingClear.Location = new Point(13, 224);
             btnMinesBettingClear.Name = "btnMinesBettingClear";
@@ -1634,7 +1640,7 @@
             btnMinesClose.BackColor = Color.FromArgb(24, 22, 28);
             btnMinesClose.FlatAppearance.BorderSize = 0;
             btnMinesClose.FlatStyle = FlatStyle.Flat;
-            btnMinesClose.Font = new Font("JetBrainsMono NF", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMinesClose.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnMinesClose.ForeColor = Color.White;
             btnMinesClose.Location = new Point(19, 19);
             btnMinesClose.Name = "btnMinesClose";
@@ -1735,6 +1741,43 @@
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(WithdrawDepositText);
+            panel1.Controls.Add(Depositbotton);
+            panel1.Controls.Add(Withdrawbutton);
+            panel1.Location = new Point(324, 107);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(284, 242);
+            panel1.TabIndex = 5;
+            // 
+            // Withdrawbutton
+            // 
+            Withdrawbutton.Location = new Point(35, 112);
+            Withdrawbutton.Name = "Withdrawbutton";
+            Withdrawbutton.Size = new Size(105, 61);
+            Withdrawbutton.TabIndex = 0;
+            Withdrawbutton.Text = "Withdraw";
+            Withdrawbutton.UseVisualStyleBackColor = true;
+            Withdrawbutton.Click += btnWithdraw_Click;
+            // 
+            // Depositbotton
+            // 
+            Depositbotton.Location = new Point(146, 112);
+            Depositbotton.Name = "Depositbotton";
+            Depositbotton.Size = new Size(105, 61);
+            Depositbotton.TabIndex = 1;
+            Depositbotton.Text = "Deposit";
+            Depositbotton.UseVisualStyleBackColor = true;
+            Depositbotton.Click += btnDeposit_Click;
+            // 
+            // WithdrawDepositText
+            // 
+            WithdrawDepositText.Location = new Point(35, 83);
+            WithdrawDepositText.Name = "WithdrawDepositText";
+            WithdrawDepositText.Size = new Size(216, 23);
+            WithdrawDepositText.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1781,6 +1824,8 @@
             panelMinesBetting.PerformLayout();
             panelHomeNavbar.ResumeLayout(false);
             panelHomeNavbar.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1918,5 +1963,9 @@
         private ComboBox comboBoxBlackJackBettingHandsCount;
         private Button btnBlackJackClose;
         private Label lblDealerBust;
+        private Panel panel1;
+        private TextBox WithdrawDepositText;
+        private Button Depositbotton;
+        private Button Withdrawbutton;
     }
 }
