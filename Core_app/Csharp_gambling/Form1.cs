@@ -580,7 +580,8 @@ namespace csharp_gambling
                         {
                             button.Enabled = false;
                         }
-                        button.Text = "Mine";
+                        button.Text = "*";
+                        button.ForeColor = Color.DarkRed;
                         button.BackColor = Color.Red;
                         field.IsRevealed = true;
                     }
