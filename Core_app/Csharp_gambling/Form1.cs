@@ -1,10 +1,13 @@
 //TO DO : TABINDEX MINES
+//TO DO : MINES MULTIPLIER REWORK
+//TO DO : TRACK STATS MINES
 
 // TO DO : BLACK JACK
 // TO DO : BETTING IN BLACKJACK - remove from database
 // TO DO : CARD FLOW IN BLACKJACK
 // TO DO : WINNINGS IN BLACKJACK
 // TO DO : NEW BALANCE IN BLACKJACK
+// TO DO : TRACK STATS BLACKJACK
 
 using System.Diagnostics.Eventing.Reader;
 using System.DirectoryServices.ActiveDirectory;
@@ -792,19 +795,123 @@ namespace csharp_gambling
             List<Card> tempPlayerCards = new List<Card>();
 
             Random random = new Random();
-            for (int i =0; i < 2; i++)
+            for (int i = 0; i < 2; i++)
             {
                 int randomIndex = random.Next(tempAvailableCards.Count);
                 Card randomCard = tempAvailableCards[randomIndex];
 
+                if (hand == 1)
+                {
+                    lblCard1CardType.Text = randomCard.CardSuit;
+                    lblCard1CardValue.Text = randomCard.CardRank;
+                    randomCard.CardHand = "1";
+                }
+                else if (hand == 2)
+                {
+                    lblCard2CardType.Text = randomCard.CardSuit;
+                    lblCard2CardValue.Text = randomCard.CardRank;
+                    randomCard.CardHand = "2";
+                }
+                else if (hand == 3)
+                {
+                    lblCard3CardType.Text = randomCard.CardSuit;
+                    lblCard3CardValue.Text = randomCard.CardRank;
+                    randomCard.CardHand = "3";
+                }
+
                 tempAvailableCards.Remove(randomCard);
                 tempPlayerCards.Add(randomCard);
+
+                //Give time to see card 
+                Thread.Sleep(2000);
             }
 
+            int numOfCards = tempPlayerCards.Count;
             int handValue = CalculateHandValue(blackJackData.PlayerCards);
             bool hasBlackJack = IsBlackjack(blackJackData.PlayerCards);
 
-            //ADD TO HAND
+            if (hasBlackJack)
+            {
+                if (hand == 1)
+                {
+                    lblCard1TotalValue.Text = "Black Jack";
+                    lblCard1CardsCount.Text = $"{numOfCards}";
+                    MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (hand == 2)
+                {
+                    lblCard2TotalValue.Text = "Black Jack";
+                    lblCard2CardsCount.Text = $"{numOfCards}";
+                    MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (hand == 3)
+                {
+                    lblCard3TotalValue.Text = "Black Jack";
+                    lblCard3CardsCount.Text = $"{numOfCards}";
+                    MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                blackJackData.Winner = "player";
+                return;
+            }
+            else
+            {
+                if (handValue > 21)
+                {
+                    if (hand == 1)
+                    {
+                        lblCard1TotalValue.Text = "Bust";
+                        lblCard1CardsCount.Text = $"{numOfCards}";
+                        lblCard1Bust.Visible = true;
+                    }
+                    else if (hand == 2)
+                    {
+                        lblCard2TotalValue.Text = "Bust";
+                        lblCard2CardsCount.Text = $"{numOfCards}";
+                        lblCard2Bust.Visible = true;
+
+                    }
+                    else if (hand == 3)
+                    {
+                        lblCard3TotalValue.Text = "Bust";
+                        lblCard3CardsCount.Text = $"{numOfCards}";
+                        lblCard3Bust.Visible = true;
+                    }
+
+                    blackJackData.Winner = "Dealer";
+                    return;
+                }
+
+                if (hand == 1)
+                {
+                    lblCard1TotalValue.Text = $"{handValue}";
+                    lblCard1CardsCount.Text = $"{numOfCards}";
+                }
+                else if (hand == 2)
+                {
+                    lblCard2TotalValue.Text = $"{handValue}";
+                    lblCard2CardsCount.Text = $"{numOfCards}";
+                }
+                else if (hand == 3)
+                {
+                    lblCard3TotalValue.Text = $"{handValue}";
+                    lblCard3CardsCount.Text = $"{numOfCards}";
+                }
+            }
+
+            while (true)
+            {
+                DialogResult result = MessageBox.Show("Vil du have et kort mere?", "Hit eller stå", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                
+                if (result == DialogResult.Yes)
+                {
+                    //GET NEW CARD
+                }
+                else
+                {
+                    break;
+                }
+            }
         }
 
         private int CalculateHandValue(List<Card> hand)
