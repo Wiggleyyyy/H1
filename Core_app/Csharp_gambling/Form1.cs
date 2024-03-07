@@ -9,6 +9,8 @@
 using System.Diagnostics.Eventing.Reader;
 using System.DirectoryServices.ActiveDirectory;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 
 namespace csharp_gambling
@@ -784,7 +786,76 @@ namespace csharp_gambling
 
         private void PlayerTurn(int hand)
         {
+            //FIND RANDOM CARD
+            List<Card> tempAvailableCards = blackJackData.AvailableCards;
+            List<Card> tempPlayerCards = new List<Card>();
 
+            Random random = new Random();
+            for (int i =0; i < 2; i++)
+            {
+                int randomIndex = random.Next(tempAvailableCards.Count);
+                Card randomCard = tempAvailableCards[randomIndex];
+
+                tempAvailableCards.Remove(randomCard);
+                tempPlayerCards.Add(randomCard);
+            }
+
+            int handValue = CalculateHandValue(blackJackData.PlayerCards);
+            bool hasBlackJack = IsBlackjack(blackJackData.PlayerCards);
+
+            //ADD TO HAND
+        }
+
+        private int CalculateHandValue(List<Card> hand)
+        {
+            int totalValue = 0;
+            int aceCount = 0;
+
+            foreach (Card card in hand)
+            {
+                if (card.CardRank.ToLower() == "ace")
+                {
+                    aceCount++;
+                    totalValue += 11; // Assume Ace is 11 initially
+                }
+                else
+                {
+                    switch (card.CardRank.ToLower())
+                    {
+                        case "jack":
+                        case "queen":
+                        case "king":
+                            totalValue += 10;
+                            break;
+                        default:
+                            totalValue += int.Parse(card.CardRank);
+                            break;
+                    }
+                }
+            }
+
+            while (totalValue > 21 && aceCount > 0)
+            {
+                totalValue -= 10; // Adjusting an Ace from 11 to 1
+                aceCount--;
+            }
+
+            return totalValue;
+        }
+
+        private bool IsBlackjack(List<Card> hand)
+        {
+            if (hand.Count == 2)
+            {
+                Card firstCard = hand[0];
+                Card secondCard = hand[1];
+                bool firstCardIsAceOrTen = (firstCard.CardRank.ToLower() == "ace") || ("10,jack,queen,king".Contains(firstCard.CardRank.ToLower()));
+                bool secondCardIsAceOrTen = (secondCard.CardRank.ToLower() == "ace") || ("10,jack,queen,king".Contains(secondCard.CardRank.ToLower()));
+
+                return firstCardIsAceOrTen && secondCardIsAceOrTen && (firstCard.CardRank != secondCard.CardRank);
+            }
+
+            return false;
         }
         //Blackjack - end
         //Game functionality - end
