@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = csharp_gambling
-build_property.ProjectDir = C:\Users\DavidHougesen\Source\Repos\Wiggleyyyy\H1\Core_app\Csharp_gambling\
+build_property.ProjectDir = C:\Users\HFGF\Documents\GitHub\H1\Core_app\Csharp_gambling\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
