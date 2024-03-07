@@ -35,13 +35,14 @@ namespace csharp_gambling
         public int NumberOfHands { get; set; }
         public List<Card> PlayerCards { get; set; }
         public List<Card> DealerCards { get; set; }
+        public List<Card> AvailableCards { get; set; }
     }
 
     public class Card
     {
-        public int CardID { get; set; }
-        public int CardValue { get; set; }
-        public string CardType { get; set; }
         public string CardName { get; set; }
+        public string CardRank { get; set; }
+        public string CardSuit { get; set; }
+        public string CardHand { get; set; }
     }
 }

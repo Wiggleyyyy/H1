@@ -1,12 +1,14 @@
-// TO DO : ONLY ENTER DIGITS IN BET
+//TO DO : TABINDEX MINES
 
 // TO DO : BLACK JACK
-// TO DO : BETTING IN BLACKJACK
+// TO DO : BETTING IN BLACKJACK - remove from database
 // TO DO : CARD FLOW IN BLACKJACK
 // TO DO : WINNINGS IN BLACKJACK
 // TO DO : NEW BALANCE IN BLACKJACK
 
+using System.Diagnostics.Eventing.Reader;
 using System.DirectoryServices.ActiveDirectory;
+using System.Reflection.Metadata.Ecma335;
 using System.Text.RegularExpressions;
 
 namespace csharp_gambling
@@ -17,11 +19,9 @@ namespace csharp_gambling
         private Dictionary<Button, Panel> buttonPanelMapLoginSignup;
         private Dictionary<Button, Panel> buttonPanelMapGames;
 
-        //ADD CASHOUT
-
         //Game data
-        public MinesData minesData = new MinesData();
-
+        private MinesData minesData = new MinesData();
+        private BlackJackData blackJackData = new BlackJackData();
         public Form1()
         {
             InitializeComponent();
@@ -38,6 +38,12 @@ namespace csharp_gambling
             for (int i = 3; i <= 24; i++)
             {
                 comboBoxMinesBettingMinesCountCustom.Items.Add($"{i}");
+            }
+
+            //Load options into handsCount, starts at 1 ends at 3
+            for (int i = 1; i <= 3; i++)
+            {
+                comboBoxBlackJackBettingHandsCount.Items.Add($"{i}");
             }
         }
 
@@ -266,6 +272,99 @@ namespace csharp_gambling
             else
             {
                 MessageBox.Show("Felter er ikke udfyldt korrekt, eller bet er for lavt.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void textBoxBlackJackBettingBet_Leave(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(textBoxBlackJackBettingBet.Text))
+            {
+                double balance = DB.GetCurrentBalance(lblHomeNavbarUsername.Text);
+                double betInput = (double)Convert.ToDouble(textBoxBlackJackBettingBet.Text);
+
+                if (balance >= betInput)
+                {
+                    blackJackData.MoneyBet = betInput;
+                    lblBlackJackBettingBet.Text = $"{betInput}kr.";
+                    textBoxBlackJackBettingBet.TextAlign = HorizontalAlignment.Right;
+                }
+                else
+                {
+                    MessageBox.Show("Ugyldigt bet.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                textBoxMinesBettingBet.TextAlign = HorizontalAlignment.Left;
+                textBoxBlackJackBettingBet.Text = "";
+            }
+        }
+
+        private void TextBoxBetting_OnlyInputDigits(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void btnMinesCashOut_Click(object sender, EventArgs e)
+        {
+            if (minesData.Fields.Where(x => x.IsRevealed == true).Count() > 0)
+            {
+                string winningsInput = lblMinesGameWinnings.Text.Replace("kr.", "");
+                double winnings = (double)Convert.ToDouble(winningsInput);
+
+                string username = lblHomeNavbarUsername.Text;
+                double currentBalance = DB.GetCurrentBalance(username);
+                double newBalance = currentBalance + winnings;
+
+                DB.InsertNewBalance(username, newBalance);
+                currentBalance = DB.GetCurrentBalance(username);
+                string balanceToWrite = $"Balance: {currentBalance}kr.";
+                lblHomeNavbarCurrency.Text = balanceToWrite;
+
+                MessageBox.Show($"Du vandt {winnings}kr.", "Tillykke!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblMinesGameWinnings.Text = "0kr.";
+                lblMinesGameMultiplier.Text = "x1.0";
+            }
+            else
+            {
+                MessageBox.Show("Du skal klikke på mindst et felt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBlackJackBettingBet_Click(object sender, EventArgs e)
+        {
+            string username = lblHomeNavbarUsername.Text;
+            double bet = (double)Convert.ToDouble(textBoxBlackJackBettingBet.Text);
+            double balance = DB.GetCurrentBalance(username);
+            string numOfHandsInput = comboBoxBlackJackBettingHandsCount.Text;
+            int numOfHands = 1;
+
+            if (!String.IsNullOrEmpty(numOfHandsInput))
+            {
+                numOfHands = (int)Convert.ToInt32(numOfHandsInput);
+            }
+            else
+            {
+                MessageBox.Show("Forkert input i hands", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (balance >= bet && bet >= 0)
+            {
+                blackJackData.MoneyBet = bet;
+                blackJackData.NumberOfHands = numOfHands;
+                BlackJackGame();
+            }
+            else
+            {
+                MessageBox.Show("Bet er for lavt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //Button functionality - end
@@ -584,36 +683,109 @@ namespace csharp_gambling
                 }
             }
         }
-
-        private void btnMinesCashOut_Click(object sender, EventArgs e)
-        {
-            if (minesData.Fields.Where(x => x.IsRevealed == true).Count() > 0)
-            {
-                string winningsInput = lblMinesGameWinnings.Text.Replace("kr.", "");
-                double winnings = (double)Convert.ToDouble(winningsInput);
-
-                string username = lblHomeNavbarUsername.Text;
-                double currentBalance = DB.GetCurrentBalance(username);
-                double newBalance = currentBalance + winnings;
-
-                DB.InsertNewBalance(username, newBalance);
-                currentBalance = DB.GetCurrentBalance(username);
-                string balanceToWrite = $"Balance: {currentBalance}kr.";
-                lblHomeNavbarCurrency.Text = balanceToWrite;
-
-                MessageBox.Show($"Du vandt {winnings}kr.", "Tillykke!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                lblMinesGameWinnings.Text = "0kr.";
-                lblMinesGameMultiplier.Text = "x1.0";
-            }
-            else
-            {
-                MessageBox.Show("Du skal klikke på mindst et felt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
         //Mines - end
 
         //Blackjack - start
+        private void BlackJackGame()
+        {
+            string username = lblHomeNavbarUsername.Text;
+            double balance = DB.GetCurrentBalance(username);
+            double bet = (double)Convert.ToDouble(textBoxBlackJackBettingBet.Text);
+            double newBalance = balance - bet;
 
+            //EDIT BALANCE
+
+            //Resets data
+            blackJackData.GameActive = true;
+            if (blackJackData.PlayerCards != null)
+            {
+                blackJackData.PlayerCards.Clear();
+            }
+            if (blackJackData.DealerCards != null)
+            {
+                blackJackData.DealerCards.Clear();
+            }
+            blackJackData.Winner = "";
+
+            switch (blackJackData.NumberOfHands)
+            {
+                case 1:
+                    {
+                        panelCard1.Visible = true;
+                        break;
+                    }
+                case 2:
+                    {
+                        panelCard1.Visible = true;
+                        panelCard2.Visible = true;
+                        break;
+                    }
+                case 3:
+                    {
+                        panelCard1.Visible = true;
+                        panelCard2.Visible = true;
+                        panelCard3.Visible = true;
+                        break;
+                    }
+            }
+
+            SetCards();
+
+            for (int i = 0; i < blackJackData.NumberOfHands; i++)
+            {
+                int hand = i;
+                PlayerTurn(hand);
+            }
+
+            //Dealer turn
+
+            //Winnings
+
+            //Multiplier
+
+            //Reset visuals
+        }
+
+        private void SetCards()
+        {
+            if (blackJackData.AvailableCards != null)
+            {
+                blackJackData.AvailableCards.Clear();
+            }
+
+            string[] suits = { "Spades", "Hearts", "Diamonds", "Clubs" };
+            string[] ranks = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
+
+            List<Card> tempAvailableCards = new List<Card>();
+
+            foreach (string suit in suits)
+            {
+                foreach (string rank in ranks)
+                {
+                    string cardName = $"{rank} of {suit}";
+
+                    Card card = new Card
+                    {
+                        CardName = cardName,
+                        CardSuit = suit,
+                        CardRank = rank,
+                        CardHand = "Deck",
+                    };
+
+                    tempAvailableCards.Add(card);
+                }
+            }
+
+            if (tempAvailableCards.Count > 0)
+            {
+                blackJackData.AvailableCards = tempAvailableCards;
+            }
+        }
+
+        private void PlayerTurn(int hand)
+        {
+
+        }
         //Blackjack - end
         //Game functionality - end
     }

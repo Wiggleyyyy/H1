@@ -62,6 +62,7 @@
             labelCard1CardValue = new Label();
             lblCard1CardType = new Label();
             panelBlackJackGameDealer = new Panel();
+            lblDealerBust = new Label();
             lblDealerCardsCount = new Label();
             lblDealerTotalValue = new Label();
             panelDealerCard = new Panel();
@@ -87,7 +88,7 @@
             lblCard2CardValue = new Label();
             lblCard2CardType = new Label();
             panelBlackJackBetting = new Panel();
-            comboBox1 = new ComboBox();
+            comboBoxBlackJackBettingHandsCount = new ComboBox();
             lblBettingsHands = new Label();
             lblBettingHandsHeader = new Label();
             btnBlackJackBettingBet = new Button();
@@ -154,7 +155,6 @@
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
-            lblDealerBust = new Label();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -568,7 +568,7 @@
             labelCard1CardValue.Name = "labelCard1CardValue";
             labelCard1CardValue.Size = new Size(76, 15);
             labelCard1CardValue.TabIndex = 1;
-            labelCard1CardValue.Text = "<CardValue>";
+            labelCard1CardValue.Text = "<CardRank>";
             // 
             // lblCard1CardType
             // 
@@ -593,6 +593,19 @@
             panelBlackJackGameDealer.Size = new Size(663, 100);
             panelBlackJackGameDealer.TabIndex = 5;
             panelBlackJackGameDealer.Visible = false;
+            // 
+            // lblDealerBust
+            // 
+            lblDealerBust.AutoSize = true;
+            lblDealerBust.BackColor = Color.Black;
+            lblDealerBust.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDealerBust.ForeColor = Color.Red;
+            lblDealerBust.Location = new Point(51, 45);
+            lblDealerBust.Name = "lblDealerBust";
+            lblDealerBust.Size = new Size(79, 37);
+            lblDealerBust.TabIndex = 4;
+            lblDealerBust.Text = "BUST";
+            lblDealerBust.Visible = false;
             // 
             // lblDealerCardsCount
             // 
@@ -636,7 +649,7 @@
             lblDealerCardValue.Name = "lblDealerCardValue";
             lblDealerCardValue.Size = new Size(76, 15);
             lblDealerCardValue.TabIndex = 1;
-            lblDealerCardValue.Text = "<CardValue>";
+            lblDealerCardValue.Text = "<CardRank>";
             // 
             // lblDealerCardType
             // 
@@ -745,7 +758,7 @@
             lblCard3CardValue.Name = "lblCard3CardValue";
             lblCard3CardValue.Size = new Size(76, 15);
             lblCard3CardValue.TabIndex = 1;
-            lblCard3CardValue.Text = "<CardValue>";
+            lblCard3CardValue.Text = "<CardRank>";
             // 
             // lblCard3CardType
             // 
@@ -843,7 +856,7 @@
             lblCard2CardValue.Name = "lblCard2CardValue";
             lblCard2CardValue.Size = new Size(76, 15);
             lblCard2CardValue.TabIndex = 1;
-            lblCard2CardValue.Text = "<CardValue>";
+            lblCard2CardValue.Text = "<CardRank>";
             // 
             // lblCard2CardType
             // 
@@ -858,7 +871,7 @@
             // panelBlackJackBetting
             // 
             panelBlackJackBetting.BackColor = Color.FromArgb(24, 22, 28);
-            panelBlackJackBetting.Controls.Add(comboBox1);
+            panelBlackJackBetting.Controls.Add(comboBoxBlackJackBettingHandsCount);
             panelBlackJackBetting.Controls.Add(lblBettingsHands);
             panelBlackJackBetting.Controls.Add(lblBettingHandsHeader);
             panelBlackJackBetting.Controls.Add(btnBlackJackBettingBet);
@@ -872,14 +885,14 @@
             panelBlackJackBetting.Size = new Size(305, 415);
             panelBlackJackBetting.TabIndex = 3;
             // 
-            // comboBox1
+            // comboBoxBlackJackBettingHandsCount
             // 
-            comboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(13, 188);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(175, 25);
-            comboBox1.TabIndex = 16;
+            comboBoxBlackJackBettingHandsCount.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxBlackJackBettingHandsCount.FormattingEnabled = true;
+            comboBoxBlackJackBettingHandsCount.Location = new Point(13, 188);
+            comboBoxBlackJackBettingHandsCount.Name = "comboBoxBlackJackBettingHandsCount";
+            comboBoxBlackJackBettingHandsCount.Size = new Size(175, 25);
+            comboBoxBlackJackBettingHandsCount.TabIndex = 16;
             // 
             // lblBettingsHands
             // 
@@ -914,6 +927,7 @@
             btnBlackJackBettingBet.TabIndex = 11;
             btnBlackJackBettingBet.Text = "Bet";
             btnBlackJackBettingBet.UseVisualStyleBackColor = false;
+            btnBlackJackBettingBet.Click += btnBlackJackBettingBet_Click;
             // 
             // lblBlackJackBettingBet
             // 
@@ -943,6 +957,8 @@
             textBoxBlackJackBettingBet.PlaceholderText = "Indtast beløb";
             textBoxBlackJackBettingBet.Size = new Size(175, 25);
             textBoxBlackJackBettingBet.TabIndex = 6;
+            textBoxBlackJackBettingBet.KeyPress += TextBoxBetting_OnlyInputDigits;
+            textBoxBlackJackBettingBet.Leave += textBoxBlackJackBettingBet_Leave;
             // 
             // lblBlackJackBettingBetTitle
             // 
@@ -1536,6 +1552,7 @@
             textBoxMinesBettingBet.PlaceholderText = "Indtast beløb";
             textBoxMinesBettingBet.Size = new Size(175, 25);
             textBoxMinesBettingBet.TabIndex = 6;
+            textBoxMinesBettingBet.KeyPress += TextBoxBetting_OnlyInputDigits;
             textBoxMinesBettingBet.Leave += textBoxMinesBettingBet_Leave;
             // 
             // lblMinesBettingBet
@@ -1713,19 +1730,6 @@
             lblHomeNavbarTitle.Size = new Size(113, 28);
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
-            // 
-            // lblDealerBust
-            // 
-            lblDealerBust.AutoSize = true;
-            lblDealerBust.BackColor = Color.Black;
-            lblDealerBust.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDealerBust.ForeColor = Color.Red;
-            lblDealerBust.Location = new Point(51, 45);
-            lblDealerBust.Name = "lblDealerBust";
-            lblDealerBust.Size = new Size(79, 37);
-            lblDealerBust.TabIndex = 4;
-            lblDealerBust.Text = "BUST";
-            lblDealerBust.Visible = false;
             // 
             // Form1
             // 
@@ -1907,7 +1911,7 @@
         private Label lblCard1Bust;
         private Label lblCard3Bust;
         private Label lblCard2Bust;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxBlackJackBettingHandsCount;
         private Button btnBlackJackClose;
         private Label lblDealerBust;
     }
