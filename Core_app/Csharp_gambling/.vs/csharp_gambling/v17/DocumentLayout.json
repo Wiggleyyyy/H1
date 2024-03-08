@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|c:\\users\\hfgf\\documents\\github\\h1\\core_app\\csharp_gambling\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|c:\\users\\hfgf\\documents\\github\\h1\\core_app\\csharp_gambling\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,24 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Database.cs",
-              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Database.cs",
-              "RelativeDocumentMoniker": "Database.cs",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Database.cs",
-              "RelativeToolTip": "Database.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAwwIwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T12:47:10.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -51,15 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAK0BAAAAAAAAAAAewLkBAAAnAAAA",
+              "ViewState": "AQIAAE8CAAAAAAAAAAArwFgCAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T09:53:17.032Z",
+              "WhenOpened": "2024-03-07T12:35:24.293Z",
               "EditorCaption": ""
             }
           ]

@@ -666,8 +666,10 @@ namespace csharp_gambling
                 Button button = FindButtonByName(this, field.MineName);
 
                 button.Enabled = true;
-                button.Text = field.MineName.Replace("mine", "");
-                button.BackColor = default;
+                //button.Text = field.MineName.Replace("mine", "");
+                button.BackColor = Color.FromArgb(24, 22, 28);
+                button.ForeColor = Color.FromArgb(41, 38, 49);
+                button.Text = "?";
                 field.IsRevealed = false;
             }
         }
