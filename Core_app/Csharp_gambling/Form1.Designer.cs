@@ -53,9 +53,7 @@
             btnBlackJackClose = new Button();
             panelBlackJackGame = new Panel();
             panelBlackJackGameCard1 = new Panel();
-            btnCard1Stand = new Button();
             lblCard1CardsCount = new Label();
-            btnCard1Hit = new Button();
             lblCard1TotalValue = new Label();
             panelCard1 = new Panel();
             lblCard1Bust = new Label();
@@ -65,23 +63,16 @@
             lblDealerBust = new Label();
             lblDealerCardsCount = new Label();
             lblDealerTotalValue = new Label();
-            panelDealerCard = new Panel();
-            lblDealerCardValue = new Label();
-            lblDealerCardType = new Label();
             lblDealerTitle = new Label();
-            panelBlackJackGameCard2 = new Panel();
-            btnCard3Stand = new Button();
+            panelBlackJackGameCard3 = new Panel();
             lblCard3CardsCount = new Label();
-            btnCard3Hit = new Button();
             lblCard3TotalValue = new Label();
             panelCard3 = new Panel();
             lblCard3Bust = new Label();
             lblCard3CardValue = new Label();
             lblCard3CardType = new Label();
-            panelBlackJacGamekCard2 = new Panel();
-            btnCard2Stand = new Button();
+            panelBlackJackGameCard2 = new Panel();
             lblCard2CardsCount = new Label();
-            btnCard2Hit = new Button();
             lblCard2TotalValue = new Label();
             panelCard2 = new Panel();
             lblCard2Bust = new Label();
@@ -168,10 +159,9 @@
             panelBlackJackGameCard1.SuspendLayout();
             panelCard1.SuspendLayout();
             panelBlackJackGameDealer.SuspendLayout();
-            panelDealerCard.SuspendLayout();
-            panelBlackJackGameCard2.SuspendLayout();
+            panelBlackJackGameCard3.SuspendLayout();
             panelCard3.SuspendLayout();
-            panelBlackJacGamekCard2.SuspendLayout();
+            panelBlackJackGameCard2.SuspendLayout();
             panelCard2.SuspendLayout();
             panelBlackJackBetting.SuspendLayout();
             panelHomeMines.SuspendLayout();
@@ -459,7 +449,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(399, 632);
+            panelBlackJack.Location = new Point(37, 120);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;
@@ -480,8 +470,8 @@
             panelBlackJackGame.BackColor = Color.FromArgb(24, 22, 28);
             panelBlackJackGame.Controls.Add(panelBlackJackGameCard1);
             panelBlackJackGame.Controls.Add(panelBlackJackGameDealer);
+            panelBlackJackGame.Controls.Add(panelBlackJackGameCard3);
             panelBlackJackGame.Controls.Add(panelBlackJackGameCard2);
-            panelBlackJackGame.Controls.Add(panelBlackJacGamekCard2);
             panelBlackJackGame.Location = new Point(429, 53);
             panelBlackJackGame.Name = "panelBlackJackGame";
             panelBlackJackGame.Size = new Size(710, 415);
@@ -490,9 +480,7 @@
             // panelBlackJackGameCard1
             // 
             panelBlackJackGameCard1.BackColor = Color.FromArgb(51, 50, 51);
-            panelBlackJackGameCard1.Controls.Add(btnCard1Stand);
             panelBlackJackGameCard1.Controls.Add(lblCard1CardsCount);
-            panelBlackJackGameCard1.Controls.Add(btnCard1Hit);
             panelBlackJackGameCard1.Controls.Add(lblCard1TotalValue);
             panelBlackJackGameCard1.Controls.Add(panelCard1);
             panelBlackJackGameCard1.Location = new Point(27, 150);
@@ -500,16 +488,6 @@
             panelBlackJackGameCard1.Size = new Size(191, 263);
             panelBlackJackGameCard1.TabIndex = 6;
             panelBlackJackGameCard1.Visible = false;
-            // 
-            // btnCard1Stand
-            // 
-            btnCard1Stand.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCard1Stand.Location = new Point(131, 29);
-            btnCard1Stand.Name = "btnCard1Stand";
-            btnCard1Stand.Size = new Size(42, 23);
-            btnCard1Stand.TabIndex = 5;
-            btnCard1Stand.Text = "STÅ";
-            btnCard1Stand.UseVisualStyleBackColor = true;
             // 
             // lblCard1CardsCount
             // 
@@ -520,16 +498,6 @@
             lblCard1CardsCount.Size = new Size(110, 15);
             lblCard1CardsCount.TabIndex = 1;
             lblCard1CardsCount.Text = "<NumberOfCards>";
-            // 
-            // btnCard1Hit
-            // 
-            btnCard1Hit.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCard1Hit.Location = new Point(131, 4);
-            btnCard1Hit.Name = "btnCard1Hit";
-            btnCard1Hit.Size = new Size(42, 23);
-            btnCard1Hit.TabIndex = 4;
-            btnCard1Hit.Text = "HIT";
-            btnCard1Hit.UseVisualStyleBackColor = true;
             // 
             // lblCard1TotalValue
             // 
@@ -591,7 +559,6 @@
             panelBlackJackGameDealer.Controls.Add(lblDealerBust);
             panelBlackJackGameDealer.Controls.Add(lblDealerCardsCount);
             panelBlackJackGameDealer.Controls.Add(lblDealerTotalValue);
-            panelBlackJackGameDealer.Controls.Add(panelDealerCard);
             panelBlackJackGameDealer.Controls.Add(lblDealerTitle);
             panelBlackJackGameDealer.Location = new Point(27, 27);
             panelBlackJackGameDealer.Name = "panelBlackJackGameDealer";
@@ -605,7 +572,7 @@
             lblDealerBust.BackColor = Color.Black;
             lblDealerBust.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             lblDealerBust.ForeColor = Color.Red;
-            lblDealerBust.Location = new Point(51, 45);
+            lblDealerBust.Location = new Point(7, 43);
             lblDealerBust.Name = "lblDealerBust";
             lblDealerBust.Size = new Size(79, 37);
             lblDealerBust.TabIndex = 4;
@@ -617,7 +584,7 @@
             lblDealerCardsCount.AutoSize = true;
             lblDealerCardsCount.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             lblDealerCardsCount.ForeColor = Color.White;
-            lblDealerCardsCount.Location = new Point(343, 47);
+            lblDealerCardsCount.Location = new Point(241, 44);
             lblDealerCardsCount.Name = "lblDealerCardsCount";
             lblDealerCardsCount.RightToLeft = RightToLeft.No;
             lblDealerCardsCount.Size = new Size(182, 28);
@@ -629,42 +596,12 @@
             lblDealerTotalValue.AutoSize = true;
             lblDealerTotalValue.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             lblDealerTotalValue.ForeColor = Color.White;
-            lblDealerTotalValue.Location = new Point(343, 14);
+            lblDealerTotalValue.Location = new Point(241, 11);
             lblDealerTotalValue.Name = "lblDealerTotalValue";
             lblDealerTotalValue.RightToLeft = RightToLeft.No;
             lblDealerTotalValue.Size = new Size(129, 28);
             lblDealerTotalValue.TabIndex = 3;
             lblDealerTotalValue.Text = "<TotalValue>";
-            // 
-            // panelDealerCard
-            // 
-            panelDealerCard.BackColor = Color.White;
-            panelDealerCard.Controls.Add(lblDealerCardValue);
-            panelDealerCard.Controls.Add(lblDealerCardType);
-            panelDealerCard.Location = new Point(181, 4);
-            panelDealerCard.Name = "panelDealerCard";
-            panelDealerCard.Size = new Size(156, 87);
-            panelDealerCard.TabIndex = 2;
-            // 
-            // lblDealerCardValue
-            // 
-            lblDealerCardValue.AutoSize = true;
-            lblDealerCardValue.BackColor = Color.Transparent;
-            lblDealerCardValue.Location = new Point(31, 43);
-            lblDealerCardValue.Name = "lblDealerCardValue";
-            lblDealerCardValue.Size = new Size(74, 15);
-            lblDealerCardValue.TabIndex = 1;
-            lblDealerCardValue.Text = "<CardRank>";
-            // 
-            // lblDealerCardType
-            // 
-            lblDealerCardType.AutoSize = true;
-            lblDealerCardType.BackColor = Color.Transparent;
-            lblDealerCardType.Location = new Point(34, 21);
-            lblDealerCardType.Name = "lblDealerCardType";
-            lblDealerCardType.Size = new Size(72, 15);
-            lblDealerCardType.TabIndex = 0;
-            lblDealerCardType.Text = "<CardType>";
             // 
             // lblDealerTitle
             // 
@@ -677,29 +614,17 @@
             lblDealerTitle.TabIndex = 0;
             lblDealerTitle.Text = "Dealer:";
             // 
-            // panelBlackJackGameCard2
+            // panelBlackJackGameCard3
             // 
-            panelBlackJackGameCard2.BackColor = Color.FromArgb(51, 50, 51);
-            panelBlackJackGameCard2.Controls.Add(btnCard3Stand);
-            panelBlackJackGameCard2.Controls.Add(lblCard3CardsCount);
-            panelBlackJackGameCard2.Controls.Add(btnCard3Hit);
-            panelBlackJackGameCard2.Controls.Add(lblCard3TotalValue);
-            panelBlackJackGameCard2.Controls.Add(panelCard3);
-            panelBlackJackGameCard2.Location = new Point(499, 150);
-            panelBlackJackGameCard2.Name = "panelBlackJackGameCard2";
-            panelBlackJackGameCard2.Size = new Size(191, 265);
-            panelBlackJackGameCard2.TabIndex = 6;
-            panelBlackJackGameCard2.Visible = false;
-            // 
-            // btnCard3Stand
-            // 
-            btnCard3Stand.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCard3Stand.Location = new Point(132, 30);
-            btnCard3Stand.Name = "btnCard3Stand";
-            btnCard3Stand.Size = new Size(42, 23);
-            btnCard3Stand.TabIndex = 8;
-            btnCard3Stand.Text = "STÅ";
-            btnCard3Stand.UseVisualStyleBackColor = true;
+            panelBlackJackGameCard3.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameCard3.Controls.Add(lblCard3CardsCount);
+            panelBlackJackGameCard3.Controls.Add(lblCard3TotalValue);
+            panelBlackJackGameCard3.Controls.Add(panelCard3);
+            panelBlackJackGameCard3.Location = new Point(499, 150);
+            panelBlackJackGameCard3.Name = "panelBlackJackGameCard3";
+            panelBlackJackGameCard3.Size = new Size(191, 265);
+            panelBlackJackGameCard3.TabIndex = 6;
+            panelBlackJackGameCard3.Visible = false;
             // 
             // lblCard3CardsCount
             // 
@@ -710,16 +635,6 @@
             lblCard3CardsCount.Size = new Size(110, 15);
             lblCard3CardsCount.TabIndex = 1;
             lblCard3CardsCount.Text = "<NumberOfCards>";
-            // 
-            // btnCard3Hit
-            // 
-            btnCard3Hit.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCard3Hit.Location = new Point(132, 5);
-            btnCard3Hit.Name = "btnCard3Hit";
-            btnCard3Hit.Size = new Size(42, 23);
-            btnCard3Hit.TabIndex = 7;
-            btnCard3Hit.Text = "HIT";
-            btnCard3Hit.UseVisualStyleBackColor = true;
             // 
             // lblCard3TotalValue
             // 
@@ -775,29 +690,17 @@
             lblCard3CardType.TabIndex = 0;
             lblCard3CardType.Text = "<CardType>";
             // 
-            // panelBlackJacGamekCard2
+            // panelBlackJackGameCard2
             // 
-            panelBlackJacGamekCard2.BackColor = Color.FromArgb(51, 50, 51);
-            panelBlackJacGamekCard2.Controls.Add(btnCard2Stand);
-            panelBlackJacGamekCard2.Controls.Add(lblCard2CardsCount);
-            panelBlackJacGamekCard2.Controls.Add(btnCard2Hit);
-            panelBlackJacGamekCard2.Controls.Add(lblCard2TotalValue);
-            panelBlackJacGamekCard2.Controls.Add(panelCard2);
-            panelBlackJacGamekCard2.Location = new Point(268, 150);
-            panelBlackJacGamekCard2.Name = "panelBlackJacGamekCard2";
-            panelBlackJacGamekCard2.Size = new Size(191, 263);
-            panelBlackJacGamekCard2.TabIndex = 5;
-            panelBlackJacGamekCard2.Visible = false;
-            // 
-            // btnCard2Stand
-            // 
-            btnCard2Stand.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCard2Stand.Location = new Point(131, 29);
-            btnCard2Stand.Name = "btnCard2Stand";
-            btnCard2Stand.Size = new Size(42, 23);
-            btnCard2Stand.TabIndex = 5;
-            btnCard2Stand.Text = "STÅ";
-            btnCard2Stand.UseVisualStyleBackColor = true;
+            panelBlackJackGameCard2.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameCard2.Controls.Add(lblCard2CardsCount);
+            panelBlackJackGameCard2.Controls.Add(lblCard2TotalValue);
+            panelBlackJackGameCard2.Controls.Add(panelCard2);
+            panelBlackJackGameCard2.Location = new Point(268, 150);
+            panelBlackJackGameCard2.Name = "panelBlackJackGameCard2";
+            panelBlackJackGameCard2.Size = new Size(191, 263);
+            panelBlackJackGameCard2.TabIndex = 5;
+            panelBlackJackGameCard2.Visible = false;
             // 
             // lblCard2CardsCount
             // 
@@ -808,16 +711,6 @@
             lblCard2CardsCount.Size = new Size(110, 15);
             lblCard2CardsCount.TabIndex = 1;
             lblCard2CardsCount.Text = "<NumberOfCards>";
-            // 
-            // btnCard2Hit
-            // 
-            btnCard2Hit.Font = new Font("Segoe UI", 7.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCard2Hit.Location = new Point(131, 4);
-            btnCard2Hit.Name = "btnCard2Hit";
-            btnCard2Hit.Size = new Size(42, 23);
-            btnCard2Hit.TabIndex = 4;
-            btnCard2Hit.Text = "HIT";
-            btnCard2Hit.UseVisualStyleBackColor = true;
             // 
             // lblCard2TotalValue
             // 
@@ -1819,14 +1712,12 @@
             panelCard1.PerformLayout();
             panelBlackJackGameDealer.ResumeLayout(false);
             panelBlackJackGameDealer.PerformLayout();
-            panelDealerCard.ResumeLayout(false);
-            panelDealerCard.PerformLayout();
-            panelBlackJackGameCard2.ResumeLayout(false);
-            panelBlackJackGameCard2.PerformLayout();
+            panelBlackJackGameCard3.ResumeLayout(false);
+            panelBlackJackGameCard3.PerformLayout();
             panelCard3.ResumeLayout(false);
             panelCard3.PerformLayout();
-            panelBlackJacGamekCard2.ResumeLayout(false);
-            panelBlackJacGamekCard2.PerformLayout();
+            panelBlackJackGameCard2.ResumeLayout(false);
+            panelBlackJackGameCard2.PerformLayout();
             panelCard2.ResumeLayout(false);
             panelCard2.PerformLayout();
             panelBlackJackBetting.ResumeLayout(false);
@@ -1937,37 +1828,28 @@
         private Panel panelBlackJackCard3;
         private Label lblCard3CardValue;
         private Label lblCard3CardType;
-        private Button btnCard3Stand;
-        private Button btnCard3Hit;
-        private Button btnCard2Stand;
-        private Button btnCard2Hit;
         private Panel panelBlackJackGameDealer;
         private Label lblDealerTitle;
         private Label lblCard2CardValue;
         private Label lblCard2CardType;
-        private Panel panelBlackJackGameCard2;
+        private Panel panelBlackJackGameCard3;
         private Label lblCard3CardsCount;
         private Label lblCard3TotalValue;
         private Panel panelCard3;
         private Label lblBettingHandsHeader;
         private Label label4;
-        private Label lblDealerCardType;
-        private Panel panelBlackJacGamekCard2;
+        private Panel panelBlackJackGameCard2;
         private Label lblCard2CardsCount;
         private Label lblCard2TotalValue;
         private Panel panelCard2;
         private Label label5;
         private Label label6;
         private Panel panelBlackJackGameCard1;
-        private Button btnCard1Stand;
         private Label lblCard1CardsCount;
-        private Button btnCard1Hit;
         private Label lblCard1TotalValue;
         private Panel panelCard1;
         private Label lblCard1CardValue;
         private Label lblCard1CardType;
-        private Panel panelDealerCard;
-        private Label lblDealerCardValue;
         private Label lblDealerTotalValue;
         private Label lblDealerCardsCount;
         private Label lblBettingsHands;

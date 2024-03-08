@@ -31,8 +31,12 @@ namespace csharp_gambling
     {
         public double MoneyBet { get; set; }
         public bool GameActive { get; set; }
-        public string Winner { get; set; }
+        public string Wins { get; set; }
         public int NumberOfHands { get; set; }
+        public bool DealerHasBlackJack { get; set; }
+        public bool PlayerHasBlackJackHand1 { get; set; }
+        public bool PlayerHasBlackJackHand2 { get; set; }
+        public bool PlayerHasBlackJackHand3 { get; set; }
         public List<Card> PlayerCards { get; set; }
         public List<Card> DealerCards { get; set; }
         public List<Card> AvailableCards { get; set; }
