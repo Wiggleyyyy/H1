@@ -147,6 +147,9 @@ namespace csharp_gambling
 
         private void btnSignupCreateAccount_Click(object sender, EventArgs e)
         {
+            textBoxLoginUsername.Text = "";
+            textBoxLoginPassword.Text = "";
+
             if (!String.IsNullOrEmpty(textBoxSignupUsername.Text) && //Check if username is entered
                 !String.IsNullOrEmpty(textBoxSignupPassword.Text) && //Check if password is entered)
                 textBoxSignupConfirmPassword.Text == textBoxSignupPassword.Text) //Check if password confirm is the same as password
@@ -428,9 +431,7 @@ namespace csharp_gambling
         }
         //Loading pages - end
 
-
         //Withdraw and deposit - start
-
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
             WithdrawDepositText.Show();
@@ -797,7 +798,7 @@ namespace csharp_gambling
 
             //EDIT BALANCE
 
-            //Resets data
+            //Reset data
             blackJackData.GameActive = true;
             if (blackJackData.PlayerCards != null)
             {
@@ -807,43 +808,73 @@ namespace csharp_gambling
             {
                 blackJackData.DealerCards.Clear();
             }
-            blackJackData.Winner = "";
+            blackJackData.Win = "";
 
             switch (blackJackData.NumberOfHands)
             {
                 case 1:
                     {
-                        panelCard1.Visible = true;
+                        panelBlackJackGameCard1.Visible = true;
+                        lblCard1TotalValue.Text = "";
+                        lblCard1CardsCount.Text = "";
+                        lblCard1CardType.Text = "";
+                        lblCard1CardValue.Text = "";
                         break;
                     }
                 case 2:
                     {
-                        panelCard1.Visible = true;
-                        panelCard2.Visible = true;
+                        panelBlackJackGameCard1.Visible = true;
+                        panelBlackJackGameCard2.Visible = true;
+                        lblCard1TotalValue.Text = "";
+                        lblCard1CardsCount.Text = "";
+                        lblCard1CardType.Text = "";
+                        lblCard1CardValue.Text = "";
+                        lblCard2TotalValue.Text = "";
+                        lblCard2CardsCount.Text = "";
+                        lblCard2CardType.Text = "";
+                        lblCard2CardValue.Text = "";
                         break;
                     }
                 case 3:
                     {
-                        panelCard1.Visible = true;
-                        panelCard2.Visible = true;
-                        panelCard3.Visible = true;
+                        panelBlackJackGameCard1.Visible = true;
+                        panelBlackJackGameCard2.Visible = true;
+                        panelBlackJackGameCard3.Visible = true;
+                        lblCard1TotalValue.Text = "";
+                        lblCard1CardsCount.Text = "";
+                        lblCard1CardType.Text = "";
+                        lblCard1CardValue.Text = "";
+                        lblCard2TotalValue.Text = "";
+                        lblCard2CardsCount.Text = "";
+                        lblCard2CardType.Text = "";
+                        lblCard2CardValue.Text = "";
+                        lblCard3TotalValue.Text = "";
+                        lblCard3CardsCount.Text = "";
+                        lblCard3CardType.Text = "";
+                        lblCard3CardValue.Text = "";
                         break;
                     }
             }
 
             SetCards();
 
+            int hand = 0;
             for (int i = 0; i < blackJackData.NumberOfHands; i++)
             {
-                int hand = i;
+                hand = i + 1;
                 PlayerTurn(hand);
             }
 
-            //Dealer turn
+            DealerTurn();
+
+            //Check for blackjacks
+            //Loop through each hand
+
+            //Extra turns
 
             //Winnings
 
-            //Multiplier
+            //Multiplier - standard win = +100% | blackjack win = +150%
 
             //Reset visuals
         }
@@ -884,9 +915,45 @@ namespace csharp_gambling
             }
         }
 
+        private void DealerTurn()
+        {
+            List<Card> tempAvailableCards = blackJackData.AvailableCards;
+            List<Card> tempDealerCards = new List<Card>();
+
+            Random random = new Random();
+            for (int i = 0; i < 2; i++)
+            {
+                int randomIndex = random.Next(tempAvailableCards.Count);
+                Card randomCard = tempAvailableCards[randomIndex];
+
+                tempAvailableCards.Remove(randomCard);
+                tempDealerCards.Add(randomCard);
+            }
+
+            blackJackData.AvailableCards = tempAvailableCards;
+            blackJackData.DealerCards = tempDealerCards;
+
+            int numOfCards = tempDealerCards.Count;
+            int handValue = CalculateHandValue(blackJackData.DealerCards);
+            bool hasBlackJack = IsBlackjack(blackJackData.DealerCards);
+
+            if (hasBlackJack)
+            {
+                blackJackData.DealerHasBlackJack = true;
+                lblDealerTotalValue.Text = "Black Jack";
+                lblDealerTotalValue.Text = $"Kort: {numOfCards}";
+                MessageBox.Show("Dealer has black jack", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                lblDealerTotalValue.Text = "Værdi: ?";
+                lblDealerCardsCount.Text = $"Kort: {numOfCards}";
+            }            
+        }
+
         private void PlayerTurn(int hand)
         {
-            //FIND RANDOM CARD
             List<Card> tempAvailableCards = blackJackData.AvailableCards;
             List<Card> tempPlayerCards = new List<Card>();
 
@@ -922,6 +989,9 @@ namespace csharp_gambling
                 Thread.Sleep(2000);
             }
 
+            blackJackData.AvailableCards = tempAvailableCards;
+            blackJackData.PlayerCards = tempPlayerCards;
+
             int numOfCards = tempPlayerCards.Count;
             int handValue = CalculateHandValue(blackJackData.PlayerCards);
             bool hasBlackJack = IsBlackjack(blackJackData.PlayerCards);
@@ -930,81 +1000,88 @@ namespace csharp_gambling
             {
                 if (hand == 1)
                 {
+                    blackJackData.PlayerHasBlackJackHand1 = true;
                     lblCard1TotalValue.Text = "Black Jack";
-                    lblCard1CardsCount.Text = $"{numOfCards}";
+                    lblCard1CardsCount.Text = $"Kort: {numOfCards}";
                     MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (hand == 2)
                 {
+                    blackJackData.PlayerHasBlackJackHand2 = true;
                     lblCard2TotalValue.Text = "Black Jack";
-                    lblCard2CardsCount.Text = $"{numOfCards}";
+                    lblCard2CardsCount.Text = $"Kort: {numOfCards}";
                     MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (hand == 3)
                 {
+                    blackJackData.PlayerHasBlackJackHand3 = true;
                     lblCard3TotalValue.Text = "Black Jack";
-                    lblCard3CardsCount.Text = $"{numOfCards}";
+                    lblCard3CardsCount.Text = $"Kort: {numOfCards}";
                     MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
-                blackJackData.Winner = "player";
                 return;
             }
             else
             {
-                if (handValue > 21)
-                {
-                    if (hand == 1)
-                    {
-                        lblCard1TotalValue.Text = "Bust";
-                        lblCard1CardsCount.Text = $"{numOfCards}";
-                        lblCard1Bust.Visible = true;
-                    }
-                    else if (hand == 2)
-                    {
-                        lblCard2TotalValue.Text = "Bust";
-                        lblCard2CardsCount.Text = $"{numOfCards}";
-                        lblCard2Bust.Visible = true;
-
-                    }
-                    else if (hand == 3)
-                    {
-                        lblCard3TotalValue.Text = "Bust";
-                        lblCard3CardsCount.Text = $"{numOfCards}";
-                        lblCard3Bust.Visible = true;
-                    }
-
-                    blackJackData.Winner = "Dealer";
-                    return;
-                }
-
                 if (hand == 1)
                 {
-                    lblCard1TotalValue.Text = $"{handValue}";
-                    lblCard1CardsCount.Text = $"{numOfCards}";
+                    lblCard1TotalValue.Text = $"Værdi: {handValue}";
+                    lblCard1CardsCount.Text = $"Kort: {numOfCards}";
                 }
                 else if (hand == 2)
                 {
-                    lblCard2TotalValue.Text = $"{handValue}";
-                    lblCard2CardsCount.Text = $"{numOfCards}";
+                    lblCard2TotalValue.Text = $"Værdi: {handValue}";
+                    lblCard2CardsCount.Text = $"Kort: {numOfCards}";
                 }
                 else if (hand == 3)
                 {
-                    lblCard3TotalValue.Text = $"{handValue}";
-                    lblCard3CardsCount.Text = $"{numOfCards}";
+                    lblCard3TotalValue.Text = $"Værdi: {handValue}";
+                    lblCard3CardsCount.Text = $"Kort: {numOfCards}";
                 }
             }
+        }
+
+        private void PlayerHitOrStand(int hand)
+        {
+            //if (handValue > 21)
+            //{
+            //    if (hand == 1)
+            //    {
+            //        lblCard1TotalValue.Text = "Bust";
+            //        lblCard1CardsCount.Text = $"Kort: {numOfCards}";
+            //        lblCard1Bust.Visible = true;
+            //    }
+            //    else if (hand == 2)
+            //    {
+            //        lblCard2TotalValue.Text = "Bust";
+            //        lblCard2CardsCount.Text = $"Kort: {numOfCards}";
+            //        lblCard2Bust.Visible = true;
+
+            //    }
+            //    else if (hand == 3)
+            //    {
+            //        lblCard3TotalValue.Text = "Bust";
+            //        lblCard3CardsCount.Text = $"Kort: {numOfCards}";
+            //        lblCard3Bust.Visible = true;
+            //    }
+
+            //    blackJackData.Win = "Dealer";
+            //    return;
+            //}
 
             while (true)
             {
-                DialogResult result = MessageBox.Show("Vil du have et kort mere?", "Hit eller stå", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                
+                DialogResult result = MessageBox.Show($"Vil du have et kort mere på hånd {hand}", "Hit eller stå", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
                 if (result == DialogResult.Yes)
                 {
                     //GET NEW CARD
+
+                    //CHECK IF BUST
                 }
                 else
                 {
+                    //Dealer turn
                     break;
                 }
             }
