@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IfConsistsOfUppercaseLetters")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ef6eefbd23d4738ebf64f3d6ce8756f249fefcc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("IfConsistsOfUppercaseLetters")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IfConsistsOfUppercaseLetters")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
