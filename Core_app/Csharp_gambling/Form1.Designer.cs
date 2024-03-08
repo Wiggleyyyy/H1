@@ -459,7 +459,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(399, 632);
+            panelBlackJack.Location = new Point(254, 632);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;

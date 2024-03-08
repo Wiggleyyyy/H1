@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("csharp_gambling")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8917d7f5434c4553c9cfcb9982f15793d1261f67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db10fdb161db1040f0da65251d8add05db370571")]
 [assembly: System.Reflection.AssemblyProductAttribute("csharp_gambling")]
 [assembly: System.Reflection.AssemblyTitleAttribute("csharp_gambling")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
