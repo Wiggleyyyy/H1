@@ -147,18 +147,19 @@
             lblMinesTitle = new Label();
             btnMinesClose = new Button();
             panelHomeNavbar = new Panel();
+            WithdrawSubmitbutton = new Button();
+            DepositSubmitbutton = new Button();
+            WithdrawDepositText = new TextBox();
             btnHomeNavbarRoulette = new Button();
+            Depositbotton = new Button();
             btnHomeNavbarCrash = new Button();
+            Withdrawbutton = new Button();
             btnHomeNavbarBlackjack = new Button();
             btnHomeNavbarMines = new Button();
             lblHomeNavbarCurrency = new Label();
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
-            panel1 = new Panel();
-            Withdrawbutton = new Button();
-            Depositbotton = new Button();
-            WithdrawDepositText = new TextBox();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
@@ -178,7 +179,6 @@
             panelMinesGameMinesArea.SuspendLayout();
             panelMinesBetting.SuspendLayout();
             panelHomeNavbar.SuspendLayout();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panelLogin
@@ -443,7 +443,6 @@
             // 
             // panelHomePage
             // 
-            panelHomePage.Controls.Add(panel1);
             panelHomePage.Controls.Add(panelBlackJack);
             panelHomePage.Controls.Add(panelHomeMines);
             panelHomePage.Controls.Add(panelHomeNavbar);
@@ -1653,8 +1652,13 @@
             // panelHomeNavbar
             // 
             panelHomeNavbar.BackColor = SystemColors.ActiveBorder;
+            panelHomeNavbar.Controls.Add(WithdrawSubmitbutton);
+            panelHomeNavbar.Controls.Add(DepositSubmitbutton);
+            panelHomeNavbar.Controls.Add(WithdrawDepositText);
             panelHomeNavbar.Controls.Add(btnHomeNavbarRoulette);
+            panelHomeNavbar.Controls.Add(Depositbotton);
             panelHomeNavbar.Controls.Add(btnHomeNavbarCrash);
+            panelHomeNavbar.Controls.Add(Withdrawbutton);
             panelHomeNavbar.Controls.Add(btnHomeNavbarBlackjack);
             panelHomeNavbar.Controls.Add(btnHomeNavbarMines);
             panelHomeNavbar.Controls.Add(lblHomeNavbarCurrency);
@@ -1666,6 +1670,36 @@
             panelHomeNavbar.Size = new Size(1275, 100);
             panelHomeNavbar.TabIndex = 0;
             // 
+            // WithdrawSubmitbutton
+            // 
+            WithdrawSubmitbutton.Location = new Point(217, 64);
+            WithdrawSubmitbutton.Name = "WithdrawSubmitbutton";
+            WithdrawSubmitbutton.Size = new Size(84, 25);
+            WithdrawSubmitbutton.TabIndex = 9;
+            WithdrawSubmitbutton.Text = "Submit";
+            WithdrawSubmitbutton.UseVisualStyleBackColor = true;
+            WithdrawSubmitbutton.Visible = false;
+            WithdrawSubmitbutton.Click += btnWithdrawSubmit_Click;
+            // 
+            // DepositSubmitbutton
+            // 
+            DepositSubmitbutton.Location = new Point(217, 64);
+            DepositSubmitbutton.Name = "DepositSubmitbutton";
+            DepositSubmitbutton.Size = new Size(84, 25);
+            DepositSubmitbutton.TabIndex = 8;
+            DepositSubmitbutton.Text = "Submit";
+            DepositSubmitbutton.UseVisualStyleBackColor = true;
+            DepositSubmitbutton.Visible = false;
+            DepositSubmitbutton.Click += btnDepositSubmit_Click;
+            // 
+            // WithdrawDepositText
+            // 
+            WithdrawDepositText.Location = new Point(114, 66);
+            WithdrawDepositText.Name = "WithdrawDepositText";
+            WithdrawDepositText.Size = new Size(97, 23);
+            WithdrawDepositText.TabIndex = 2;
+            WithdrawDepositText.Visible = false;
+            // 
             // btnHomeNavbarRoulette
             // 
             btnHomeNavbarRoulette.Location = new Point(696, 57);
@@ -1675,6 +1709,16 @@
             btnHomeNavbarRoulette.Text = "Roulette";
             btnHomeNavbarRoulette.UseVisualStyleBackColor = true;
             // 
+            // Depositbotton
+            // 
+            Depositbotton.Location = new Point(70, 70);
+            Depositbotton.Name = "Depositbotton";
+            Depositbotton.Size = new Size(20, 20);
+            Depositbotton.TabIndex = 1;
+            Depositbotton.Text = "+";
+            Depositbotton.UseVisualStyleBackColor = true;
+            Depositbotton.Click += btnDeposit_Click;
+            // 
             // btnHomeNavbarCrash
             // 
             btnHomeNavbarCrash.Location = new Point(606, 57);
@@ -1683,6 +1727,16 @@
             btnHomeNavbarCrash.TabIndex = 6;
             btnHomeNavbarCrash.Text = "Crash";
             btnHomeNavbarCrash.UseVisualStyleBackColor = true;
+            // 
+            // Withdrawbutton
+            // 
+            Withdrawbutton.Location = new Point(37, 70);
+            Withdrawbutton.Name = "Withdrawbutton";
+            Withdrawbutton.Size = new Size(20, 20);
+            Withdrawbutton.TabIndex = 0;
+            Withdrawbutton.Text = "-";
+            Withdrawbutton.UseVisualStyleBackColor = true;
+            Withdrawbutton.Click += btnWithdraw_Click;
             // 
             // btnHomeNavbarBlackjack
             // 
@@ -1741,43 +1795,6 @@
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(WithdrawDepositText);
-            panel1.Controls.Add(Depositbotton);
-            panel1.Controls.Add(Withdrawbutton);
-            panel1.Location = new Point(324, 107);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(284, 242);
-            panel1.TabIndex = 5;
-            // 
-            // Withdrawbutton
-            // 
-            Withdrawbutton.Location = new Point(35, 112);
-            Withdrawbutton.Name = "Withdrawbutton";
-            Withdrawbutton.Size = new Size(105, 61);
-            Withdrawbutton.TabIndex = 0;
-            Withdrawbutton.Text = "Withdraw";
-            Withdrawbutton.UseVisualStyleBackColor = true;
-            Withdrawbutton.Click += btnWithdraw_Click;
-            // 
-            // Depositbotton
-            // 
-            Depositbotton.Location = new Point(146, 112);
-            Depositbotton.Name = "Depositbotton";
-            Depositbotton.Size = new Size(105, 61);
-            Depositbotton.TabIndex = 1;
-            Depositbotton.Text = "Deposit";
-            Depositbotton.UseVisualStyleBackColor = true;
-            Depositbotton.Click += btnDeposit_Click;
-            // 
-            // WithdrawDepositText
-            // 
-            WithdrawDepositText.Location = new Point(35, 83);
-            WithdrawDepositText.Name = "WithdrawDepositText";
-            WithdrawDepositText.Size = new Size(216, 23);
-            WithdrawDepositText.TabIndex = 2;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1824,8 +1841,6 @@
             panelMinesBetting.PerformLayout();
             panelHomeNavbar.ResumeLayout(false);
             panelHomeNavbar.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1963,9 +1978,10 @@
         private ComboBox comboBoxBlackJackBettingHandsCount;
         private Button btnBlackJackClose;
         private Label lblDealerBust;
-        private Panel panel1;
         private TextBox WithdrawDepositText;
         private Button Depositbotton;
         private Button Withdrawbutton;
+        private Button DepositSubmitbutton;
+        private Button WithdrawSubmitbutton;
     }
 }

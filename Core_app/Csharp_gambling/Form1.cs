@@ -430,6 +430,24 @@ namespace csharp_gambling
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
+            WithdrawDepositText.Show();
+            WithdrawSubmitbutton.Show();
+
+            DepositSubmitbutton.Hide();
+        }
+
+        private void btnDeposit_Click(object sender, EventArgs e)
+        {
+            WithdrawDepositText.Show();
+            DepositSubmitbutton.Show();
+
+            WithdrawSubmitbutton.Hide();
+        }
+
+        private void btnWithdrawSubmit_Click(object sender, EventArgs e)
+        {
+            WithdrawDepositText.Hide();
+            WithdrawSubmitbutton.Hide();
             try
             {
                 string username = lblHomeNavbarUsername.Text;
@@ -453,8 +471,10 @@ namespace csharp_gambling
             }
         }
 
-        private void btnDeposit_Click(object sender, EventArgs e)
+        private void btnDepositSubmit_Click(object sender, EventArgs e)
         {
+            WithdrawDepositText.Hide();
+            DepositSubmitbutton.Hide();
             try
             {
                 string username = lblHomeNavbarUsername.Text;
@@ -848,7 +868,7 @@ namespace csharp_gambling
             List<Card> tempPlayerCards = new List<Card>();
 
             Random random = new Random();
-            for (int i =0; i < 2; i++)
+            for (int i = 0; i < 2; i++)
             {
                 int randomIndex = random.Next(tempAvailableCards.Count);
                 Card randomCard = tempAvailableCards[randomIndex];

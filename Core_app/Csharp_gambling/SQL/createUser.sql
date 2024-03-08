@@ -7,7 +7,7 @@ CREATE LOGIN ConnectionUser
     WITH PASSWORD = 'AppConnection!';
 
 -- Assign db_owner role directly to the login
-USE YourDatabaseName;
+USE CasinoDB;
 CREATE USER ConnectionUser
     FOR LOGIN ConnectionUser
     WITH DEFAULT_SCHEMA = dbo;
