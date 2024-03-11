@@ -340,6 +340,10 @@ namespace csharp_gambling
                 MessageBox.Show($"Du vandt {winnings}kr.", "Tillykke!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 lblMinesGameWinnings.Text = "0kr.";
                 lblMinesGameMultiplier.Text = "x1.0";
+
+                RevealAllMines();
+
+                minesData.GameActive = false;
             }
             else
             {

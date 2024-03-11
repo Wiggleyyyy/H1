@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|c:\\users\\hfgf\\documents\\github\\h1\\core_app\\csharp_gambling\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\sql\\database.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\sql\\createuser.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:sql\\createuser.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E17BDB8-EADD-40FC-BE62-A98639B6EF19}|csharp_gambling.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,23 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAAHoGAAAAAAAAAAAawJsGAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T13:06:42.965Z"
+              "WhenOpened": "2024-03-07T13:06:42.965Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Database.cs",
               "RelativeDocumentMoniker": "Database.cs",
@@ -58,25 +59,24 @@
               "RelativeToolTip": "Database.cs",
               "ViewState": "AQIAAGsAAAAAAAAAAAAwwJkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T12:47:10.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T12:47:10.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAGQCAAAAAAAAAAAQwH0CAAAJAAAA",
+              "ViewState": "AQIAADgBAAAAAAAAAAAAwEwBAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T09:53:17.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "createUser.sql",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\SQL\\createUser.sql",
               "RelativeDocumentMoniker": "SQL\\createUser.sql",
@@ -88,18 +88,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T09:53:16.657Z"
+              "WhenOpened": "2024-03-07T09:53:16.657Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Database.sql",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H1\\Core_app\\Csharp_gambling\\SQL\\Database.sql",
               "RelativeDocumentMoniker": "SQL\\Database.sql",
