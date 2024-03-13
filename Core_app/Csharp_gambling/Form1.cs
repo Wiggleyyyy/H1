@@ -1152,6 +1152,94 @@ namespace csharp_gambling
             return false;
         }
         //Blackjack - end
+
+        //Crash - start
+
+        private static void Crash()
+        {
+            double multiplier = 1.00;
+            System.Threading.Thread.Sleep(1000);
+
+            try
+            {
+                Random random = new Random();
+
+                bool useAlternativeFormula = random.Next(1, 11) == 1;
+                bool useAlternativeFormulaMid = random.Next(1, 4) == 1;
+                while (true)
+                {
+                    // Display the current multiplier
+                    Console.WriteLine($"Multiplier: {multiplier:F2}x");
+
+                    // Adjust increment based on the current multiplier to simulate acceleration
+                    double increment = 0.01 * Math.Pow(multiplier, 1);
+
+                    // Increase the multiplier gradually
+                    multiplier += increment;
+
+                    System.Threading.Thread.Sleep(100);
+
+                    // Calculate the probability of using an alternative formula
+                    double crashProbability;
+
+                    if (useAlternativeFormula)
+                    {
+                        crashProbability = CalculateCrashProbability(random, multiplier, 1);
+                    }
+                    else
+                    {
+                        if (useAlternativeFormulaMid)
+                        {
+                            crashProbability = CalculateCrashProbability(random, multiplier, 2);
+                        }
+                        else
+                        {
+                            crashProbability = CalculateCrashProbability(random, multiplier, 0);
+                        }
+                    }
+
+                    // Simulate the crash if a random number is greater than the crash probability
+                    if (random.NextDouble() > crashProbability)
+                    {
+                        // Simulate the crash by throwing an exception
+                        SimulateCrash();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle the crash exception here (e.g., log it)
+                Console.WriteLine($"Crash: {ex.Message}");
+            }
+        }
+
+        private static double CalculateCrashProbability(Random random, double multiplier, int id)
+        {
+            double randomFactor;
+            switch (id)
+            {
+                case 0:
+                    randomFactor = random.NextDouble() * 0.5 + 0.85; // THE NORMAL
+                    return 1.0 / Math.Pow(multiplier, 0.3) * randomFactor;
+
+                case 1:
+                    randomFactor = random.NextDouble() * 0.65 + 1.1; // THE RARE
+                    return 1.0 / Math.Pow(multiplier, 0.1) * randomFactor;
+
+                case 2:
+                    randomFactor = random.NextDouble() * 0.65 + 1.0; // THE MID
+                    return 1.0 / Math.Pow(multiplier, 0.2) * randomFactor;
+            }
+
+            return 0;
+        }
+        private static void SimulateCrash()
+        {
+            // Simulate a crash by throwing an exception
+            throw new ApplicationException("The game has crashed!");
+        }
+
+        //Crash - end
         //Game functionality - end
     }
 }
