@@ -37,7 +37,12 @@ namespace csharp_gambling
         public bool PlayerHasBlackJackHand1 { get; set; }
         public bool PlayerHasBlackJackHand2 { get; set; }
         public bool PlayerHasBlackJackHand3 { get; set; }
-        public List<Card> PlayerCards { get; set; }
+        public HandStatus DealerHandStatus { get; set; }
+        public HandStatus PlayerHand1Status { get; set; }
+        public HandStatus PlayerHand2Status { get; set; }
+        public HandStatus PlayerHand3Status { get; set; }
+        public string HitOrStand { get; set; }
+        public List<Card> PlayerCards = new List<Card>();
         public List<Card> DealerCards { get; set; }
         public List<Card> AvailableCards { get; set; }
     }
@@ -48,5 +53,13 @@ namespace csharp_gambling
         public string CardRank { get; set; }
         public string CardSuit { get; set; }
         public string CardHand { get; set; }
+    }
+
+    public enum HandStatus
+    {
+        NONE,
+        WIN,
+        DRAW,
+        LOSS,
     }
 }

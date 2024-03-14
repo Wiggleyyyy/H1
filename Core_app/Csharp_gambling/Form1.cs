@@ -1,5 +1,4 @@
 //TO DO : TABINDEX MINES
-//TO DO : MINES MULTIPLIER REWORK
 //TO DO : TRACK STATS MINES
 
 // TO DO : BLACK JACK
@@ -27,7 +26,8 @@ namespace csharp_gambling
 
         //Game data
         private MinesData minesData = new MinesData();
-        private BlackJackData blackJackData = new BlackJackData();
+        public BlackJackData blackJackData = new BlackJackData();
+
         public Form1()
         {
             InitializeComponent();
@@ -878,10 +878,18 @@ namespace csharp_gambling
                 PlayerTurn(hand);
             }
 
+            panelBlackJackGameDealer.Visible = true;
             DealerTurn();
 
-            //Check for blackjacks
-            //Loop through each hand
+            HandStatus temp1 = blackJackData.PlayerHand1Status;
+            HandStatus temp2 = blackJackData.PlayerHand2Status;
+            HandStatus temp3 = blackJackData.PlayerHand3Status;
+            CheckHandStatus(blackJackData.DealerHasBlackJack, blackJackData.PlayerHasBlackJackHand1, ref temp1);
+            CheckHandStatus(blackJackData.DealerHasBlackJack, blackJackData.PlayerHasBlackJackHand2, ref temp2);
+            CheckHandStatus(blackJackData.DealerHasBlackJack, blackJackData.PlayerHasBlackJackHand3, ref temp3);
+            blackJackData.PlayerHand1Status = temp1;
+            blackJackData.PlayerHand2Status = temp2;
+            blackJackData.PlayerHand3Status = temp3;
 
             //Extra turns
 
@@ -890,6 +898,22 @@ namespace csharp_gambling
             //Multiplier - standard win = +100% | blackjack win = +150%
 
             //Reset visuals
+        }
+
+        private void CheckHandStatus(bool dealerHasBlackJack, bool playerHasBlackJack, ref HandStatus playerHandStatus)
+        {
+            if (dealerHasBlackJack && playerHasBlackJack)
+            {
+                playerHandStatus = HandStatus.DRAW;
+            }
+            else if (!dealerHasBlackJack && playerHasBlackJack)
+            {
+                playerHandStatus = HandStatus.WIN;
+            }
+            else if (dealerHasBlackJack && !playerHasBlackJack)
+            {
+                playerHandStatus = HandStatus.LOSS;
+            }
         }
 
         private void SetCards()
@@ -962,13 +986,23 @@ namespace csharp_gambling
             {
                 lblDealerTotalValue.Text = "Værdi: ?";
                 lblDealerCardsCount.Text = $"Kort: {numOfCards}";
-            }            
+            }
         }
 
         private void PlayerTurn(int hand)
         {
             List<Card> tempAvailableCards = blackJackData.AvailableCards;
             List<Card> tempPlayerCards = new List<Card>();
+
+            //BUG HERE : player cards gets overwritten 
+
+            if (blackJackData.PlayerCards.Count > 0)
+            {
+                foreach (Card card in blackJackData.PlayerCards)
+                {
+                    tempPlayerCards.Add(card);
+                }
+            }
 
             Random random = new Random();
             for (int i = 0; i < 2; i++)
