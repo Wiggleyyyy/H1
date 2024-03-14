@@ -954,23 +954,17 @@ namespace csharp_gambling
 
         private void DealerTurn()
         {
-            List<Card> tempAvailableCards = blackJackData.AvailableCards;
-            List<Card> tempDealerCards = new List<Card>();
-
             Random random = new Random();
             for (int i = 0; i < 2; i++)
             {
-                int randomIndex = random.Next(tempAvailableCards.Count);
-                Card randomCard = tempAvailableCards[randomIndex];
+                int randomIndex = random.Next(blackJackData.AvailableCards.Count);
+                Card randomCard = blackJackData.AvailableCards[randomIndex];
 
-                tempAvailableCards.Remove(randomCard);
-                tempDealerCards.Add(randomCard);
+                blackJackData.AvailableCards.Remove(randomCard);
+                blackJackData.DealerCards.Add(randomCard);
             }
 
-            blackJackData.AvailableCards = tempAvailableCards;
-            blackJackData.DealerCards = tempDealerCards;
-
-            int numOfCards = tempDealerCards.Count;
+            int numOfCards = blackJackData.DealerCards.Count;
             int handValue = CalculateHandValue(blackJackData.DealerCards);
             bool hasBlackJack = IsBlackjack(blackJackData.DealerCards);
 
@@ -991,24 +985,11 @@ namespace csharp_gambling
 
         private void PlayerTurn(int hand)
         {
-            List<Card> tempAvailableCards = blackJackData.AvailableCards;
-            List<Card> tempPlayerCards = new List<Card>();
-
-            //BUG HERE : player cards gets overwritten
-
-            if (blackJackData.PlayerCards.Count > 0)
-            {
-                foreach (Card card in blackJackData.PlayerCards)
-                {
-                    tempPlayerCards.Add(card);
-                }
-            }
-
             Random random = new Random();
             for (int i = 0; i < 2; i++)
             {
-                int randomIndex = random.Next(tempAvailableCards.Count);
-                Card randomCard = tempAvailableCards[randomIndex];
+                int randomIndex = random.Next(blackJackData.AvailableCards.Count);
+                Card randomCard = blackJackData.AvailableCards[randomIndex];
 
                 if (hand == 1)
                 {
@@ -1029,17 +1010,14 @@ namespace csharp_gambling
                     randomCard.CardHand = "3";
                 }
 
-                tempAvailableCards.Remove(randomCard);
-                tempPlayerCards.Add(randomCard);
+                blackJackData.AvailableCards.Remove(randomCard);
+                blackJackData.PlayerCards.Add(randomCard);
 
                 //Give time to see card 
                 Thread.Sleep(2000);
             }
 
-            blackJackData.AvailableCards = tempAvailableCards;
-            blackJackData.PlayerCards = tempPlayerCards;
-
-            int numOfCards = tempPlayerCards.Count;
+            int numOfCards = blackJackData.PlayerCards.Count;
             int handValue = CalculateHandValue(blackJackData.PlayerCards);
             bool hasBlackJack = IsBlackjack(blackJackData.PlayerCards);
 

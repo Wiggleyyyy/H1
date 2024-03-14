@@ -43,8 +43,8 @@ namespace csharp_gambling
         public HandStatus PlayerHand3Status { get; set; }
         public string HitOrStand { get; set; }
         public List<Card> PlayerCards = new List<Card>();
-        public List<Card> DealerCards { get; set; }
-        public List<Card> AvailableCards { get; set; }
+        public List<Card> DealerCards = new List<Card>();
+        public List<Card> AvailableCards = new List<Card>();
     }
 
     public class Card
