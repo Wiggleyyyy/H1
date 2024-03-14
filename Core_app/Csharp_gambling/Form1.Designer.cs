@@ -197,7 +197,7 @@
             // 
             // panelLogin
             // 
-            panelLogin.BackColor = Color.FromArgb(51, 50, 51);
+            panelLogin.BackColor = Color.FromArgb(41, 38, 49);
             panelLogin.Controls.Add(btnLoginLogin);
             panelLogin.Controls.Add(btnLoginSignup);
             panelLogin.Controls.Add(textBoxLoginPassword);
@@ -214,11 +214,11 @@
             // 
             // btnLoginLogin
             // 
-            btnLoginLogin.BackColor = Color.FromArgb(175, 141, 252);
+            btnLoginLogin.BackColor = Color.LimeGreen;
             btnLoginLogin.FlatAppearance.BorderColor = Color.FromArgb(255, 224, 192);
             btnLoginLogin.FlatAppearance.BorderSize = 0;
             btnLoginLogin.FlatStyle = FlatStyle.Flat;
-            btnLoginLogin.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLoginLogin.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnLoginLogin.ForeColor = Color.White;
             btnLoginLogin.Location = new Point(37, 557);
             btnLoginLogin.Name = "btnLoginLogin";
@@ -235,7 +235,7 @@
             btnLoginSignup.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnLoginSignup.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnLoginSignup.FlatStyle = FlatStyle.Flat;
-            btnLoginSignup.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Underline, GraphicsUnit.Point);
+            btnLoginSignup.Font = new Font("Segoe UI", 8.999999F, FontStyle.Underline, GraphicsUnit.Point);
             btnLoginSignup.ForeColor = Color.White;
             btnLoginSignup.Location = new Point(37, 528);
             btnLoginSignup.Name = "btnLoginSignup";
@@ -246,53 +246,58 @@
             // 
             // textBoxLoginPassword
             // 
+            textBoxLoginPassword.BackColor = Color.White;
             textBoxLoginPassword.BorderStyle = BorderStyle.None;
-            textBoxLoginPassword.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLoginPassword.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLoginPassword.ForeColor = Color.Black;
             textBoxLoginPassword.Location = new Point(37, 285);
             textBoxLoginPassword.Name = "textBoxLoginPassword";
             textBoxLoginPassword.PlaceholderText = "Skriv adgangskode";
-            textBoxLoginPassword.Size = new Size(261, 23);
+            textBoxLoginPassword.Size = new Size(261, 25);
             textBoxLoginPassword.TabIndex = 2;
             textBoxLoginPassword.UseSystemPasswordChar = true;
             // 
             // lblLoginPassword
             // 
             lblLoginPassword.AutoSize = true;
-            lblLoginPassword.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLoginPassword.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             lblLoginPassword.Location = new Point(31, 256);
             lblLoginPassword.Name = "lblLoginPassword";
-            lblLoginPassword.Size = new Size(140, 25);
+            lblLoginPassword.Size = new Size(145, 28);
             lblLoginPassword.TabIndex = 4;
             lblLoginPassword.Text = "Adgangskode:";
             // 
             // textBoxLoginUsername
             // 
+            textBoxLoginUsername.BackColor = Color.White;
             textBoxLoginUsername.BorderStyle = BorderStyle.None;
-            textBoxLoginUsername.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLoginUsername.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLoginUsername.ForeColor = Color.Black;
             textBoxLoginUsername.Location = new Point(37, 215);
             textBoxLoginUsername.Name = "textBoxLoginUsername";
             textBoxLoginUsername.PlaceholderText = "Skriv brugernavn";
-            textBoxLoginUsername.Size = new Size(261, 23);
+            textBoxLoginUsername.Size = new Size(261, 25);
             textBoxLoginUsername.TabIndex = 1;
             // 
             // lblLoginUsername
             // 
             lblLoginUsername.AutoSize = true;
-            lblLoginUsername.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLoginUsername.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             lblLoginUsername.Location = new Point(31, 186);
             lblLoginUsername.Name = "lblLoginUsername";
-            lblLoginUsername.Size = new Size(119, 25);
+            lblLoginUsername.Size = new Size(127, 28);
             lblLoginUsername.TabIndex = 2;
             lblLoginUsername.Text = "Brugernavn:";
             // 
             // lblLoginHeader
             // 
             lblLoginHeader.AutoSize = true;
-            lblLoginHeader.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLoginHeader.Location = new Point(122, 71);
+            lblLoginHeader.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLoginHeader.ForeColor = Color.White;
+            lblLoginHeader.Location = new Point(124, 71);
             lblLoginHeader.Name = "lblLoginHeader";
             lblLoginHeader.RightToLeft = RightToLeft.No;
-            lblLoginHeader.Size = new Size(89, 31);
+            lblLoginHeader.Size = new Size(95, 37);
             lblLoginHeader.TabIndex = 1;
             lblLoginHeader.Text = "Log-in";
             lblLoginHeader.UseMnemonic = false;
@@ -300,12 +305,12 @@
             // lblLoginTitle
             // 
             lblLoginTitle.AutoSize = true;
-            lblLoginTitle.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Underline, GraphicsUnit.Point);
+            lblLoginTitle.Font = new Font("Segoe UI", 30F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             lblLoginTitle.ForeColor = Color.White;
-            lblLoginTitle.Location = new Point(25, 21);
+            lblLoginTitle.Location = new Point(32, 17);
             lblLoginTitle.Name = "lblLoginTitle";
             lblLoginTitle.RightToLeft = RightToLeft.No;
-            lblLoginTitle.Size = new Size(305, 46);
+            lblLoginTitle.Size = new Size(295, 54);
             lblLoginTitle.TabIndex = 0;
             lblLoginTitle.Text = "JYTTE CASINO";
             // 
@@ -1957,7 +1962,7 @@
             lblHomeNavbarUsername.AutoSize = true;
             lblHomeNavbarUsername.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblHomeNavbarUsername.ForeColor = Color.White;
-            lblHomeNavbarUsername.Location = new Point(25, 14);
+            lblHomeNavbarUsername.Location = new Point(29, 14);
             lblHomeNavbarUsername.Name = "lblHomeNavbarUsername";
             lblHomeNavbarUsername.Size = new Size(141, 21);
             lblHomeNavbarUsername.TabIndex = 2;
