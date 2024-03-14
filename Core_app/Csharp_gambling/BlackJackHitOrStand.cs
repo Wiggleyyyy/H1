@@ -28,17 +28,20 @@ namespace csharp_gambling
 
         private void btnHit_Click(object sender, EventArgs e)
         {
-
+            blackJackData.HitOrStandAction = HitOrStandAction.HIT;
+            this.Close();
         }
 
         private void btnStand_Click(object sender, EventArgs e)
         {
-
+            blackJackData.HitOrStandAction = HitOrStandAction.STAND;
+            this.Close();
         }
 
         private void btnDoubleDown_Click(object sender, EventArgs e)
         {
-
+            blackJackData.HitOrStandAction = HitOrStandAction.DOUBLE;
+            this.Close();
         }
     }
 }

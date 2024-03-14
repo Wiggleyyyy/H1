@@ -474,7 +474,7 @@
             panelCrash.Controls.Add(panel15);
             panelCrash.Controls.Add(label40);
             panelCrash.Controls.Add(button33);
-            panelCrash.Location = new Point(25, 639);
+            panelCrash.Location = new Point(31, 636);
             panelCrash.Name = "panelCrash";
             panelCrash.Size = new Size(1195, 506);
             panelCrash.TabIndex = 2;
@@ -732,7 +732,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(676, 632);
+            panelBlackJack.Location = new Point(25, 135);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;

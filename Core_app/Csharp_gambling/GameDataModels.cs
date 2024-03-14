@@ -42,6 +42,7 @@ namespace csharp_gambling
         public HandStatus PlayerHand2Status { get; set; }
         public HandStatus PlayerHand3Status { get; set; }
         public bool HitOrStandIsFirstCard { get; set; }
+        public bool HitOrStandDoubleIsAvailable { get; set; }
         public string HitOrStandHand { get; set; }
         public HitOrStandAction HitOrStandAction { get; set; }
         public List<Card> PlayerCards = new List<Card>();
@@ -70,6 +71,7 @@ namespace csharp_gambling
         NONE,
         HIT,
         STAND,
+        DOUBLE,
     }
 
     public class CrashData

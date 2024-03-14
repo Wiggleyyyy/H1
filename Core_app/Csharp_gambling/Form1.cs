@@ -1054,10 +1054,34 @@ namespace csharp_gambling
             {
                 if (hand1StillActive)
                 {
-                    blackJackData.HitOrStandIsFirstCard = true;
                     blackJackData.HitOrStandHand = "hand 1";
-                    //Continue
-                    PlayerHitOrStand(1);
+                    blackJackData.HitOrStandIsFirstCard = true;
+
+                    //ADD
+                    //CHECK IF DOUBLE IS AVAILABLE, if not set false
+                    while (true)
+                    {
+                        PlayerHitOrStand();
+
+                        if (blackJackData.HitOrStandAction == HitOrStandAction.HIT)
+                        {
+                            //ADD
+                            GiveCard("hand 1");
+                            //CHECK IF BUST
+                        }
+                        else if (blackJackData.HitOrStandAction == HitOrStandAction.DOUBLE)
+                        {
+                            //ADD
+                            //DOUBLE BET + NEW CARD
+                            //CHECK IF BUST
+
+                            break;
+                        }
+                        else if (blackJackData.HitOrStandAction == HitOrStandAction.STAND)
+                        {
+                            break;
+                        }
+                    }
                 }
             }
             else if (blackJackData.NumberOfHands == 2)
@@ -1066,13 +1090,13 @@ namespace csharp_gambling
                 {
                     blackJackData.HitOrStandIsFirstCard = true;
                     blackJackData.HitOrStandHand = "hand 1";
-                    PlayerHitOrStand(1);
+                    PlayerHitOrStand();
                 }
                 if (hand2StillActive)
                 {
                     blackJackData.HitOrStandIsFirstCard = true;
                     blackJackData.HitOrStandHand = "hand 2";
-                    PlayerHitOrStand(2);
+                    PlayerHitOrStand();
                 }
             }
             else if (blackJackData.NumberOfHands == 3)
@@ -1081,19 +1105,19 @@ namespace csharp_gambling
                 {
                     blackJackData.HitOrStandIsFirstCard = true;
                     blackJackData.HitOrStandHand = "hand 1";
-                    PlayerHitOrStand(1);
+                    PlayerHitOrStand();
                 }
                 if (hand2StillActive)
                 {
                     blackJackData.HitOrStandIsFirstCard = true;
                     blackJackData.HitOrStandHand = "hand 2";
-                    PlayerHitOrStand(2);
+                    PlayerHitOrStand();
                 }
                 if (hand3StillActive)
                 {
                     blackJackData.HitOrStandIsFirstCard = true;
                     blackJackData.HitOrStandHand = "hand 3";
-                    PlayerHitOrStand(3);
+                    PlayerHitOrStand();
                 }
             }
 
@@ -1104,6 +1128,27 @@ namespace csharp_gambling
             //Multiplier - standard win = +100% | blackjack win = +150% | draw = money back
 
             //Reset visuals
+        }
+
+        private void GiveCard(string hand)
+        {
+            if (hand == "dealer")
+            {
+
+            }
+            else if (hand == "hand 1")
+            {
+                //test if it gets cards for hand 1
+                List<Card> tempHand1Cards = blackJackData.PlayerCards.Where(x => x.CardHand == "1").ToList();
+            }
+            else if (hand == "hand 2")
+            {
+
+            }
+            else if (hand == "hand 3")
+            {
+
+            }
         }
 
         private void CheckHandStatus(bool dealerHasBlackJack, bool playerHasBlackJack, ref HandStatus playerHandStatus)
@@ -1221,7 +1266,8 @@ namespace csharp_gambling
                 blackJackData.PlayerCards.Add(randomCard);
 
                 //Give time to see card 
-                Thread.Sleep(2000);
+                //Thread.Sleep(2000);
+                //FIND DIFF WAY TO SEE CARD BEFORE NEW CARD
             }
 
             int numOfCards = blackJackData.PlayerCards.Count;
@@ -1273,9 +1319,12 @@ namespace csharp_gambling
             }
         }
 
-        private void PlayerHitOrStand(int hand)
+        private void PlayerHitOrStand()
         {
-            BlackJackHitOrStand hitOrStandPopUp = new BlackJackHitOrStand();
+            BlackJackHitOrStand hitOrStandPopUp = new BlackJackHitOrStand
+            {
+                Visible = false,
+            };
             hitOrStandPopUp.blackJackData = blackJackData;
             hitOrStandPopUp.Show();
 
