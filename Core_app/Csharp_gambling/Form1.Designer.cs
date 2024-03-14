@@ -163,7 +163,6 @@
             WithdrawSubmitbutton = new Button();
             DepositSubmitbutton = new Button();
             WithdrawDepositText = new TextBox();
-            btnHomeNavbarRoulette = new Button();
             Depositbotton = new Button();
             btnHomeNavbarCrash = new Button();
             Withdrawbutton = new Button();
@@ -312,7 +311,7 @@
             // 
             // panelSignup
             // 
-            panelSignup.BackColor = Color.FromArgb(51, 50, 51);
+            panelSignup.BackColor = Color.FromArgb(41, 38, 49);
             panelSignup.Controls.Add(textBoxSignupConfirmPassword);
             panelSignup.Controls.Add(lblSignupConfirmPassword);
             panelSignup.Controls.Add(btnSignupCreateAccount);
@@ -333,32 +332,32 @@
             // 
             textBoxSignupConfirmPassword.BackColor = Color.White;
             textBoxSignupConfirmPassword.BorderStyle = BorderStyle.None;
-            textBoxSignupConfirmPassword.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSignupConfirmPassword.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSignupConfirmPassword.ForeColor = Color.Black;
             textBoxSignupConfirmPassword.Location = new Point(37, 355);
             textBoxSignupConfirmPassword.Name = "textBoxSignupConfirmPassword";
             textBoxSignupConfirmPassword.PlaceholderText = "Gentag adgangskode";
-            textBoxSignupConfirmPassword.Size = new Size(261, 23);
+            textBoxSignupConfirmPassword.Size = new Size(261, 25);
             textBoxSignupConfirmPassword.TabIndex = 7;
             textBoxSignupConfirmPassword.UseSystemPasswordChar = true;
             // 
             // lblSignupConfirmPassword
             // 
             lblSignupConfirmPassword.AutoSize = true;
-            lblSignupConfirmPassword.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignupConfirmPassword.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             lblSignupConfirmPassword.ForeColor = Color.White;
             lblSignupConfirmPassword.Location = new Point(31, 326);
             lblSignupConfirmPassword.Name = "lblSignupConfirmPassword";
-            lblSignupConfirmPassword.Size = new Size(206, 25);
+            lblSignupConfirmPassword.Size = new Size(216, 28);
             lblSignupConfirmPassword.TabIndex = 8;
             lblSignupConfirmPassword.Text = "Gentag adgangskode:";
             // 
             // btnSignupCreateAccount
             // 
-            btnSignupCreateAccount.BackColor = Color.FromArgb(175, 141, 252);
+            btnSignupCreateAccount.BackColor = Color.LimeGreen;
             btnSignupCreateAccount.FlatAppearance.BorderSize = 0;
             btnSignupCreateAccount.FlatStyle = FlatStyle.Flat;
-            btnSignupCreateAccount.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSignupCreateAccount.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnSignupCreateAccount.ForeColor = Color.White;
             btnSignupCreateAccount.Location = new Point(37, 557);
             btnSignupCreateAccount.Name = "btnSignupCreateAccount";
@@ -375,7 +374,7 @@
             btnSignupLogin.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnSignupLogin.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnSignupLogin.FlatStyle = FlatStyle.Flat;
-            btnSignupLogin.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Underline, GraphicsUnit.Point);
+            btnSignupLogin.Font = new Font("Segoe UI", 8.999999F, FontStyle.Underline, GraphicsUnit.Point);
             btnSignupLogin.ForeColor = Color.White;
             btnSignupLogin.Location = new Point(37, 528);
             btnSignupLogin.Name = "btnSignupLogin";
@@ -388,23 +387,23 @@
             // 
             textBoxSignupPassword.BackColor = Color.White;
             textBoxSignupPassword.BorderStyle = BorderStyle.None;
-            textBoxSignupPassword.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSignupPassword.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSignupPassword.ForeColor = Color.Black;
             textBoxSignupPassword.Location = new Point(37, 285);
             textBoxSignupPassword.Name = "textBoxSignupPassword";
             textBoxSignupPassword.PlaceholderText = "Skriv adgangskode";
-            textBoxSignupPassword.Size = new Size(261, 23);
+            textBoxSignupPassword.Size = new Size(261, 25);
             textBoxSignupPassword.TabIndex = 6;
             textBoxSignupPassword.UseSystemPasswordChar = true;
             // 
             // lblSignupPassword
             // 
             lblSignupPassword.AutoSize = true;
-            lblSignupPassword.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignupPassword.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             lblSignupPassword.ForeColor = Color.White;
             lblSignupPassword.Location = new Point(31, 256);
             lblSignupPassword.Name = "lblSignupPassword";
-            lblSignupPassword.Size = new Size(140, 25);
+            lblSignupPassword.Size = new Size(145, 28);
             lblSignupPassword.TabIndex = 4;
             lblSignupPassword.Text = "Adgangskode:";
             // 
@@ -412,34 +411,34 @@
             // 
             textBoxSignupUsername.BackColor = Color.White;
             textBoxSignupUsername.BorderStyle = BorderStyle.None;
-            textBoxSignupUsername.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSignupUsername.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSignupUsername.ForeColor = Color.Black;
             textBoxSignupUsername.Location = new Point(37, 215);
             textBoxSignupUsername.Name = "textBoxSignupUsername";
             textBoxSignupUsername.PlaceholderText = "Skriv brugernavn";
-            textBoxSignupUsername.Size = new Size(261, 23);
+            textBoxSignupUsername.Size = new Size(261, 25);
             textBoxSignupUsername.TabIndex = 5;
             // 
             // lblSignupUsername
             // 
             lblSignupUsername.AutoSize = true;
-            lblSignupUsername.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignupUsername.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             lblSignupUsername.ForeColor = Color.White;
             lblSignupUsername.Location = new Point(31, 186);
             lblSignupUsername.Name = "lblSignupUsername";
-            lblSignupUsername.Size = new Size(119, 25);
+            lblSignupUsername.Size = new Size(127, 28);
             lblSignupUsername.TabIndex = 2;
             lblSignupUsername.Text = "Brugernavn:";
             // 
             // lblSignupHeader
             // 
             lblSignupHeader.AutoSize = true;
-            lblSignupHeader.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSignupHeader.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             lblSignupHeader.ForeColor = Color.White;
-            lblSignupHeader.Location = new Point(122, 71);
+            lblSignupHeader.Location = new Point(124, 71);
             lblSignupHeader.Name = "lblSignupHeader";
             lblSignupHeader.RightToLeft = RightToLeft.No;
-            lblSignupHeader.Size = new Size(107, 31);
+            lblSignupHeader.Size = new Size(111, 37);
             lblSignupHeader.TabIndex = 1;
             lblSignupHeader.Text = "Sign-up";
             lblSignupHeader.UseMnemonic = false;
@@ -447,12 +446,12 @@
             // lblSignupTitle
             // 
             lblSignupTitle.AutoSize = true;
-            lblSignupTitle.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Underline, GraphicsUnit.Point);
+            lblSignupTitle.Font = new Font("Segoe UI", 30F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             lblSignupTitle.ForeColor = Color.White;
-            lblSignupTitle.Location = new Point(25, 21);
+            lblSignupTitle.Location = new Point(32, 17);
             lblSignupTitle.Name = "lblSignupTitle";
             lblSignupTitle.RightToLeft = RightToLeft.No;
-            lblSignupTitle.Size = new Size(305, 46);
+            lblSignupTitle.Size = new Size(295, 54);
             lblSignupTitle.TabIndex = 0;
             lblSignupTitle.Text = "JYTTE CASINO";
             // 
@@ -733,7 +732,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(6, 124);
+            panelBlackJack.Location = new Point(676, 632);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;
@@ -1827,11 +1826,10 @@
             // 
             // panelHomeNavbar
             // 
-            panelHomeNavbar.BackColor = SystemColors.ActiveBorder;
+            panelHomeNavbar.BackColor = Color.FromArgb(41, 38, 49);
             panelHomeNavbar.Controls.Add(WithdrawSubmitbutton);
             panelHomeNavbar.Controls.Add(DepositSubmitbutton);
             panelHomeNavbar.Controls.Add(WithdrawDepositText);
-            panelHomeNavbar.Controls.Add(btnHomeNavbarRoulette);
             panelHomeNavbar.Controls.Add(Depositbotton);
             panelHomeNavbar.Controls.Add(btnHomeNavbarCrash);
             panelHomeNavbar.Controls.Add(Withdrawbutton);
@@ -1848,42 +1846,37 @@
             // 
             // WithdrawSubmitbutton
             // 
-            WithdrawSubmitbutton.Location = new Point(217, 64);
+            WithdrawSubmitbutton.BackColor = Color.White;
+            WithdrawSubmitbutton.FlatStyle = FlatStyle.Flat;
+            WithdrawSubmitbutton.Location = new Point(205, 66);
             WithdrawSubmitbutton.Name = "WithdrawSubmitbutton";
             WithdrawSubmitbutton.Size = new Size(84, 25);
             WithdrawSubmitbutton.TabIndex = 9;
             WithdrawSubmitbutton.Text = "Submit";
-            WithdrawSubmitbutton.UseVisualStyleBackColor = true;
+            WithdrawSubmitbutton.UseVisualStyleBackColor = false;
             WithdrawSubmitbutton.Visible = false;
             WithdrawSubmitbutton.Click += btnWithdrawSubmit_Click;
             // 
             // DepositSubmitbutton
             // 
-            DepositSubmitbutton.Location = new Point(217, 64);
+            DepositSubmitbutton.BackColor = Color.White;
+            DepositSubmitbutton.FlatStyle = FlatStyle.Flat;
+            DepositSubmitbutton.Location = new Point(206, 66);
             DepositSubmitbutton.Name = "DepositSubmitbutton";
             DepositSubmitbutton.Size = new Size(84, 25);
             DepositSubmitbutton.TabIndex = 8;
             DepositSubmitbutton.Text = "Submit";
-            DepositSubmitbutton.UseVisualStyleBackColor = true;
+            DepositSubmitbutton.UseVisualStyleBackColor = false;
             DepositSubmitbutton.Visible = false;
             DepositSubmitbutton.Click += btnDepositSubmit_Click;
             // 
             // WithdrawDepositText
             // 
-            WithdrawDepositText.Location = new Point(114, 66);
+            WithdrawDepositText.Location = new Point(102, 68);
             WithdrawDepositText.Name = "WithdrawDepositText";
             WithdrawDepositText.Size = new Size(97, 23);
             WithdrawDepositText.TabIndex = 2;
             WithdrawDepositText.Visible = false;
-            // 
-            // btnHomeNavbarRoulette
-            // 
-            btnHomeNavbarRoulette.Location = new Point(696, 57);
-            btnHomeNavbarRoulette.Name = "btnHomeNavbarRoulette";
-            btnHomeNavbarRoulette.Size = new Size(75, 23);
-            btnHomeNavbarRoulette.TabIndex = 7;
-            btnHomeNavbarRoulette.Text = "Roulette";
-            btnHomeNavbarRoulette.UseVisualStyleBackColor = true;
             // 
             // Depositbotton
             // 
@@ -1897,12 +1890,17 @@
             // 
             // btnHomeNavbarCrash
             // 
-            btnHomeNavbarCrash.Location = new Point(606, 57);
+            btnHomeNavbarCrash.BackColor = Color.LimeGreen;
+            btnHomeNavbarCrash.FlatAppearance.BorderSize = 0;
+            btnHomeNavbarCrash.FlatStyle = FlatStyle.Flat;
+            btnHomeNavbarCrash.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHomeNavbarCrash.ForeColor = Color.White;
+            btnHomeNavbarCrash.Location = new Point(689, 61);
             btnHomeNavbarCrash.Name = "btnHomeNavbarCrash";
-            btnHomeNavbarCrash.Size = new Size(75, 23);
+            btnHomeNavbarCrash.Size = new Size(85, 30);
             btnHomeNavbarCrash.TabIndex = 6;
             btnHomeNavbarCrash.Text = "Crash";
-            btnHomeNavbarCrash.UseVisualStyleBackColor = true;
+            btnHomeNavbarCrash.UseVisualStyleBackColor = false;
             // 
             // Withdrawbutton
             // 
@@ -1916,46 +1914,65 @@
             // 
             // btnHomeNavbarBlackjack
             // 
-            btnHomeNavbarBlackjack.Location = new Point(524, 57);
+            btnHomeNavbarBlackjack.BackColor = Color.LimeGreen;
+            btnHomeNavbarBlackjack.FlatAppearance.BorderColor = Color.LimeGreen;
+            btnHomeNavbarBlackjack.FlatAppearance.BorderSize = 0;
+            btnHomeNavbarBlackjack.FlatStyle = FlatStyle.Flat;
+            btnHomeNavbarBlackjack.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHomeNavbarBlackjack.ForeColor = Color.White;
+            btnHomeNavbarBlackjack.Location = new Point(594, 61);
             btnHomeNavbarBlackjack.Name = "btnHomeNavbarBlackjack";
-            btnHomeNavbarBlackjack.Size = new Size(75, 23);
+            btnHomeNavbarBlackjack.Size = new Size(85, 30);
             btnHomeNavbarBlackjack.TabIndex = 5;
             btnHomeNavbarBlackjack.Text = "Blackjack";
-            btnHomeNavbarBlackjack.UseVisualStyleBackColor = true;
+            btnHomeNavbarBlackjack.UseVisualStyleBackColor = false;
             // 
             // btnHomeNavbarMines
             // 
-            btnHomeNavbarMines.Location = new Point(443, 57);
+            btnHomeNavbarMines.BackColor = Color.LimeGreen;
+            btnHomeNavbarMines.FlatAppearance.BorderSize = 0;
+            btnHomeNavbarMines.FlatStyle = FlatStyle.Flat;
+            btnHomeNavbarMines.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHomeNavbarMines.ForeColor = Color.White;
+            btnHomeNavbarMines.Location = new Point(499, 61);
             btnHomeNavbarMines.Name = "btnHomeNavbarMines";
-            btnHomeNavbarMines.Size = new Size(75, 23);
+            btnHomeNavbarMines.Size = new Size(85, 30);
             btnHomeNavbarMines.TabIndex = 4;
             btnHomeNavbarMines.Text = "Mines";
-            btnHomeNavbarMines.UseVisualStyleBackColor = true;
+            btnHomeNavbarMines.UseVisualStyleBackColor = false;
             // 
             // lblHomeNavbarCurrency
             // 
             lblHomeNavbarCurrency.AutoSize = true;
-            lblHomeNavbarCurrency.Location = new Point(29, 48);
+            lblHomeNavbarCurrency.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHomeNavbarCurrency.ForeColor = Color.White;
+            lblHomeNavbarCurrency.Location = new Point(29, 42);
             lblHomeNavbarCurrency.Name = "lblHomeNavbarCurrency";
-            lblHomeNavbarCurrency.Size = new Size(89, 15);
+            lblHomeNavbarCurrency.Size = new Size(125, 21);
             lblHomeNavbarCurrency.TabIndex = 3;
             lblHomeNavbarCurrency.Text = "$<CURRENCY>";
             // 
             // lblHomeNavbarUsername
             // 
             lblHomeNavbarUsername.AutoSize = true;
-            lblHomeNavbarUsername.Location = new Point(25, 20);
+            lblHomeNavbarUsername.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHomeNavbarUsername.ForeColor = Color.White;
+            lblHomeNavbarUsername.Location = new Point(25, 14);
             lblHomeNavbarUsername.Name = "lblHomeNavbarUsername";
-            lblHomeNavbarUsername.Size = new Size(98, 15);
+            lblHomeNavbarUsername.Size = new Size(141, 21);
             lblHomeNavbarUsername.TabIndex = 2;
             lblHomeNavbarUsername.Text = "<BRUGERNAVN>";
             // 
             // btnHomeNavbarSignOut
             // 
             btnHomeNavbarSignOut.BackColor = Color.IndianRed;
-            btnHomeNavbarSignOut.Location = new Point(1154, 20);
+            btnHomeNavbarSignOut.FlatAppearance.BorderSize = 0;
+            btnHomeNavbarSignOut.FlatStyle = FlatStyle.Flat;
+            btnHomeNavbarSignOut.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHomeNavbarSignOut.ForeColor = Color.White;
+            btnHomeNavbarSignOut.Location = new Point(1160, 7);
             btnHomeNavbarSignOut.Name = "btnHomeNavbarSignOut";
-            btnHomeNavbarSignOut.Size = new Size(97, 39);
+            btnHomeNavbarSignOut.Size = new Size(97, 35);
             btnHomeNavbarSignOut.TabIndex = 1;
             btnHomeNavbarSignOut.Text = "Log-ud";
             btnHomeNavbarSignOut.UseVisualStyleBackColor = false;
@@ -1964,12 +1981,13 @@
             // lblHomeNavbarTitle
             // 
             lblHomeNavbarTitle.AutoSize = true;
-            lblHomeNavbarTitle.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblHomeNavbarTitle.Location = new Point(550, 9);
+            lblHomeNavbarTitle.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHomeNavbarTitle.ForeColor = Color.White;
+            lblHomeNavbarTitle.Location = new Point(484, 4);
             lblHomeNavbarTitle.Name = "lblHomeNavbarTitle";
-            lblHomeNavbarTitle.Size = new Size(113, 28);
+            lblHomeNavbarTitle.Size = new Size(295, 54);
             lblHomeNavbarTitle.TabIndex = 0;
-            lblHomeNavbarTitle.Text = "Jytte casino";
+            lblHomeNavbarTitle.Text = "JYTTE CASINO";
             // 
             // Form1
             // 
@@ -2053,7 +2071,6 @@
         private Label lblHomeNavbarTitle;
         private Label lblHomeNavbarCurrency;
         private Label lblHomeNavbarUsername;
-        private Button btnHomeNavbarRoulette;
         private Button btnHomeNavbarCrash;
         private Button btnHomeNavbarBlackjack;
         private Panel panelHomeMines;
