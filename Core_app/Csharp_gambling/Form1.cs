@@ -478,6 +478,11 @@ namespace csharp_gambling
                 MessageBox.Show("Bet er for lavt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void comboBoxBlackJackBettingHandsCount_Leave(object sender, EventArgs e)
+        {
+            lblBlackJackBettingHandCount.Text = comboBoxBlackJackBettingHandsCount.Text.Trim();
+        }
         //Button functionality - end
 
         //Password validation - start
@@ -926,24 +931,24 @@ namespace csharp_gambling
                 case 1:
                     {
                         panelBlackJackGameCard1.Visible = true;
-                        lblCard1TotalValue.Text = "";
-                        lblCard1CardsCount.Text = "";
-                        lblCard1CardType.Text = "";
-                        lblCard1CardValue.Text = "";
+                        lblBlackJackGameCard1TotalValue.Text = "";
+                        lblBlackJackGameCard1NumOfCards.Text = "";
+                        lblBlackJackGameCard1CardType.Text = "";
+                        lblBlackJackGameCard1CardRank.Text = "";
                         break;
                     }
                 case 2:
                     {
                         panelBlackJackGameCard1.Visible = true;
                         panelBlackJackGameCard2.Visible = true;
-                        lblCard1TotalValue.Text = "";
-                        lblCard1CardsCount.Text = "";
-                        lblCard1CardType.Text = "";
-                        lblCard1CardValue.Text = "";
-                        lblCard2TotalValue.Text = "";
-                        lblCard2CardsCount.Text = "";
-                        lblCard2CardType.Text = "";
-                        lblCard2CardValue.Text = "";
+                        lblBlackJackGameCard1TotalValue.Text = "";
+                        lblBlackJackGameCard1NumOfCards.Text = "";
+                        lblBlackJackGameCard1CardType.Text = "";
+                        lblBlackJackGameCard1CardRank.Text = "";
+                        lblBlackJackGameCard2TotalValue.Text = "";
+                        lblBlackJackGameCard2NumOfCards.Text = "";
+                        lblBlackJackGameCard2CardType.Text = "";
+                        lblBlackJackGameCard2CardRank.Text = "";
                         break;
                     }
                 case 3:
@@ -951,18 +956,18 @@ namespace csharp_gambling
                         panelBlackJackGameCard1.Visible = true;
                         panelBlackJackGameCard2.Visible = true;
                         panelBlackJackGameCard3.Visible = true;
-                        lblCard1TotalValue.Text = "";
-                        lblCard1CardsCount.Text = "";
-                        lblCard1CardType.Text = "";
-                        lblCard1CardValue.Text = "";
-                        lblCard2TotalValue.Text = "";
-                        lblCard2CardsCount.Text = "";
-                        lblCard2CardType.Text = "";
-                        lblCard2CardValue.Text = "";
-                        lblCard3TotalValue.Text = "";
-                        lblCard3CardsCount.Text = "";
-                        lblCard3CardType.Text = "";
-                        lblCard3CardValue.Text = "";
+                        lblBlackJackGameCard1TotalValue.Text = "";
+                        lblBlackJackGameCard1NumOfCards.Text = "";
+                        lblBlackJackGameCard1CardType.Text = "";
+                        lblBlackJackGameCard1CardRank.Text = "";
+                        lblBlackJackGameCard2TotalValue.Text = "";
+                        lblBlackJackGameCard2NumOfCards.Text = "";
+                        lblBlackJackGameCard2CardType.Text = "";
+                        lblBlackJackGameCard2CardRank.Text = "";
+                        lblBlackJackGameCard3TotalValue.Text = "";
+                        lblBlackJackGameCard3NumOfCards.Text = "";
+                        lblBlackJackGameCard3CardType.Text = "";
+                        lblBlackJackGameCard3CardRank.Text = "";
                         break;
                     }
             }
@@ -1068,15 +1073,15 @@ namespace csharp_gambling
             if (hasBlackJack)
             {
                 blackJackData.DealerHasBlackJack = true;
-                lblDealerTotalValue.Text = "Black Jack";
-                lblDealerTotalValue.Text = $"Kort: {numOfCards}";
+                lblBlackJackGameDealerTotalValue.Text = "Black Jack";
+                lblBlackJackGameDealerTotalValue.Text = $"Kort: {numOfCards}";
                 MessageBox.Show("Dealer has black jack", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             else
             {
-                lblDealerTotalValue.Text = "Værdi: ?";
-                lblDealerCardsCount.Text = $"Kort: {numOfCards}";
+                lblBlackJackGameDealerTotalValue.Text = "Værdi: ?";
+                lblBlackJackGameDealerNumOfCards.Text = $"Kort: {numOfCards}";
             }
         }
 
@@ -1091,20 +1096,20 @@ namespace csharp_gambling
 
                 if (hand == 1)
                 {
-                    lblCard1CardType.Text = randomCard.CardSuit;
-                    lblCard1CardValue.Text = randomCard.CardRank;
+                    lblBlackJackGameCard1CardType.Text = randomCard.CardSuit;
+                    lblBlackJackGameCard2CardRank.Text = randomCard.CardRank;
                     randomCard.CardHand = "1";
                 }
                 else if (hand == 2)
                 {
-                    lblCard2CardType.Text = randomCard.CardSuit;
-                    lblCard2CardValue.Text = randomCard.CardRank;
+                    lblBlackJackGameCard2CardType.Text = randomCard.CardSuit;
+                    lblBlackJackGameCard2CardRank.Text = randomCard.CardRank;
                     randomCard.CardHand = "2";
                 }
                 else if (hand == 3)
                 {
-                    lblCard3CardType.Text = randomCard.CardSuit;
-                    lblCard3CardValue.Text = randomCard.CardRank;
+                    lblBlackJackGameCard3CardType.Text = randomCard.CardSuit;
+                    lblBlackJackGameCard3CardRank.Text = randomCard.CardRank;
                     randomCard.CardHand = "3";
                 }
 
@@ -1124,22 +1129,22 @@ namespace csharp_gambling
                 if (hand == 1)
                 {
                     blackJackData.PlayerHasBlackJackHand1 = true;
-                    lblCard1TotalValue.Text = "Black Jack";
-                    lblCard1CardsCount.Text = $"Kort: {numOfCards}";
+                    lblBlackJackGameCard1TotalValue.Text = "Black Jack";
+                    lblBlackJackGameCard1NumOfCards.Text = $"Kort: {numOfCards}";
                     MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (hand == 2)
                 {
                     blackJackData.PlayerHasBlackJackHand2 = true;
-                    lblCard2TotalValue.Text = "Black Jack";
-                    lblCard2CardsCount.Text = $"Kort: {numOfCards}";
+                    lblBlackJackGameCard2TotalValue.Text = "Black Jack";
+                    lblBlackJackGameCard2NumOfCards.Text = $"Kort: {numOfCards}";
                     MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (hand == 3)
                 {
                     blackJackData.PlayerHasBlackJackHand3 = true;
-                    lblCard3TotalValue.Text = "Black Jack";
-                    lblCard3CardsCount.Text = $"Kort: {numOfCards}";
+                    lblBlackJackGameCard3TotalValue.Text = "Black Jack";
+                    lblBlackJackGameCard3NumOfCards.Text = $"Kort: {numOfCards}";
                     MessageBox.Show($"Black Jack on hand {hand}", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 return;
@@ -1148,18 +1153,18 @@ namespace csharp_gambling
             {
                 if (hand == 1)
                 {
-                    lblCard1TotalValue.Text = $"Værdi: {handValue}";
-                    lblCard1CardsCount.Text = $"Kort: {numOfCards}";
+                    lblBlackJackGameCard1TotalValue.Text = $"Værdi: {handValue}";
+                    lblBlackJackGameCard1NumOfCards.Text = $"Kort: {numOfCards}";
                 }
                 else if (hand == 2)
                 {
-                    lblCard2TotalValue.Text = $"Værdi: {handValue}";
-                    lblCard2CardsCount.Text = $"Kort: {numOfCards}";
+                    lblBlackJackGameCard2TotalValue.Text = $"Værdi: {handValue}";
+                    lblBlackJackGameCard2NumOfCards.Text = $"Kort: {numOfCards}";
                 }
                 else if (hand == 3)
                 {
-                    lblCard3TotalValue.Text = $"Værdi: {handValue}";
-                    lblCard3CardsCount.Text = $"Kort: {numOfCards}";
+                    lblBlackJackGameCard3TotalValue.Text = $"Værdi: {handValue}";
+                    lblBlackJackGameCard3NumOfCards.Text = $"Kort: {numOfCards}";
                 }
             }
         }
