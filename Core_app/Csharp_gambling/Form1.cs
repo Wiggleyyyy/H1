@@ -994,7 +994,7 @@ namespace csharp_gambling
             List<Card> tempAvailableCards = blackJackData.AvailableCards;
             List<Card> tempPlayerCards = new List<Card>();
 
-            //BUG HERE : player cards gets overwritten 
+            //BUG HERE : player cards gets overwritten
 
             if (blackJackData.PlayerCards.Count > 0)
             {
