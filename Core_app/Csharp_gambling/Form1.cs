@@ -1,7 +1,3 @@
-//TO DO : TABINDEX MINES
-//TO DO : MINES MULTIPLIER REWORK
-//TO DO : TRACK STATS MINES
-
 // TO DO : BLACK JACK
 // TO DO : BETTING IN BLACKJACK - remove from database
 // TO DO : CARD FLOW IN BLACKJACK
@@ -9,6 +5,7 @@
 // TO DO : NEW BALANCE IN BLACKJACK
 // TO DO : TRACK STATS BLACKJACK
 
+using System.CodeDom;
 using System.Diagnostics.Eventing.Reader;
 using System.DirectoryServices.ActiveDirectory;
 using System.Reflection.Metadata.Ecma335;
@@ -27,7 +24,7 @@ namespace csharp_gambling
 
         //Game data
         private MinesData minesData = new MinesData();
-        private BlackJackData blackJackData = new BlackJackData();
+        public BlackJackData blackJackData = new BlackJackData();
         private CrashData crashData = new CrashData();
         public Form1()
         {
@@ -993,11 +990,118 @@ namespace csharp_gambling
             blackJackData.PlayerHand2Status = temp2;
             blackJackData.PlayerHand3Status = temp3;
 
-            //Extra turns
+            bool hand1StillActive = true;
+            bool hand2StillActive = true;
+            bool hand3StillActive = true;
+            if (blackJackData.PlayerHand1Status == HandStatus.WIN)
+            {
+                MessageBox.Show("Hånd 1 har vundet!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand1StillActive = false;
+                //GO TO PAYOUT METHOD
+            }
+            else if (blackJackData.PlayerHand1Status == HandStatus.LOSS)
+            {
+                MessageBox.Show("Hånd 1 har tabt!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand1StillActive = false;
+                //END GAME
+            }
+            else if (blackJackData.PlayerHand1Status == HandStatus.DRAW)
+            {
+                MessageBox.Show("Uafgjordt på hånd 1", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand1StillActive = false;
+                //GO TO PAYOUT METHOD
+            }
+
+            if (blackJackData.PlayerHand2Status == HandStatus.WIN)
+            {
+                MessageBox.Show("Hånd 2 har vundet!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand2StillActive = false;
+                //GO TO PAYOUT METHOD
+            }
+            else if (blackJackData.PlayerHand2Status == HandStatus.LOSS)
+            {
+                MessageBox.Show("Hånd 2 har tabt!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand2StillActive = false;
+                //END GAME
+            }
+            else if (blackJackData.PlayerHand2Status == HandStatus.DRAW)
+            {
+                MessageBox.Show("Uafgjordt på hånd 2", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand2StillActive = false;
+                //GO TO PAYOUT METHOD
+            }
+
+            if (blackJackData.PlayerHand3Status == HandStatus.WIN)
+            {
+                MessageBox.Show("Hånd 3 har vundet!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand3StillActive = false;
+                //GO TO PAYOUT METHOD
+            }
+            else if (blackJackData.PlayerHand3Status == HandStatus.LOSS)
+            {
+                MessageBox.Show("Hånd 3 har tabt!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand3StillActive = false;
+                //END GAME
+            }
+            else if (blackJackData.PlayerHand3Status == HandStatus.DRAW)
+            {
+                MessageBox.Show("Uafgjordt på hånd 3", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hand3StillActive = false;
+                //GO TO PAYOUT METHOD
+            }
+
+            if (blackJackData.NumberOfHands == 1)
+            {
+                if (hand1StillActive)
+                {
+                    blackJackData.HitOrStandIsFirstCard = true;
+                    blackJackData.HitOrStandHand = "hand 1";
+                    //Continue
+                    PlayerHitOrStand(1);
+                }
+            }
+            else if (blackJackData.NumberOfHands == 2)
+            {
+                if (hand1StillActive)
+                {
+                    blackJackData.HitOrStandIsFirstCard = true;
+                    blackJackData.HitOrStandHand = "hand 1";
+                    PlayerHitOrStand(1);
+                }
+                if (hand2StillActive)
+                {
+                    blackJackData.HitOrStandIsFirstCard = true;
+                    blackJackData.HitOrStandHand = "hand 2";
+                    PlayerHitOrStand(2);
+                }
+            }
+            else if (blackJackData.NumberOfHands == 3)
+            {
+                if (hand1StillActive)
+                {
+                    blackJackData.HitOrStandIsFirstCard = true;
+                    blackJackData.HitOrStandHand = "hand 1";
+                    PlayerHitOrStand(1);
+                }
+                if (hand2StillActive)
+                {
+                    blackJackData.HitOrStandIsFirstCard = true;
+                    blackJackData.HitOrStandHand = "hand 2";
+                    PlayerHitOrStand(2);
+                }
+                if (hand3StillActive)
+                {
+                    blackJackData.HitOrStandIsFirstCard = true;
+                    blackJackData.HitOrStandHand = "hand 3";
+                    PlayerHitOrStand(3);
+                }
+            }
+
+            //DEALER EXTRA TURN
 
             //Winnings
 
-            //Multiplier - standard win = +100% | blackjack win = +150%
+            //Multiplier - standard win = +100% | blackjack win = +150% | draw = money back
 
             //Reset visuals
         }
@@ -1171,6 +1275,10 @@ namespace csharp_gambling
 
         private void PlayerHitOrStand(int hand)
         {
+            BlackJackHitOrStand hitOrStandPopUp = new BlackJackHitOrStand();
+            hitOrStandPopUp.blackJackData = blackJackData;
+            hitOrStandPopUp.Show();
+
             //if (handValue > 21)
             //{
             //    if (hand == 1)
@@ -1197,22 +1305,22 @@ namespace csharp_gambling
             //    return;
             //}
 
-            while (true)
-            {
-                DialogResult result = MessageBox.Show($"Vil du have et kort mere på hånd {hand}", "Hit eller stå", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //while (true)
+            //{
+            //    DialogResult result = MessageBox.Show($"Vil du have et kort mere på hånd {hand}", "Hit eller stå", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (result == DialogResult.Yes)
-                {
-                    //GET NEW CARD
+            //    if (result == DialogResult.Yes)
+            //    {
+            //        //GET NEW CARD
 
-                    //CHECK IF BUST
-                }
-                else
-                {
-                    //Dealer turn
-                    break;
-                }
-            }
+            //        //CHECK IF BUST
+            //    }
+            //    else
+            //    {
+            //        //Dealer turn
+            //        break;
+            //    }
+            //}
         }
 
         private int CalculateHandValue(List<Card> hand)

@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Noah S. Vangsgaard\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\DavidHougesen\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Noah S. Vangsgaard\\.nuget\\packages"
     ],
     "configProperties": {

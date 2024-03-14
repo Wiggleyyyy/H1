@@ -32,6 +32,7 @@
             btnHit = new Button();
             btnStand = new Button();
             btnDoubleDown = new Button();
+            lblHand = new Label();
             SuspendLayout();
             // 
             // lblTitle
@@ -71,13 +72,24 @@
             btnDoubleDown.TabIndex = 3;
             btnDoubleDown.Text = "DOUBLE DOWN";
             btnDoubleDown.UseVisualStyleBackColor = true;
+            btnDoubleDown.Visible = false;
             btnDoubleDown.Click += btnDoubleDown_Click;
+            // 
+            // lblHand
+            // 
+            lblHand.AutoSize = true;
+            lblHand.Location = new Point(231, 34);
+            lblHand.Name = "lblHand";
+            lblHand.Size = new Size(57, 15);
+            lblHand.TabIndex = 4;
+            lblHand.Text = "<HAND>";
             // 
             // BlackJackHitOrStand
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(549, 233);
+            Controls.Add(lblHand);
             Controls.Add(btnDoubleDown);
             Controls.Add(btnStand);
             Controls.Add(btnHit);
@@ -94,5 +106,6 @@
         private Button btnHit;
         private Button btnStand;
         private Button btnDoubleDown;
+        private Label lblHand;
     }
 }
