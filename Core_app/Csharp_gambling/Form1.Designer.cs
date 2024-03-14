@@ -510,6 +510,7 @@
             // 
             panelHomePage.Controls.Add(panelCrash);
             panelHomePage.Controls.Add(panel2);
+            panelHomePage.Controls.Add(panelBlackJack);
             panelHomePage.Controls.Add(panelHomeMines);
             panelHomePage.Controls.Add(panelHomeNavbar);
             panelHomePage.Location = new Point(0, 0);
@@ -1241,7 +1242,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(330, 510);
+            panelBlackJack.Location = new Point(37, 120);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;

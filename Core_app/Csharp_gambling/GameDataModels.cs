@@ -49,6 +49,13 @@ namespace csharp_gambling
         public string CardSuit { get; set; }
         public string CardHand { get; set; }
     }
+    public enum HandStatus
+    {
+        NONE,
+        WIN,
+        DRAW,
+        LOSS,
+    }
 
     public class CrashData
     {
