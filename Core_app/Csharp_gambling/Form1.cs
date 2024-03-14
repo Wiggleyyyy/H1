@@ -28,6 +28,7 @@ namespace csharp_gambling
         //Game data
         private MinesData minesData = new MinesData();
         private BlackJackData blackJackData = new BlackJackData();
+        private CrashData crashData = new CrashData();
         public Form1()
         {
             InitializeComponent();
@@ -84,7 +85,8 @@ namespace csharp_gambling
             buttonPanelMapGames = new Dictionary<Button, Panel>
             {
                 { btnHomeNavbarMines,  panelHomeMines },
-                { btnHomeNavbarBlackjack, panelBlackJack }
+                { btnHomeNavbarBlackjack, panelBlackJack },
+                { btnHomeNavbarCrash, panelCrash }
                 //add more panels
                 //DOING ^^
             };
@@ -257,6 +259,45 @@ namespace csharp_gambling
                 textBoxMinesBettingBet.Text = "";
             }
         }
+        private void textBoxCrashBettingBet_Leave(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(textBoxCrashBettingBet.Text))
+            {
+                double balance = DB.GetCurrentBalance(lblHomeNavbarUsername.Text);
+                double betInput = (double)Convert.ToDouble(textBoxCrashBettingBet.Text);
+
+                if (balance >= betInput)
+                {
+                    crashData.MoneyBet = betInput;
+                    lblCrashBettingCurrentBet.Text = $"{betInput}kr.";
+                    textBoxMinesBettingBet.TextAlign = HorizontalAlignment.Right;
+                }
+                else
+                {
+                    MessageBox.Show("Ugyldigt bet.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                textBoxMinesBettingBet.TextAlign = HorizontalAlignment.Left;
+                textBoxMinesBettingBet.Text = "";
+            }
+        }
+        private void textBoxCrashAutoCashout_Leave(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(textBoxCrashAutoCashout.Text))
+            {
+                double betInput = (double)Convert.ToDouble(textBoxCrashAutoCashout.Text);
+
+                crashData.AutoCashOut = betInput;
+                lblCrashAutoCashout.Text = $"{betInput}x";
+            }
+            else
+            {
+                textBoxMinesBettingBet.TextAlign = HorizontalAlignment.Left;
+                textBoxMinesBettingBet.Text = "";
+            }
+        }
 
         private void btnMinesBettingClear_Click(object sender, EventArgs e)
         {
@@ -348,6 +389,63 @@ namespace csharp_gambling
             else
             {
                 MessageBox.Show("Du skal klikke på mindst et felt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCrashCashOut_Click(object sender, EventArgs e)
+        {
+
+            if (crashData.GameActive)
+            {
+                if (crashData.CashedOut == false)
+                {
+                    crashData.CashedOut = true;
+                    string winningsInput = lblCrashGameWinnings.Text.Replace("kr.", "");
+                    double winnings = (double)Convert.ToDouble(winningsInput);
+
+                    string username = lblHomeNavbarUsername.Text;
+                    double currentBalance = DB.GetCurrentBalance(username);
+                    double newBalance = currentBalance + winnings;
+
+                    DB.InsertNewBalance(username, newBalance);
+                    currentBalance = DB.GetCurrentBalance(username);
+                    string balanceToWrite = $"Balance: {currentBalance}kr.";
+                    lblHomeNavbarCurrency.Text = balanceToWrite;
+
+                    MessageBox.Show($"Du vandt {winnings}kr.", "Tillykke!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    lblCrashGameWinnings.Text = "0kr.";
+                    lblCrashGameMultiplier.Text = "x1.0";
+
+                    crashData.GameActive = false;
+                }
+                else
+                {
+                    MessageBox.Show("Du allerede cashoutet", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Spillet er ikke aktivt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnCrashBettingPlaceBet_Click(object sender, EventArgs e)
+        {
+            if (crashData.GameActive == false)
+            {
+                //Check requirements
+                if (crashData.MoneyBet > 0)
+                {
+                    //Start game
+                    Crash();
+                }
+                else
+                {
+                    MessageBox.Show("Felter er ikke udfyldt korrekt, eller bet er for lavt.", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Gamet er igang", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -962,7 +1060,7 @@ namespace csharp_gambling
             {
                 lblDealerTotalValue.Text = "Værdi: ?";
                 lblDealerCardsCount.Text = $"Kort: {numOfCards}";
-            }            
+            }
         }
 
         private void PlayerTurn(int hand)
@@ -1155,10 +1253,30 @@ namespace csharp_gambling
 
         //Crash - start
 
-        private static void Crash()
+        private async void Crash()
         {
+            string username = lblHomeNavbarUsername.Text;
+            double balance = DB.GetCurrentBalance(username);
+            string betInput = textBoxCrashBettingBet.Text;
+            double bet = (double)Convert.ToDouble(betInput);
+
+            if (balance > 0)
+            {
+                double currentBalance = DB.GetCurrentBalance(username);
+                double newBalance = currentBalance - bet;
+
+                DB.InsertNewBalance(username, newBalance);
+                currentBalance = DB.GetCurrentBalance(username);
+                string balanceToWrite = $"Balance: {currentBalance}kr.";
+                lblHomeNavbarCurrency.Text = balanceToWrite;
+            }
+            else
+            {
+                MessageBox.Show("Balance er for lavt", "Fejl", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            crashData.GameActive = true;
             double multiplier = 1.00;
-            System.Threading.Thread.Sleep(1000);
 
             try
             {
@@ -1169,15 +1287,40 @@ namespace csharp_gambling
                 while (true)
                 {
                     // Display the current multiplier
-                    Console.WriteLine($"Multiplier: {multiplier:F2}x");
+                    label34.Text = $"{multiplier:F2}x";
+                    lblCrashGameMultiplier.Text = $"{multiplier:F2}x";
 
+                    lblCrashGameWinnings.Text = $"{Math.Round(multiplier * crashData.MoneyBet, 2)}kr.";
+
+                    if (crashData.AutoCashOut <= multiplier && crashData.CashedOut == false)
+                    {
+                        crashData.CashedOut = true;
+
+                        string winningsInput = lblCrashGameWinnings.Text.Replace("kr.", "");
+                        double winnings = (double)Convert.ToDouble(winningsInput);
+
+                        username = lblHomeNavbarUsername.Text;
+                        double currentBalance = DB.GetCurrentBalance(username);
+                        double newBalance = currentBalance + winnings;
+
+                        DB.InsertNewBalance(username, newBalance);
+                        currentBalance = DB.GetCurrentBalance(username);
+                        string balanceToWrite = $"Balance: {currentBalance}kr.";
+                        lblHomeNavbarCurrency.Text = balanceToWrite;
+
+                        MessageBox.Show($"Du vandt {winnings}kr.", "Tillykke!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        lblCrashGameWinnings.Text = "0kr.";
+                        lblCrashGameMultiplier.Text = "x1.0";
+
+                        crashData.GameActive = false;
+                    }
                     // Adjust increment based on the current multiplier to simulate acceleration
                     double increment = 0.01 * Math.Pow(multiplier, 1);
 
                     // Increase the multiplier gradually
                     multiplier += increment;
 
-                    System.Threading.Thread.Sleep(100);
+                    await Task.Delay(100);
 
                     // Calculate the probability of using an alternative formula
                     double crashProbability;
@@ -1208,8 +1351,9 @@ namespace csharp_gambling
             }
             catch (Exception ex)
             {
-                // Handle the crash exception here (e.g., log it)
-                Console.WriteLine($"Crash: {ex.Message}");
+                label34.Text = $"{ex.Message}";
+                crashData.GameActive = false;
+                crashData.CashedOut = false;
             }
         }
 
@@ -1238,7 +1382,6 @@ namespace csharp_gambling
             // Simulate a crash by throwing an exception
             throw new ApplicationException("The game has crashed!");
         }
-
         //Crash - end
         //Game functionality - end
     }

@@ -49,6 +49,28 @@
             lblSignupHeader = new Label();
             lblSignupTitle = new Label();
             panelHomePage = new Panel();
+            panelCrash = new Panel();
+            panel13 = new Panel();
+            button4 = new Button();
+            label34 = new Label();
+            label38 = new Label();
+            panel15 = new Panel();
+            lblCrashAutoCashout = new Label();
+            label6 = new Label();
+            label4 = new Label();
+            textBoxCrashAutoCashout = new TextBox();
+            button29 = new Button();
+            lblCrashGameMultiplier = new Label();
+            label31 = new Label();
+            label32 = new Label();
+            lblCrashGameWinnings = new Label();
+            lblCrashBettingCurrentBet = new Label();
+            label36 = new Label();
+            textBoxCrashBettingBet = new TextBox();
+            label37 = new Label();
+            label39 = new Label();
+            label40 = new Label();
+            button33 = new Button();
             panel2 = new Panel();
             button1 = new Button();
             panel4 = new Panel();
@@ -90,21 +112,6 @@
             label28 = new Label();
             label29 = new Label();
             panelHomeMines = new Panel();
-            panel1 = new Panel();
-            panel13 = new Panel();
-            label30 = new Label();
-            label31 = new Label();
-            label32 = new Label();
-            label33 = new Label();
-            panel15 = new Panel();
-            button29 = new Button();
-            label35 = new Label();
-            label36 = new Label();
-            textBox2 = new TextBox();
-            label37 = new Label();
-            label39 = new Label();
-            label40 = new Label();
-            button33 = new Button();
             panelBlackJack = new Panel();
             btnBlackJackClose = new Button();
             panelBlackJackGame = new Panel();
@@ -206,12 +213,12 @@
             lblHomeNavbarUsername = new Label();
             btnHomeNavbarSignOut = new Button();
             lblHomeNavbarTitle = new Label();
-            button3 = new Button();
-            label4 = new Label();
-            textBox3 = new TextBox();
             panelLogin.SuspendLayout();
             panelSignup.SuspendLayout();
             panelHomePage.SuspendLayout();
+            panelCrash.SuspendLayout();
+            panel13.SuspendLayout();
+            panel15.SuspendLayout();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
@@ -223,8 +230,6 @@
             panel11.SuspendLayout();
             panel12.SuspendLayout();
             panelHomeMines.SuspendLayout();
-            panel1.SuspendLayout();
-            panel15.SuspendLayout();
             panelBlackJack.SuspendLayout();
             panelBlackJackGame.SuspendLayout();
             panelBlackJackGameCard1.SuspendLayout();
@@ -503,6 +508,7 @@
             // 
             // panelHomePage
             // 
+            panelHomePage.Controls.Add(panelCrash);
             panelHomePage.Controls.Add(panel2);
             panelHomePage.Controls.Add(panelHomeMines);
             panelHomePage.Controls.Add(panelHomeNavbar);
@@ -512,6 +518,264 @@
             panelHomePage.TabIndex = 9;
             panelHomePage.Visible = false;
             // 
+            // panelCrash
+            // 
+            panelCrash.BackColor = Color.FromArgb(41, 38, 49);
+            panelCrash.Controls.Add(panel13);
+            panelCrash.Controls.Add(panel15);
+            panelCrash.Controls.Add(label40);
+            panelCrash.Controls.Add(button33);
+            panelCrash.Location = new Point(37, 120);
+            panelCrash.Name = "panelCrash";
+            panelCrash.Size = new Size(1195, 506);
+            panelCrash.TabIndex = 2;
+            panelCrash.Visible = false;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(24, 22, 28);
+            panel13.Controls.Add(button4);
+            panel13.Controls.Add(label34);
+            panel13.Controls.Add(label38);
+            panel13.Location = new Point(437, 65);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(727, 415);
+            panel13.TabIndex = 3;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.LimeGreen;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(202, 349);
+            button4.Name = "button4";
+            button4.Size = new Size(277, 37);
+            button4.TabIndex = 15;
+            button4.Text = "Cashout";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += btnCrashCashOut_Click;
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label34.ForeColor = Color.LawnGreen;
+            label34.Location = new Point(348, 155);
+            label34.Name = "label34";
+            label34.Size = new Size(47, 28);
+            label34.TabIndex = 6;
+            label34.Text = "1.0x";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label38.ForeColor = Color.White;
+            label38.Location = new Point(243, 155);
+            label38.Name = "label38";
+            label38.Size = new Size(112, 28);
+            label38.TabIndex = 5;
+            label38.Text = "Multiplier:";
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(24, 22, 28);
+            panel15.Controls.Add(lblCrashAutoCashout);
+            panel15.Controls.Add(label6);
+            panel15.Controls.Add(label4);
+            panel15.Controls.Add(textBoxCrashAutoCashout);
+            panel15.Controls.Add(button29);
+            panel15.Controls.Add(lblCrashGameMultiplier);
+            panel15.Controls.Add(label31);
+            panel15.Controls.Add(label32);
+            panel15.Controls.Add(lblCrashGameWinnings);
+            panel15.Controls.Add(lblCrashBettingCurrentBet);
+            panel15.Controls.Add(label36);
+            panel15.Controls.Add(textBoxCrashBettingBet);
+            panel15.Controls.Add(label37);
+            panel15.Controls.Add(label39);
+            panel15.Location = new Point(19, 65);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(305, 415);
+            panel15.TabIndex = 2;
+            // 
+            // lblCrashAutoCashout
+            // 
+            lblCrashAutoCashout.AutoSize = true;
+            lblCrashAutoCashout.ForeColor = Color.White;
+            lblCrashAutoCashout.Location = new Point(91, 179);
+            lblCrashAutoCashout.Name = "lblCrashAutoCashout";
+            lblCrashAutoCashout.Size = new Size(19, 15);
+            lblCrashAutoCashout.TabIndex = 16;
+            lblCrashAutoCashout.Text = "0x";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(14, 179);
+            label6.Name = "label6";
+            label6.Size = new Size(81, 15);
+            label6.TabIndex = 15;
+            label6.Text = "Auto cashout:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(187, 201);
+            label4.Name = "label4";
+            label4.Size = new Size(13, 15);
+            label4.TabIndex = 14;
+            label4.Text = "x";
+            // 
+            // textBoxCrashAutoCashout
+            // 
+            textBoxCrashAutoCashout.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCrashAutoCashout.Location = new Point(12, 196);
+            textBoxCrashAutoCashout.Name = "textBoxCrashAutoCashout";
+            textBoxCrashAutoCashout.PlaceholderText = "Indtast beløb";
+            textBoxCrashAutoCashout.Size = new Size(175, 25);
+            textBoxCrashAutoCashout.TabIndex = 13;
+            textBoxCrashAutoCashout.Leave += textBoxCrashAutoCashout_Leave;
+            // 
+            // button29
+            // 
+            button29.BackColor = Color.LimeGreen;
+            button29.FlatAppearance.BorderSize = 0;
+            button29.FlatStyle = FlatStyle.Flat;
+            button29.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button29.ForeColor = Color.White;
+            button29.Location = new Point(14, 364);
+            button29.Name = "button29";
+            button29.Size = new Size(277, 37);
+            button29.TabIndex = 11;
+            button29.Text = "Bet";
+            button29.UseVisualStyleBackColor = false;
+            button29.Click += btnCrashBettingPlaceBet_Click;
+            // 
+            // lblCrashGameMultiplier
+            // 
+            lblCrashGameMultiplier.AutoSize = true;
+            lblCrashGameMultiplier.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCrashGameMultiplier.ForeColor = Color.LawnGreen;
+            lblCrashGameMultiplier.Location = new Point(119, 323);
+            lblCrashGameMultiplier.Name = "lblCrashGameMultiplier";
+            lblCrashGameMultiplier.Size = new Size(47, 28);
+            lblCrashGameMultiplier.TabIndex = 4;
+            lblCrashGameMultiplier.Text = "1.0x";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label31.ForeColor = Color.White;
+            label31.Location = new Point(14, 323);
+            label31.Name = "label31";
+            label31.Size = new Size(112, 28);
+            label31.TabIndex = 3;
+            label31.Text = "Multiplier:";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label32.ForeColor = Color.White;
+            label32.Location = new Point(14, 289);
+            label32.Name = "label32";
+            label32.Size = new Size(106, 28);
+            label32.TabIndex = 2;
+            label32.Text = "Winnings:";
+            // 
+            // lblCrashGameWinnings
+            // 
+            lblCrashGameWinnings.AutoSize = true;
+            lblCrashGameWinnings.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCrashGameWinnings.ForeColor = Color.White;
+            lblCrashGameWinnings.Location = new Point(114, 289);
+            lblCrashGameWinnings.Name = "lblCrashGameWinnings";
+            lblCrashGameWinnings.Size = new Size(49, 28);
+            lblCrashGameWinnings.TabIndex = 1;
+            lblCrashGameWinnings.Text = "0 kr.";
+            // 
+            // lblCrashBettingCurrentBet
+            // 
+            lblCrashBettingCurrentBet.AutoSize = true;
+            lblCrashBettingCurrentBet.ForeColor = Color.White;
+            lblCrashBettingCurrentBet.Location = new Point(38, 106);
+            lblCrashBettingCurrentBet.Name = "lblCrashBettingCurrentBet";
+            lblCrashBettingCurrentBet.Size = new Size(29, 15);
+            lblCrashBettingCurrentBet.TabIndex = 8;
+            lblCrashBettingCurrentBet.Text = "0 kr.";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.ForeColor = Color.White;
+            label36.Location = new Point(188, 129);
+            label36.Name = "label36";
+            label36.Size = new Size(21, 15);
+            label36.TabIndex = 7;
+            label36.Text = "Kr.";
+            // 
+            // textBoxCrashBettingBet
+            // 
+            textBoxCrashBettingBet.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCrashBettingBet.Location = new Point(13, 124);
+            textBoxCrashBettingBet.Name = "textBoxCrashBettingBet";
+            textBoxCrashBettingBet.PlaceholderText = "Indtast beløb";
+            textBoxCrashBettingBet.Size = new Size(175, 25);
+            textBoxCrashBettingBet.TabIndex = 6;
+            textBoxCrashBettingBet.Leave += textBoxCrashBettingBet_Leave;
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.ForeColor = Color.White;
+            label37.Location = new Point(13, 106);
+            label37.Name = "label37";
+            label37.Size = new Size(27, 15);
+            label37.TabIndex = 5;
+            label37.Text = "Bet:";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label39.ForeColor = Color.White;
+            label39.Location = new Point(113, 21);
+            label39.Name = "label39";
+            label39.Size = new Size(75, 25);
+            label39.TabIndex = 0;
+            label39.Text = "Betting";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label40.ForeColor = Color.White;
+            label40.Location = new Point(528, 3);
+            label40.Name = "label40";
+            label40.Size = new Size(126, 46);
+            label40.TabIndex = 1;
+            label40.Text = "Crash";
+            // 
+            // button33
+            // 
+            button33.BackColor = Color.FromArgb(24, 22, 28);
+            button33.FlatAppearance.BorderSize = 0;
+            button33.FlatStyle = FlatStyle.Flat;
+            button33.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            button33.ForeColor = Color.White;
+            button33.Location = new Point(19, 19);
+            button33.Name = "button33";
+            button33.Size = new Size(93, 28);
+            button33.TabIndex = 0;
+            button33.Text = "Luk";
+            button33.UseVisualStyleBackColor = false;
+            // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(51, 50, 51);
@@ -519,7 +783,7 @@
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel12);
             panel2.Controls.Add(label29);
-            panel2.Location = new Point(355, 632);
+            panel2.Location = new Point(37, 120);
             panel2.Name = "panel2";
             panel2.Size = new Size(1195, 506);
             panel2.TabIndex = 4;
@@ -959,7 +1223,6 @@
             // panelHomeMines
             // 
             panelHomeMines.BackColor = Color.FromArgb(41, 38, 49);
-            panelHomeMines.Controls.Add(panel1);
             panelHomeMines.Controls.Add(panelBlackJack);
             panelHomeMines.Controls.Add(panelMinesGame);
             panelHomeMines.Controls.Add(panelMinesBetting);
@@ -971,181 +1234,6 @@
             panelHomeMines.TabIndex = 1;
             panelHomeMines.Visible = false;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(41, 38, 49);
-            panel1.Controls.Add(panel13);
-            panel1.Controls.Add(panel15);
-            panel1.Controls.Add(label40);
-            panel1.Controls.Add(button33);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1195, 506);
-            panel1.TabIndex = 2;
-            panel1.Visible = false;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(24, 22, 28);
-            panel13.Location = new Point(437, 65);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(727, 415);
-            panel13.TabIndex = 3;
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label30.ForeColor = Color.LawnGreen;
-            label30.Location = new Point(119, 323);
-            label30.Name = "label30";
-            label30.Size = new Size(47, 28);
-            label30.TabIndex = 4;
-            label30.Text = "1.0x";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label31.ForeColor = Color.White;
-            label31.Location = new Point(14, 323);
-            label31.Name = "label31";
-            label31.Size = new Size(112, 28);
-            label31.TabIndex = 3;
-            label31.Text = "Multiplier:";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label32.ForeColor = Color.White;
-            label32.Location = new Point(14, 289);
-            label32.Name = "label32";
-            label32.Size = new Size(106, 28);
-            label32.TabIndex = 2;
-            label32.Text = "Winnings:";
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label33.ForeColor = Color.White;
-            label33.Location = new Point(114, 289);
-            label33.Name = "label33";
-            label33.Size = new Size(49, 28);
-            label33.TabIndex = 1;
-            label33.Text = "0 kr.";
-            // 
-            // panel15
-            // 
-            panel15.BackColor = Color.FromArgb(24, 22, 28);
-            panel15.Controls.Add(label4);
-            panel15.Controls.Add(textBox3);
-            panel15.Controls.Add(button3);
-            panel15.Controls.Add(button29);
-            panel15.Controls.Add(label30);
-            panel15.Controls.Add(label31);
-            panel15.Controls.Add(label32);
-            panel15.Controls.Add(label33);
-            panel15.Controls.Add(label35);
-            panel15.Controls.Add(label36);
-            panel15.Controls.Add(textBox2);
-            panel15.Controls.Add(label37);
-            panel15.Controls.Add(label39);
-            panel15.Location = new Point(19, 65);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(305, 415);
-            panel15.TabIndex = 2;
-            // 
-            // button29
-            // 
-            button29.BackColor = Color.LimeGreen;
-            button29.FlatAppearance.BorderSize = 0;
-            button29.FlatStyle = FlatStyle.Flat;
-            button29.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button29.ForeColor = Color.White;
-            button29.Location = new Point(14, 364);
-            button29.Name = "button29";
-            button29.Size = new Size(277, 37);
-            button29.TabIndex = 11;
-            button29.Text = "Bet";
-            button29.UseVisualStyleBackColor = false;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.ForeColor = Color.White;
-            label35.Location = new Point(38, 106);
-            label35.Name = "label35";
-            label35.Size = new Size(29, 15);
-            label35.TabIndex = 8;
-            label35.Text = "0 kr.";
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.ForeColor = Color.White;
-            label36.Location = new Point(188, 129);
-            label36.Name = "label36";
-            label36.Size = new Size(21, 15);
-            label36.TabIndex = 7;
-            label36.Text = "Kr.";
-            // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(13, 124);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Indtast beløb";
-            textBox2.Size = new Size(175, 25);
-            textBox2.TabIndex = 6;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.ForeColor = Color.White;
-            label37.Location = new Point(13, 106);
-            label37.Name = "label37";
-            label37.Size = new Size(27, 15);
-            label37.TabIndex = 5;
-            label37.Text = "Bet:";
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
-            label39.ForeColor = Color.White;
-            label39.Location = new Point(113, 21);
-            label39.Name = "label39";
-            label39.Size = new Size(75, 25);
-            label39.TabIndex = 0;
-            label39.Text = "Betting";
-            // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            label40.ForeColor = Color.White;
-            label40.Location = new Point(528, 3);
-            label40.Name = "label40";
-            label40.Size = new Size(126, 46);
-            label40.TabIndex = 1;
-            label40.Text = "Crash";
-            // 
-            // button33
-            // 
-            button33.BackColor = Color.FromArgb(24, 22, 28);
-            button33.FlatAppearance.BorderSize = 0;
-            button33.FlatStyle = FlatStyle.Flat;
-            button33.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            button33.ForeColor = Color.White;
-            button33.Location = new Point(19, 19);
-            button33.Name = "button33";
-            button33.Size = new Size(93, 28);
-            button33.TabIndex = 0;
-            button33.Text = "Luk";
-            button33.UseVisualStyleBackColor = false;
-            // 
             // panelBlackJack
             // 
             panelBlackJack.BackColor = Color.FromArgb(51, 50, 51);
@@ -1153,7 +1241,7 @@
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(330, 465);
+            panelBlackJack.Location = new Point(330, 510);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;
@@ -2378,39 +2466,6 @@
             lblHomeNavbarTitle.TabIndex = 0;
             lblHomeNavbarTitle.Text = "Jytte casino";
             // 
-            // button3
-            // 
-            button3.BackColor = Color.LimeGreen;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(11, 224);
-            button3.Name = "button3";
-            button3.Size = new Size(277, 37);
-            button3.TabIndex = 12;
-            button3.Text = "Auto cashout";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(187, 201);
-            label4.Name = "label4";
-            label4.Size = new Size(21, 15);
-            label4.TabIndex = 14;
-            label4.Text = "Kr.";
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(12, 196);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Indtast beløb";
-            textBox3.Size = new Size(175, 25);
-            textBox3.TabIndex = 13;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -2427,6 +2482,12 @@
             panelSignup.ResumeLayout(false);
             panelSignup.PerformLayout();
             panelHomePage.ResumeLayout(false);
+            panelCrash.ResumeLayout(false);
+            panelCrash.PerformLayout();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel4.ResumeLayout(false);
@@ -2448,10 +2509,6 @@
             panel12.PerformLayout();
             panelHomeMines.ResumeLayout(false);
             panelHomeMines.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
             panelBlackJack.ResumeLayout(false);
             panelBlackJack.PerformLayout();
             panelBlackJackGame.ResumeLayout(false);
@@ -2589,7 +2646,7 @@
         private Label lblCard2CardsCount;
         private Label lblCard2TotalValue;
         private Panel panelCard2;
-        private Label label5;
+        private Label lblCrashAutoCashout;
         private Label label6;
         private Panel panelBlackJackGameCard1;
         private Label lblCard1CardsCount;
@@ -2651,22 +2708,24 @@
         private Label label27;
         private Label label28;
         private Label label29;
-        private Panel panel1;
+        private Panel panelCrash;
         private Panel panel13;
-        private Label label30;
+        private Label lblCrashGameMultiplier;
         private Label label31;
         private Label label32;
-        private Label label33;
+        private Label lblCrashGameWinnings;
         private Panel panel15;
         private Button button29;
-        private Label label35;
+        private Label lblCrashBettingCurrentBet;
         private Label label36;
-        private TextBox textBox2;
+        private TextBox textBoxCrashBettingBet;
         private Label label37;
         private Label label39;
         private Label label40;
         private Button button33;
-        private TextBox textBox3;
-        private Button button3;
+        private TextBox textBoxCrashAutoCashout;
+        private Label label34;
+        private Label label38;
+        private Button button4;
     }
 }

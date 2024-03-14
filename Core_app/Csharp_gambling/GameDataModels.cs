@@ -49,4 +49,17 @@ namespace csharp_gambling
         public string CardSuit { get; set; }
         public string CardHand { get; set; }
     }
+
+    public class CrashData
+    {
+        public double MoneyBet { get; set; }
+        public bool GameActive { get; set; }
+        public bool CashedOut { get; set; }
+        public double AutoCashOut { get; set; }
+        public CrashData()
+        {
+            GameActive = false;
+            CashedOut = false;
+        }
+    }
 }
