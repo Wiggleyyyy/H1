@@ -41,7 +41,9 @@ namespace csharp_gambling
         public HandStatus PlayerHand1Status { get; set; }
         public HandStatus PlayerHand2Status { get; set; }
         public HandStatus PlayerHand3Status { get; set; }
-        public string HitOrStand { get; set; }
+        public bool HitOrStandIsFirstCard { get; set; }
+        public string HitOrStandHand { get; set; }
+        public HitOrStandAction HitOrStandAction { get; set; }
         public List<Card> PlayerCards = new List<Card>();
         public List<Card> DealerCards = new List<Card>();
         public List<Card> AvailableCards = new List<Card>();
@@ -54,12 +56,20 @@ namespace csharp_gambling
         public string CardSuit { get; set; }
         public string CardHand { get; set; }
     }
+
     public enum HandStatus
     {
         NONE,
         WIN,
         DRAW,
         LOSS,
+    }
+
+    public enum HitOrStandAction
+    {
+        NONE,
+        HIT,
+        STAND,
     }
 
     public class CrashData
