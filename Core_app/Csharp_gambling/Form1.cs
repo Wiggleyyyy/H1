@@ -1059,19 +1059,6 @@ namespace csharp_gambling
 
         private void PlayerTurn(int hand)
         {
-            List<Card> tempAvailableCards = blackJackData.AvailableCards;
-            List<Card> tempPlayerCards = new List<Card>();
-
-            //BUG HERE : player cards gets overwritten
-
-            if (blackJackData.PlayerCards.Count > 0)
-            {
-                foreach (Card card in blackJackData.PlayerCards)
-                {
-                    tempPlayerCards.Add(card);
-                }
-            }
-
             Random random = new Random();
             for (int i = 0; i < 2; i++)
             {
