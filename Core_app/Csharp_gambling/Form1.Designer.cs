@@ -53,7 +53,6 @@
             panel13 = new Panel();
             button4 = new Button();
             label34 = new Label();
-            label38 = new Label();
             panel15 = new Panel();
             lblCrashAutoCashout = new Label();
             label6 = new Label();
@@ -479,7 +478,7 @@
             panelCrash.Controls.Add(panel15);
             panelCrash.Controls.Add(label40);
             panelCrash.Controls.Add(button33);
-            panelCrash.Location = new Point(31, 636);
+            panelCrash.Location = new Point(37, 120);
             panelCrash.Name = "panelCrash";
             panelCrash.Size = new Size(1195, 506);
             panelCrash.TabIndex = 2;
@@ -490,7 +489,6 @@
             panel13.BackColor = Color.FromArgb(24, 22, 28);
             panel13.Controls.Add(button4);
             panel13.Controls.Add(label34);
-            panel13.Controls.Add(label38);
             panel13.Location = new Point(437, 65);
             panel13.Name = "panel13";
             panel13.Size = new Size(727, 415);
@@ -514,24 +512,14 @@
             // label34
             // 
             label34.AutoSize = true;
-            label34.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label34.Font = new Font("Segoe UI", 50F, FontStyle.Bold, GraphicsUnit.Point);
             label34.ForeColor = Color.LawnGreen;
-            label34.Location = new Point(348, 155);
+            label34.Location = new Point(252, 140);
             label34.Name = "label34";
-            label34.Size = new Size(47, 28);
+            label34.Size = new Size(171, 89);
             label34.TabIndex = 6;
             label34.Text = "1.0x";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label38.ForeColor = Color.White;
-            label38.Location = new Point(243, 155);
-            label38.Name = "label38";
-            label38.Size = new Size(112, 28);
-            label38.TabIndex = 5;
-            label38.Text = "Multiplier:";
+            label34.TextAlign = ContentAlignment.TopCenter;
             // 
             // panel15
             // 
@@ -732,12 +720,12 @@
             // 
             // panelBlackJack
             // 
-            panelBlackJack.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJack.BackColor = Color.FromArgb(41, 38, 49);
             panelBlackJack.Controls.Add(btnBlackJackClose);
             panelBlackJack.Controls.Add(panelBlackJackGame);
             panelBlackJack.Controls.Add(panelBlackJackBetting);
             panelBlackJack.Controls.Add(lblBlackJackTitle);
-            panelBlackJack.Location = new Point(25, 135);
+            panelBlackJack.Location = new Point(37, 632);
             panelBlackJack.Name = "panelBlackJack";
             panelBlackJack.Size = new Size(1195, 506);
             panelBlackJack.TabIndex = 4;
@@ -745,12 +733,18 @@
             // 
             // btnBlackJackClose
             // 
+            btnBlackJackClose.BackColor = Color.FromArgb(24, 22, 28);
+            btnBlackJackClose.FlatAppearance.BorderSize = 0;
+            btnBlackJackClose.FlatStyle = FlatStyle.Flat;
+            btnBlackJackClose.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBlackJackClose.ForeColor = Color.White;
             btnBlackJackClose.Location = new Point(33, 19);
             btnBlackJackClose.Name = "btnBlackJackClose";
-            btnBlackJackClose.Size = new Size(75, 23);
+            btnBlackJackClose.Size = new Size(93, 28);
             btnBlackJackClose.TabIndex = 13;
             btnBlackJackClose.Text = "Luk";
-            btnBlackJackClose.UseVisualStyleBackColor = true;
+            btnBlackJackClose.UseVisualStyleBackColor = false;
+            btnBlackJackClose.Click += btnBlackJackClose_Click_1;
             // 
             // panelBlackJackGame
             // 
@@ -766,7 +760,7 @@
             // 
             // panelBlackJackGameCard1
             // 
-            panelBlackJackGameCard1.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameCard1.BackColor = Color.FromArgb(41, 38, 49);
             panelBlackJackGameCard1.Controls.Add(lblBlackJackGameCard1NumOfCards);
             panelBlackJackGameCard1.Controls.Add(lblBlackJackGameCard1TotalValue);
             panelBlackJackGameCard1.Controls.Add(panelBlackJackGameCard1Card);
@@ -842,7 +836,7 @@
             // 
             // panelBlackJackGameDealer
             // 
-            panelBlackJackGameDealer.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameDealer.BackColor = Color.FromArgb(41, 38, 49);
             panelBlackJackGameDealer.Controls.Add(lblBlackJackGameDealerBust);
             panelBlackJackGameDealer.Controls.Add(lblBlackJackGameDealerNumOfCards);
             panelBlackJackGameDealer.Controls.Add(lblBlackJackGameDealerTotalValue);
@@ -903,7 +897,7 @@
             // 
             // panelBlackJackGameCard3
             // 
-            panelBlackJackGameCard3.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameCard3.BackColor = Color.FromArgb(41, 38, 49);
             panelBlackJackGameCard3.Controls.Add(lblBlackJackGameCard3NumOfCards);
             panelBlackJackGameCard3.Controls.Add(lblBlackJackGameCard3TotalValue);
             panelBlackJackGameCard3.Controls.Add(panelBlackJackGameCard3Card);
@@ -979,7 +973,7 @@
             // 
             // panelBlackJackGameCard2
             // 
-            panelBlackJackGameCard2.BackColor = Color.FromArgb(51, 50, 51);
+            panelBlackJackGameCard2.BackColor = Color.FromArgb(41, 38, 49);
             panelBlackJackGameCard2.Controls.Add(lblBlackJackGameCard2NumOfCards);
             panelBlackJackGameCard2.Controls.Add(lblBlackJackGameCard2TotalValue);
             panelBlackJackGameCard2.Controls.Add(panelBlackJackGameCard2Card);
@@ -2005,6 +1999,7 @@
             Controls.Add(panelLogin);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panelLogin.ResumeLayout(false);
             panelLogin.PerformLayout();
             panelSignup.ResumeLayout(false);
@@ -2233,7 +2228,6 @@
         private Button button33;
         private TextBox textBoxCrashAutoCashout;
         private Label label34;
-        private Label label38;
         private Button button4;
     }
 }

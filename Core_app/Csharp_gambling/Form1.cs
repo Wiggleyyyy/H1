@@ -1466,6 +1466,7 @@ namespace csharp_gambling
 
                     lblCrashGameWinnings.Text = $"{Math.Round(multiplier * crashData.MoneyBet, 2)}kr.";
 
+
                     if (crashData.AutoCashOut <= multiplier && crashData.CashedOut == false)
                     {
                         crashData.CashedOut = true;
@@ -1555,6 +1556,16 @@ namespace csharp_gambling
         {
             // Simulate a crash by throwing an exception
             throw new ApplicationException("The game has crashed!");
+        }
+
+        private void btnBlackJackClose_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
         //Crash - end
         //Game functionality - end
