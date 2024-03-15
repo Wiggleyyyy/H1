@@ -1057,11 +1057,17 @@ namespace csharp_gambling
                     blackJackData.HitOrStandHand = "hand 1";
                     blackJackData.HitOrStandIsFirstCard = true;
 
-                    //ADD
+                    double currentBalance = DB.GetCurrentBalance(username); ;
                     //CHECK IF DOUBLE IS AVAILABLE, if not set false
                     while (true)
                     {
-                        PlayerHitOrStand();
+                        BlackJackHitOrStand hitOrStandPopUp = new BlackJackHitOrStand
+                        {
+                            Visible = false,
+                        };
+                        hitOrStandPopUp.blackJackData = blackJackData;
+                        var dialogResult = hitOrStandPopUp.ShowDialog();
+                        blackJackData.HitOrStandIsActive = true;
 
                         if (blackJackData.HitOrStandAction == HitOrStandAction.HIT)
                         {
@@ -1321,12 +1327,7 @@ namespace csharp_gambling
 
         private void PlayerHitOrStand()
         {
-            BlackJackHitOrStand hitOrStandPopUp = new BlackJackHitOrStand
-            {
-                Visible = false,
-            };
-            hitOrStandPopUp.blackJackData = blackJackData;
-            hitOrStandPopUp.Show();
+            
 
             //if (handValue > 21)
             //{
