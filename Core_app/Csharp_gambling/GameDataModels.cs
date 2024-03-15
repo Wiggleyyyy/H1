@@ -44,6 +44,7 @@ namespace csharp_gambling
         public bool HitOrStandIsFirstCard { get; set; }
         public bool HitOrStandDoubleIsAvailable { get; set; }
         public string HitOrStandHand { get; set; }
+        public bool HitOrStandIsActive = false;
         public HitOrStandAction HitOrStandAction { get; set; }
         public List<Card> PlayerCards = new List<Card>();
         public List<Card> DealerCards = new List<Card>();
